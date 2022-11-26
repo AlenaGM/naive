@@ -49,40 +49,8 @@
 
 <script setup>
 import { ref } from "vue";
+import menu from "@/components/layout/menu.js";
 const isOpenedMobileMenu = ref(false);
-
-const menu = [
-  {
-    name: "магазин",
-    image: "/svg/menu-shop.svg",
-    path: "/",
-  },
-  {
-    name: "художники",
-    image: "/svg/menu-artist.svg",
-    path: "/artists",
-  },
-  {
-    name: "новости",
-    image: "/svg/menu-news.svg",
-    path: "/news",
-  },
-  {
-    name: "как заказать",
-    image: "/svg/menu-order.svg",
-    path: "/how-to-order",
-  },
-  {
-    name: "доставка",
-    image: "/svg/menu-delivery.svg",
-    path: "/delivery",
-  },
-  {
-    name: "контакты",
-    image: "/svg/menu-contacts.svg",
-    path: "/contacts",
-  },
-];
 </script>
 
 <style lang="scss" scoped>
