@@ -49,9 +49,6 @@ import menu from "@/components/layout/menu.js";
       grid-template-columns: repeat(2, 1fr);
       column-gap: 24px;
     }
-    @media screen and (max-width: 400px) {
-      display: block;
-    }
   }
   &__logo {
     font-size: 32px;
@@ -60,11 +57,11 @@ import menu from "@/components/layout/menu.js";
     letter-spacing: -0.025em;
     color: var(--black);
     margin-bottom: 33px;
-    @media screen and (max-width: 470px) {
+    @media screen and (max-width: 767px) {
       text-align: left;
     }
-    @media screen and (max-width: 400px) {
-      text-align: center;
+    @media screen and (max-width: 450px) {
+      font-size: 24px;
     }
   }
   &__menu {
@@ -84,10 +81,11 @@ import menu from "@/components/layout/menu.js";
         margin-right: 0;
       }
       @media screen and (max-width: 767px) {
-        margin: 0 0 12px 0;
+        margin-bottom: 12px;
+        margin-right: 0;
       }
-      @media screen and (max-width: 400px) {
-        display: none;
+      @media screen and (max-width: 450px) {
+        font-size: 12px;
       }
     }
     @media screen and (max-width: 767px) {
