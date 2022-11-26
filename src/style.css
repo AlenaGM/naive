@@ -20,8 +20,20 @@ body {
   line-height: 24px;
 }
 
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .container {
   max-width: 1208px;
   margin: auto;
   padding: 0 24px;
+}
+
+.main {
+  padding-top: 108px;
+  padding-bottom: 24px;
+  flex-grow: 1;
 }

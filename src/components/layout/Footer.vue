@@ -29,6 +29,7 @@ import menu from "@/components/layout/menu.js";
 
 <style lang="scss" scoped>
 .footer {
+  flex-shrink: 0;
   height: 84px;
   background: var(--white);
   border-top: solid 1px rgba(41, 45, 50, 0.2);

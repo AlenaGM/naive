@@ -8,6 +8,7 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
+      //eslint-disable-next-line
       "@": path.resolve(__dirname, "src"),
     },
   },
