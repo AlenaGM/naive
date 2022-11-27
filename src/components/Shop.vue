@@ -6,7 +6,17 @@
       погружения представляет собой интересный эксперимент проверки новых
       принципов формирования материально-технической и кадровой базы.
     </div>
-    <div class="shop__filter">filter</div>
+    <div class="shop__filter">
+      <img src="/svg/filter.svg" alt="menu-icon" />
+      <div class="shop__filter_item">
+        <span>Год</span>
+        <img src="/svg/filter-arrows-norm.svg" alt="menu-icon" />
+      </div>
+      <div class="shop__filter_item">
+        <span>Цена</span>
+        <img src="/svg/filter-arrows-norm.svg" alt="menu-icon" />
+      </div>
+    </div>
     <div class="shop__gallery">
       <router-link
         class="shop__gallery_item"
@@ -27,37 +37,37 @@ const gallery = [
   {
     id: 1,
     image: "/img/item-1.jpg",
-    path: "/",
+    path: "/:id",
   },
   {
     id: 2,
     image: "/img/item-2.jpg",
-    path: "/",
+    path: "/:id",
   },
   {
     id: 3,
     image: "/img/item-3.jpg",
-    path: "/",
+    path: "/:id",
   },
   {
     id: 4,
     image: "/img/item-4.jpg",
-    path: "/",
+    path: "/:id",
   },
   {
     id: 5,
     image: "/img/item-5.jpg",
-    path: "/",
+    path: "/:id",
   },
   {
     id: 6,
     image: "/img/item-6.jpg",
-    path: "/",
+    path: "/:id",
   },
   {
     id: 7,
     image: "/img/item-7.jpg",
-    path: "/",
+    path: "/:id",
   },
 ];
 </script>
@@ -93,8 +103,17 @@ const gallery = [
     }
   }
   &__filter {
-    margin: 45px 0 0 0;
-    text-align: right;
+    margin: 50px 0 15px 0;
+    display: inline-flex;
+    align-self: flex-end;
+    &_item {
+      display: inline-flex;
+      margin-left: 14px;
+      cursor: pointer;
+      img {
+        margin-left: 7px;
+      }
+    }
   }
   &__gallery {
     columns: 3 360px;

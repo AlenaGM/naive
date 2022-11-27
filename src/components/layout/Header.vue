@@ -98,9 +98,11 @@ const isOpenedMobileMenu = ref(false);
     flex-direction: column;
     &_link {
       display: inline-flex;
+      align-items: center;
       margin-bottom: 50px;
       color: var(--black);
       text-decoration: none;
+      text-transform: uppercase;
       font-size: 16px;
       font-weight: 500;
       line-height: 20px;

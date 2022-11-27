@@ -2,7 +2,9 @@
   <footer class="footer">
     <div class="footer__container container">
       <div class="footer__top">
-        <div class="footer__logo">Наивное<br />искусство</div>
+        <div class="footer__logo">
+          <router-link to="/"> Наивное<br />искусство </router-link>
+        </div>
         <div class="footer__menu">
           <router-link
             class="footer__menu_link"
@@ -52,12 +54,16 @@ import menu from "@/components/layout/menu.js";
     }
   }
   &__logo {
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 29px;
-    letter-spacing: -0.025em;
-    color: var(--black);
     margin-bottom: 33px;
+    cursor: pointer;
+    a {
+      color: var(--black);
+      text-decoration: none;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 29px;
+      letter-spacing: -0.025em;
+    }
     @media screen and (max-width: 767px) {
       text-align: left;
     }
