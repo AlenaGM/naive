@@ -75,6 +75,9 @@
       grid-template-columns: 1fr;
       max-width: 660px;
     }
+    @media screen and (max-width: 400px) {
+      margin-bottom: 84px;
+    }
   }
   &__image {
     display: block;

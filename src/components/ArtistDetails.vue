@@ -1,6 +1,6 @@
 <template>
   <div class="artist">
-    <h2 class="artist__title">автор</h2>
+    <h2 class="artist__title">художник</h2>
     <div class="artist__card">
       <div class="artist__image">
         <img src="/img/artist.jpg" alt="artist" />
@@ -22,6 +22,41 @@
           Арт-Наив галерее (Москва) и других коллекциях Москвы, Пскова, Казани,
           а также США, Канады, Аргентины, Германии, Франции, Голландии, Бельгии,
           Португалии.
+        </div>
+      </div>
+    </div>
+    <div class="artist__paintings">
+      <h4 class="artist__paintings_title">Работы художника</h4>
+      <div class="artist__paintings_container">
+        <div class="artist__paintings_item">
+          <router-link to="/:id">
+            <img src="/img/item-3.jpg" alt="painting" />
+          </router-link>
+        </div>
+        <div class="artist__paintings_item">
+          <router-link to="/:id">
+            <img src="/img/item-4.jpg" alt="painting" />
+          </router-link>
+        </div>
+        <div class="artist__paintings_item">
+          <router-link to="/:id">
+            <img src="/img/item-1.jpg" alt="painting" />
+          </router-link>
+        </div>
+        <div class="artist__paintings_item">
+          <router-link to="/:id">
+            <img src="/img/item-3.jpg" alt="painting" />
+          </router-link>
+        </div>
+        <div class="artist__paintings_item">
+          <router-link to="/:id">
+            <img src="/img/item-4.jpg" alt="painting" />
+          </router-link>
+        </div>
+        <div class="artist__paintings_item">
+          <router-link to="/:id">
+            <img src="/img/item-1.jpg" alt="painting" />
+          </router-link>
         </div>
       </div>
     </div>
@@ -54,11 +89,14 @@
     align-items: center;
     grid-template-columns: 1fr 580px;
     column-gap: 40px;
-    margin-bottom: 220px;
+    margin-bottom: 83px;
     @media screen and (max-width: 1092px) {
       grid-template-columns: 1fr;
       max-width: 660px;
       justify-items: center;
+    }
+    @media screen and (max-width: 400px) {
+      margin-bottom: 28px;
     }
   }
   &__image {
@@ -85,6 +123,38 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 23px;
+  }
+  &__paintings {
+    width: 100%;
+    &_title {
+      margin: 0 0 10px 0;
+      @media screen and (max-width: 400px) {
+        margin: 0;
+      }
+    }
+    &_container {
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin-bottom: 124px;
+      @media screen and (max-width: 400px) {
+        margin-bottom: 42px;
+      }
+    }
+    &_item {
+      height: 107px;
+      margin: 20px 20px 0 0;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+      @media screen and (max-width: 400px) {
+        margin: 12px 12px 0 0;
+      }
+    }
+    @media screen and (max-width: 1092px) {
+      max-width: 660px;
+    }
   }
 }
 </style>
