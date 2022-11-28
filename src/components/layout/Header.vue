@@ -30,6 +30,7 @@
           :to="element.path"
           v-for="(element, i) of menu"
           :key="i"
+          @click="isOpenedMobileMenu = false"
         >
           <img :src="element.image" alt="menu-icon" class="header__icon" />
           {{ element.name }}
