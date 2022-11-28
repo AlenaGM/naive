@@ -25,6 +25,7 @@
         :key="i"
       >
         <img :src="element.image" alt="menu-icon" class="shop__gallery_image" />
+        <div class="shop__gallery_item-hover"></div>
       </router-link>
     </div>
   </div>

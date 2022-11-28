@@ -92,7 +92,7 @@ const isOpenedMobileMenu = ref(false);
     background: var(--white);
     top: 72px;
     padding: 40px 70px 60px 30px;
-    border-radius: 8px;
+    //border-radius: 8px;
     box-shadow: 8px 8px 30px 6px #00000033;
     display: flex;
     flex-direction: column;
