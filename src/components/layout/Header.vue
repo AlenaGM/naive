@@ -19,8 +19,20 @@
             v-else
           />
         </div>
+
         <div class="header__menu_search">
-          <img src="/svg/search.svg" alt="search" class="header__icon" />
+          <img
+            src="/svg/search.svg"
+            alt="search"
+            class="header__icon"
+            @click="isActiveSearch = !isActiveSearch"
+          />
+          <input
+            type="text"
+            className="header__menu_search-input"
+            placeholder="Поиск... "
+            v-if="isActiveSearch"
+          />
         </div>
       </div>
 
@@ -52,6 +64,7 @@
 import { ref } from "vue";
 import menu from "@/components/layout/menu.js";
 const isOpenedMobileMenu = ref(false);
+const isActiveSearch = ref(false);
 </script>
 
 <style lang="scss" scoped>
@@ -86,6 +99,15 @@ const isOpenedMobileMenu = ref(false);
     }
     &_search {
       cursor: pointer;
+      display: inline-flex;
+      img {
+        margin-right: 8px;
+      }
+      &-input {
+        padding: 5px 15px 2px 15px;
+        max-width: 362px;
+        resize: horizontal;
+      }
     }
   }
   &__dropdown {
