@@ -105,8 +105,16 @@ const isActiveSearch = ref(false);
       }
       &-input {
         padding: 5px 15px 2px 15px;
+        margin: 0;
         max-width: 362px;
+        border: solid 1px #66707c;
         resize: horizontal;
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0em;
+        height: 34px;
       }
     }
   }

@@ -80,16 +80,16 @@ const gallery = [
   align-items: center;
   &__title {
     margin: 30px 0 0 0;
-    text-align: center;
-    font-size: 76px;
+    font-size: 4.75rem;
     font-weight: 600;
-    line-height: 68px;
+    line-height: 90%;
     letter-spacing: -0.025em;
-    @media screen and (max-width: 767px) {
-      font-size: 64px;
+    text-align: center;
+    @media screen and (max-width: 803px) {
+      font-size: 3.75rem;
     }
-    @media screen and (max-width: 400px) {
-      font-size: 48px;
+    @media screen and (max-width: 470px) {
+      font-size: 3rem;
     }
   }
   &__description {
