@@ -4,25 +4,34 @@
       <div class="header__menu">
         <div
           class="header__menu_mobile"
-          @click="isOpenedMobileMenu = !isOpenedMobileMenu"
+          @click="
+            isOpenedMobileMenu = !isOpenedMobileMenu;
+            isActiveSearch = false;
+          "
           v-bind:class="{ _active: isOpenedMobileMenu }"
         >
           <span />
         </div>
 
         <div class="header__menu_search">
-          <img
-            src="/svg/search.svg"
-            alt="search"
-            class="header__icon"
-            @click="isActiveSearch = !isActiveSearch"
-          />
-          <input
-            type="text"
-            className="header__menu_search-input"
-            placeholder="Поиск... "
-            v-if="isActiveSearch"
-          />
+          <div className="header__menu_search-image">
+            <img
+              src="/svg/search.svg"
+              alt="search"
+              class="header__icon"
+              @click="
+                isActiveSearch = !isActiveSearch;
+                isOpenedMobileMenu = false;
+              "
+            />
+          </div>
+          <div className="header__menu_search-body" v-if="isActiveSearch">
+            <input
+              type="text"
+              className="header__menu_search-input"
+              placeholder="Поиск... "
+            />
+          </div>
         </div>
       </div>
 
@@ -91,7 +100,7 @@ const isActiveSearch = ref(false);
       display: grid;
       align-items: center;
       justify-self: end;
-      margin-right: 18.5%;
+      margin-right: 70px;
       span,
       &::before,
       &::after {
@@ -134,8 +143,32 @@ const isActiveSearch = ref(false);
     &_search {
       cursor: pointer;
       display: inline-flex;
-      img {
+      &-image {
         margin-right: 8px;
+      }
+      &-body {
+        @media screen and (max-width: 767px) {
+          position: fixed;
+          background: var(--white);
+          top: 72px;
+          padding: 40px 30px 60px 30px;
+          border-radius: 8px;
+          box-shadow: 8px 8px 30px 6px #00000033;
+          display: flex;
+          flex-direction: column;
+        }
+        @media screen and (max-width: 450px) {
+          position: fixed;
+          left: 24px;
+          right: 24px;
+          background: var(--white);
+          top: 72px;
+          padding: 40px 30px 60px 30px;
+          border-radius: 8px;
+          box-shadow: 8px 8px 30px 6px #00000033;
+          display: flex;
+          flex-direction: column;
+        }
       }
       &-input {
         padding: 5px 8px 5px 8px;
@@ -149,10 +182,7 @@ const isActiveSearch = ref(false);
         letter-spacing: 0em;
         border-radius: 6px;
         height: 24px;
-        width: 220px;
-      }
-      @media screen and (max-width: 736px) {
-        display: none;
+        min-width: 220px;
       }
     }
   }
@@ -161,7 +191,7 @@ const isActiveSearch = ref(false);
     background: var(--white);
     top: 72px;
     padding: 40px 70px 60px 30px;
-    //border-radius: 8px;
+    border-radius: 8px;
     box-shadow: 8px 8px 30px 6px #00000033;
     display: flex;
     flex-direction: column;
