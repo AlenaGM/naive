@@ -138,17 +138,18 @@ const isActiveSearch = ref(false);
         margin-right: 8px;
       }
       &-input {
-        padding: 4px 8px 4px 8px;
+        padding: 5px 8px 5px 8px;
         margin: 0;
-        max-width: 362px;
         border: solid 1px #66707c;
         resize: horizontal;
         font-family: "Montserrat", sans-serif;
-        font-size: 1rem;
+        font-size: 0.75rem;
         font-weight: 400;
         line-height: 23px;
         letter-spacing: 0em;
+        border-radius: 6px;
         height: 24px;
+        width: 220px;
       }
       @media screen and (max-width: 736px) {
         display: none;

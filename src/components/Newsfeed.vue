@@ -151,7 +151,7 @@
     &_title {
       font-size: 2rem;
       font-weight: 600;
-      line-height: 90%;
+      line-height: 130%;
       text-transform: uppercase;
       margin: 0;
       @media screen and (max-width: 1092px) {
