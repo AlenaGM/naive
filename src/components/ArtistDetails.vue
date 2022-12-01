@@ -119,7 +119,7 @@
     }
   }
   &__description {
-    margin-top: 15px;
+    margin-top: 0.75rem;
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 130%;

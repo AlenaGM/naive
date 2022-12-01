@@ -102,7 +102,7 @@
       text-align: center;
       margin: 2.1875rem 0 2.1875rem 0;
       @media screen and (max-width: 944px) {
-        margin-top: 1.5rem;
+        margin-top: 0.75rem;
         font-size: 1.25rem;
       }
       @media screen and (max-width: 646px) {
@@ -167,10 +167,11 @@
       font-weight: 400;
       line-height: 130%;
       @media screen and (max-width: 944px) {
+        margin-top: 10px;
         font-size: 1.25rem;
       }
       @media screen and (max-width: 646px) {
-        font-size: 1.25rem;
+        font-size: 1rem;
       }
     }
   }
