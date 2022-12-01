@@ -97,16 +97,14 @@ const isActiveSearch = ref(false);
       width: 36px;
       height: 24px;
       cursor: pointer;
-      display: grid;
-      align-items: center;
-      justify-self: end;
+      display: block;
       margin-right: 70px;
       span,
       &::before,
       &::after {
         left: 0;
         position: absolute;
-        height: 14%;
+        height: 4px;
         width: 100%;
         transition: all 0.3s ease 0s;
         background-color: var(--black);
@@ -123,7 +121,7 @@ const isActiveSearch = ref(false);
         bottom: 0;
       }
       span {
-        top: 50%;
+        top: 12px;
         transform: scale(1) translate(0px, -50%);
       }
       &._active {
@@ -132,11 +130,11 @@ const isActiveSearch = ref(false);
         }
         &::before {
           top: 50%;
-          transform: rotate(-40deg) translate(0px, -50%);
+          transform: rotate(-45deg) translate(0px, -50%);
         }
         &::after {
           bottom: 50%;
-          transform: rotate(40deg) translate(0px, 50%);
+          transform: rotate(45deg) translate(0px, 50%);
         }
       }
     }
@@ -173,7 +171,7 @@ const isActiveSearch = ref(false);
       &-input {
         padding: 5px 8px 5px 8px;
         margin: 0;
-        border: solid 1px #66707c;
+        border: solid 1px var(--third-black);
         resize: horizontal;
         font-family: "Montserrat", sans-serif;
         font-size: 0.75rem;
