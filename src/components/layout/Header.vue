@@ -182,7 +182,8 @@ const isActiveSearch = ref(false);
         letter-spacing: 0em;
         border-radius: 6px;
         height: 24px;
-        min-width: 220px;
+        width: 212px;
+        max-width: 100%;
       }
     }
   }
