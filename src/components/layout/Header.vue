@@ -119,15 +119,15 @@ const isActiveSearch = ref(false);
       }
       &._active {
         span {
-          transform: scale(0) translate(0px, -48%);
+          transform: scale(0) translate(0px, -50%);
         }
         &::before {
           top: 50%;
-          transform: rotate(-45deg) translate(0px, -48%);
+          transform: rotate(-40deg) translate(0px, -50%);
         }
         &::after {
           bottom: 50%;
-          transform: rotate(45deg) translate(0px, 48%);
+          transform: rotate(40deg) translate(0px, 50%);
         }
       }
     }
