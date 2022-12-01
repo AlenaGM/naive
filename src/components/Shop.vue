@@ -95,18 +95,22 @@ const gallery = [
   &__description {
     margin: 20px 0 0 0;
     max-width: 774px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
-    line-height: 31px;
+    line-height: 130%;
     text-align: center;
-    @media screen and (max-width: 767px) {
-      font-size: 18px;
+    @media screen and (max-width: 803px) {
+      font-size: 1.125rem;
+    }
+    @media screen and (max-width: 470px) {
+      font-size: 1rem;
     }
   }
   &__filter {
     margin: 50px 0 15px 0;
     display: inline-flex;
     align-self: flex-end;
+    font-size: 1rem;
     &_item {
       display: inline-flex;
       margin-left: 14px;

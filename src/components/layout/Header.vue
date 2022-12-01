@@ -5,19 +5,9 @@
         <div
           class="header__menu_mobile"
           @click="isOpenedMobileMenu = !isOpenedMobileMenu"
+          v-bind:class="{ _active: isOpenedMobileMenu }"
         >
-          <img
-            src="/svg/menu.svg"
-            alt="menu"
-            class="header__icon"
-            v-if="!isOpenedMobileMenu"
-          />
-          <img
-            src="/svg/menu-active.svg"
-            alt="menu"
-            class="header__icon"
-            v-else
-          />
+          <span />
         </div>
 
         <div class="header__menu_search">
@@ -94,8 +84,52 @@ const isActiveSearch = ref(false);
     align-items: center;
     justify-content: flex-start;
     &_mobile {
-      margin-right: 60px;
+      position: relative;
+      width: 36px;
+      height: 24px;
       cursor: pointer;
+      display: grid;
+      align-items: center;
+      justify-self: end;
+      margin-right: 18.5%;
+      span,
+      &::before,
+      &::after {
+        left: 0;
+        position: absolute;
+        height: 14%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: var(--black);
+        border-radius: 20px;
+      }
+      &::before,
+      &::after {
+        content: "";
+      }
+      &::before {
+        top: 0;
+      }
+      &::after {
+        bottom: 0;
+      }
+      span {
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+      }
+      &._active {
+        span {
+          transform: scale(0) translate(0px, -48%);
+        }
+        &::before {
+          top: 50%;
+          transform: rotate(-45deg) translate(0px, -48%);
+        }
+        &::after {
+          bottom: 50%;
+          transform: rotate(45deg) translate(0px, 48%);
+        }
+      }
     }
     &_search {
       cursor: pointer;
@@ -104,17 +138,20 @@ const isActiveSearch = ref(false);
         margin-right: 8px;
       }
       &-input {
-        padding: 5px 15px 2px 15px;
+        padding: 4px 8px 4px 8px;
         margin: 0;
         max-width: 362px;
         border: solid 1px #66707c;
         resize: horizontal;
         font-family: "Montserrat", sans-serif;
-        font-size: 18px;
+        font-size: 1rem;
         font-weight: 400;
         line-height: 23px;
         letter-spacing: 0em;
-        height: 34px;
+        height: 24px;
+      }
+      @media screen and (max-width: 736px) {
+        display: none;
       }
     }
   }

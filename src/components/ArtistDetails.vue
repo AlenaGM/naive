@@ -74,14 +74,14 @@
     align-items: center;
   }
   &__title {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 600;
-    line-height: 29px;
+    line-height: 90%;
     text-transform: uppercase;
     margin: 60px 0 34px 0;
     @media screen and (max-width: 400px) {
-      font-size: 24px;
-      margin-top: 17px;
+      font-size: 1.5rem;
+      margin: 30px 0 17px 0;
     }
   }
   &__card {
@@ -106,7 +106,7 @@
     }
   }
   &__name {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 600;
     line-height: 39px;
     margin: 0 0 6px 0;
@@ -120,9 +120,9 @@
   }
   &__description {
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
-    line-height: 23px;
+    line-height: 130%;
   }
   &__paintings {
     width: 100%;

@@ -55,14 +55,14 @@
     align-items: center;
   }
   &__title {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 600;
-    line-height: 29px;
+    line-height: 90%;
     text-transform: uppercase;
     margin: 60px 0 34px 0;
     @media screen and (max-width: 400px) {
-      font-size: 24px;
-      margin-top: 17px;
+      font-size: 1.5rem;
+      margin: 30px 0 17px 0;
     }
   }
   &__card {
@@ -86,7 +86,7 @@
     }
   }
   &__name {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 600;
     line-height: 39px;
     margin: 0 0 6px 0;
@@ -94,7 +94,7 @@
       margin-top: 48px;
     }
     @media screen and (max-width: 400px) {
-      font-size: 24px;
+      font-size: 1.5rem;
       margin-top: 24px;
     }
   }
@@ -110,28 +110,28 @@
       }
       h4 {
         margin: 0 10px 0 0;
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 600;
         line-height: 29px;
         @media screen and (max-width: 400px) {
-          font-size: 18px;
+          font-size: 1.125rem;
         }
       }
       span {
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 600;
         line-height: 22px;
         @media screen and (max-width: 400px) {
-          font-size: 14px;
+          font-size: 0.875rem;
         }
       }
     }
   }
   &__description {
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
-    line-height: 23px;
+    line-height: 130%;
   }
   &__params {
     margin-top: 58px;
@@ -146,7 +146,7 @@
     }
     &_item {
       display: block;
-      font-size: 16px;
+      font-size: 1rem;
       font-weight: 400;
       line-height: 20px;
       span {
@@ -159,14 +159,14 @@
     }
   }
   &__price {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 29px;
     img {
       margin-right: 5px;
     }
     @media screen and (max-width: 400px) {
-      font-size: 18px;
+      font-size: 1.125rem;
     }
   }
 }
@@ -174,7 +174,7 @@
 .button {
   color: var(--black);
   background-color: var(--white);
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   line-height: 22px;
   text-transform: uppercase;

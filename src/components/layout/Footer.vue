@@ -25,14 +25,12 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
 import menu from "@/components/layout/menu.js";
 </script>
 
 <style lang="scss" scoped>
 .footer {
   flex-shrink: 0;
-  height: 84px;
   background: var(--white);
   border-top: solid 1px rgba(41, 45, 50, 0.2);
   @media screen and (max-width: 767px) {
@@ -59,22 +57,22 @@ import menu from "@/components/layout/menu.js";
     a {
       color: var(--black);
       text-decoration: none;
-      font-size: 32px;
+      font-size: 2rem;
       font-weight: 600;
-      line-height: 29px;
+      line-height: 90%;
       letter-spacing: -0.025em;
     }
     @media screen and (max-width: 767px) {
       text-align: left;
     }
     @media screen and (max-width: 450px) {
-      font-size: 24px;
+      font-size: 1.5rem;
     }
   }
   &__menu {
     margin-bottom: 42px;
     &_link {
-      font-size: 16px;
+      font-size: 1rem;
       font-weight: 500;
       line-height: 20px;
       text-transform: uppercase;
