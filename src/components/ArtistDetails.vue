@@ -3,7 +3,7 @@
     <h2 class="artist__title">художник</h2>
     <div class="artist__card">
       <div class="artist__image">
-        <img src="/img/artist.jpg" alt="artist" />
+        <img src="/img/artist-1.jpg" alt="artist" />
       </div>
       <div>
         <h3 class="artist__name">Виктор Тимофеев</h3>
@@ -86,7 +86,7 @@
   }
   &__card {
     display: grid;
-    align-items: center;
+    align-items: start;
     grid-template-columns: 1fr 580px;
     column-gap: 40px;
     margin-bottom: 83px;

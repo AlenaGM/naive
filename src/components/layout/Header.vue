@@ -99,6 +99,9 @@ const isActiveSearch = ref(false);
       cursor: pointer;
       display: block;
       margin-right: 70px;
+      @media screen and (max-width: 500px) {
+        margin-right: 24px;
+      }
       span,
       &::before,
       &::after {
@@ -129,12 +132,12 @@ const isActiveSearch = ref(false);
           transform: scale(0) translate(0px, -50%);
         }
         &::before {
-          top: 50%;
-          transform: rotate(-45deg) translate(0px, -50%);
+          top: 48%;
+          transform: rotate(-42deg) translate(0px, -50%);
         }
         &::after {
           bottom: 50%;
-          transform: rotate(45deg) translate(0px, 50%);
+          transform: rotate(42deg) translate(0px, 50%);
         }
       }
     }

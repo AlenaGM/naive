@@ -1,41 +1,41 @@
 <template>
-  <div class="product">
-    <h2 class="product__title">произведение</h2>
-    <div class="product__card">
-      <div class="product__image">
+  <div class="artwork">
+    <h2 class="artwork__title">произведение</h2>
+    <div class="artwork__card">
+      <div class="artwork__image">
         <img src="/img/item-3-full.jpg" alt="painting" />
       </div>
       <div>
-        <h3 class="product__name">Преображение</h3>
-        <div class="product__artist">
-          <router-link to="/artist" class="product__artist_link">
+        <h3 class="artwork__name">Преображение</h3>
+        <div class="artwork__artist">
+          <router-link to="/artist" class="artwork__artist_link">
             <img src="/svg/artist.svg" alt="artist-icon" />
             <h4>Виктор Тимофеев</h4>
-            <span class="product__price">2011 г.</span>
+            <span class="artwork__price">2011 г.</span>
           </router-link>
         </div>
-        <div class="product__block product__description">
+        <div class="artwork__block artwork__description">
           Современные технологии достигли такого уровня, что глубокий уровень
           погружения представляет собой интересный эксперимент проверки новых
           принципов формирования материально-технической и кадровой базы.
         </div>
-        <div class="product__block product__params">
-          <div class="product__params_item">
+        <div class="artwork__block artwork__params">
+          <div class="artwork__params_item">
             <span>Техника:</span>
             <div>ДВП, масло</div>
           </div>
-          <div class="product__params_item">
+          <div class="artwork__params_item">
             <span>Размер:</span>
             <div>700×500 мм</div>
           </div>
-          <div class="product__params_item">
+          <div class="artwork__params_item">
             <span>Цена:</span>
-            <div class="product__price">
+            <div class="artwork__price">
               <img src="svg/price.svg" alt="price-icon" />
               18.000 ₽
             </div>
           </div>
-          <div class="product__params_item">
+          <div class="artwork__params_item">
             <button class="button">в корзину</button>
           </div>
         </div>
@@ -47,7 +47,7 @@
 <script setup></script>
 
 <style lang="scss" scoped>
-.product {
+.artwork {
   display: flex;
   flex-direction: column;
   align-items: flex-start;

@@ -24,53 +24,18 @@
         v-for="(element, i) of gallery"
         :key="i"
       >
-        <img :src="element.image" alt="menu-icon" class="shop__gallery_image" />
-        <div class="shop__gallery_item-hover"></div>
+        <img
+          :src="element.image"
+          :alt="element.title"
+          class="shop__gallery_image"
+        />
       </router-link>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref } from "vue";
-
-const gallery = [
-  {
-    id: 1,
-    image: "/img/item-1.jpg",
-    path: "/:id",
-  },
-  {
-    id: 2,
-    image: "/img/item-2.jpg",
-    path: "/:id",
-  },
-  {
-    id: 3,
-    image: "/img/item-3.jpg",
-    path: "/:id",
-  },
-  {
-    id: 4,
-    image: "/img/item-4.jpg",
-    path: "/:id",
-  },
-  {
-    id: 5,
-    image: "/img/item-5.jpg",
-    path: "/:id",
-  },
-  {
-    id: 6,
-    image: "/img/item-6.jpg",
-    path: "/:id",
-  },
-  {
-    id: 7,
-    image: "/img/item-7.jpg",
-    path: "/:id",
-  },
-];
+import gallery from "@/components/gallery.js";
 </script>
 
 <style lang="scss" scoped>

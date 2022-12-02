@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Index from "@/views/Index.vue";
-import Product from "@/views/Product.vue";
+import Artwork from "@/views/Artwork.vue";
 import Artist from "@/views/Artist.vue";
 import Cart from "@/views/Cart.vue";
 import News from "@/views/News.vue";
@@ -18,8 +18,8 @@ const router = createRouter({
     },
     {
       path: "/:id",
-      name: "Product",
-      component: Product,
+      name: "Artwork",
+      component: Artwork,
     },
     {
       path: "/artist",
