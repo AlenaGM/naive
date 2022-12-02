@@ -127,12 +127,22 @@ const gallery = [
     @media screen and (max-width: 1207px) {
       margin: 0 auto 120px auto;
     }
+    @media screen and (max-width: 1024px) {
+      columns: 2 350px;
+      column-gap: 20px;
+    }
     a {
       width: 360px;
       margin: 0 0 50px 0;
       display: inline-block;
       width: 100%;
       img {
+        width: 100%;
+      }
+      @media screen and (max-width: 1024px) {
+        width: 350px;
+        margin: 0 0 12px 0;
+        display: inline-block;
         width: 100%;
       }
     }
