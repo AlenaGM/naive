@@ -9,7 +9,7 @@
         рассмотрены исключительно в разрезе маркетинговых и финансовых
         предпосылок.
       </div>
-      <button class="button">в магазин</button>
+      <ui-button type="link" to="/">в магазин</ui-button>
       <img
         src="img/news-background.jpg"
         alt="background"
@@ -57,6 +57,10 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import uiButton from "@/components/ui/Button.vue";
+</script>
 
 <style lang="scss" scoped>
 .news {
@@ -173,23 +177,6 @@
       @media screen and (max-width: 646px) {
         font-size: 1rem;
       }
-    }
-  }
-
-  .button {
-    color: var(--black);
-    background-color: var(--white);
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 22px;
-    text-transform: uppercase;
-    padding: 8px 24px;
-    border: 1px solid var(--black);
-    border-radius: 6px;
-    cursor: pointer;
-    &:hover {
-      color: var(--white);
-      background-color: var(--black);
     }
   }
 }

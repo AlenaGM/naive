@@ -20,13 +20,21 @@
     <div class="shop__gallery">
       <router-link
         class="shop__gallery_item"
-        :to="element.path"
-        v-for="(element, i) of gallery"
-        :key="i"
+        :to="artwork.path"
+        v-for="artwork of gallery"
+        :key="artwork.id"
+        :artist_id="artwork.artist_id"
+        :artist_name="artwork.artist_name"
+        :year="artwork.year"
+        :description="artwork.description"
+        :technique="artwork.technique"
+        :size="artwork.size"
+        :on_sale="artwork.on_sale"
+        :price="artwork.price"
       >
         <img
-          :src="element.image"
-          :alt="element.title"
+          :src="artwork.image"
+          :alt="artwork.title"
           class="shop__gallery_image"
         />
       </router-link>
@@ -35,7 +43,109 @@
 </template>
 
 <script setup>
-import gallery from "@/components/gallery.js";
+import { ref } from "vue";
+
+const gallery = ref([
+  {
+    id: 1,
+    image: "/img/item-1.jpg",
+    artist_id: 1,
+    artist_name: "Виктор Тимофеев",
+    title: "Бородатые лица зверей",
+    year: 2000,
+    description: "описание",
+    technique: "техника",
+    size: "размеры",
+    on_sale: true,
+    price: 10000,
+    path: "/:id",
+  },
+  {
+    id: 2,
+    image: "/img/item-2.jpg",
+    artist_id: 3,
+    artist_name: "Татьяна Еленок",
+    title: "Котенок",
+    year: 1973,
+    description: "описание",
+    technique: "техника",
+    size: "размеры",
+    on_sale: false,
+    price: "",
+    path: "/:id",
+  },
+  {
+    id: 3,
+    image: "/img/item-3.jpg",
+    artist_id: 1,
+    artist_name: "Виктор Тимофеев",
+    title: "Преображение",
+    year: 2011,
+    description:
+      "Современные технологии достигли такого уровня, что глубокий уровень погружения представляет собой интересный эксперимент проверки новых принципов формирования материально-технической и кадровой базы.",
+    technique: "ДВП, масло",
+    size: "700×500 мм",
+    on_sale: true,
+    price: 18000,
+    path: "/:id",
+  },
+  {
+    id: 4,
+    image: "/img/item-4.jpg",
+    artist_id: 1,
+    artist_name: "Виктор Тимофеев",
+    title: "Название",
+    year: 2002,
+    description: "описание",
+    technique: "техника",
+    size: "размеры",
+    on_sale: true,
+    price: 10002,
+    path: "/:id",
+  },
+  {
+    id: 5,
+    image: "/img/item-5.jpg",
+    artist_id: 2,
+    artist_name: "Альфрид Шаймарданов",
+    title: "Название",
+    year: 2003,
+    description: "описание",
+    technique: "техника",
+    size: "размеры",
+    on_sale: true,
+    price: 10003,
+    path: "/:id",
+  },
+  {
+    id: 6,
+    image: "/img/item-6.jpg",
+    artist_id: 2,
+    artist_name: "Альфрид Шаймарданов",
+    title: "Название",
+    year: 2004,
+    description: "описание",
+    technique: "техника",
+    size: "размеры",
+    on_sale: true,
+    price: 10004,
+    path: "/:id",
+  },
+  {
+    id: 7,
+    image: "/img/item-7.jpg",
+    artist_id: 2,
+    artist_name: "Альфрид Шаймарданов",
+    title: "Река жизни",
+    year: 2013,
+    description: "описание",
+    technique: "холст, масло",
+    size: "130х100 см",
+    on_sale: true,
+    price: 10005,
+    path: "/:id",
+  },
+]);
 </script>
 
 <style lang="scss" scoped>

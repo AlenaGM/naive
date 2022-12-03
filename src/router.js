@@ -22,7 +22,7 @@ const router = createRouter({
       component: Artwork,
     },
     {
-      path: "/artist",
+      path: "/artist/:id",
       name: "Artist",
       component: Artist,
     },

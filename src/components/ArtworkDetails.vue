@@ -3,40 +3,36 @@
     <h2 class="artwork__title">произведение</h2>
     <div class="artwork__card">
       <div class="artwork__image">
-        <img src="/img/item-3-full.jpg" alt="painting" />
+        <img :src="image" :alt="title" />
       </div>
       <div>
-        <h3 class="artwork__name">Преображение</h3>
+        <h3 class="artwork__name">{{ title }}</h3>
         <div class="artwork__artist">
-          <router-link to="/artist" class="artwork__artist_link">
+          <router-link to="/artist/1" class="artwork__artist_link">
             <img src="/svg/artist.svg" alt="artist-icon" />
-            <h4>Виктор Тимофеев</h4>
-            <span class="artwork__price">2011 г.</span>
+            <h4>{{ artist_name }}</h4>
+            <span class="artwork__price">{{ year }}</span>
           </router-link>
         </div>
-        <div class="artwork__block artwork__description">
-          Современные технологии достигли такого уровня, что глубокий уровень
-          погружения представляет собой интересный эксперимент проверки новых
-          принципов формирования материально-технической и кадровой базы.
-        </div>
+        <div class="artwork__block artwork__description">{{ description }}</div>
         <div class="artwork__block artwork__params">
           <div class="artwork__params_item">
             <span>Техника:</span>
-            <div>ДВП, масло</div>
+            <div>{{ technique }}</div>
           </div>
           <div class="artwork__params_item">
             <span>Размер:</span>
-            <div>700×500 мм</div>
+            <div>{{ size }}</div>
           </div>
           <div class="artwork__params_item">
             <span>Цена:</span>
             <div class="artwork__price">
               <img src="svg/price.svg" alt="price-icon" />
-              18.000 ₽
+              {{ price }} ₽
             </div>
           </div>
           <div class="artwork__params_item">
-            <button class="button">в корзину</button>
+            <ui-button>в корзину</ui-button>
           </div>
         </div>
       </div>
@@ -44,7 +40,57 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+import uiButton from "@/components/ui/Button.vue";
+
+const props = defineProps({
+  id: {
+    type: String,
+    required: true,
+  },
+  image: {
+    type: String,
+    required: true,
+  },
+  title: {
+    type: String,
+    required: true,
+  },
+  price: {
+    type: Number,
+    required: true,
+  },
+  artist_id: {
+    type: String,
+    required: true,
+  },
+  artist_name: {
+    type: String,
+    required: true,
+  },
+  year: {
+    type: Number,
+    required: true,
+  },
+  description: {
+    type: String,
+    required: true,
+  },
+  technique: {
+    type: String,
+    required: true,
+  },
+  size: {
+    type: String,
+    required: true,
+  },
+  on_sale: {
+    type: Boolean,
+    default: true,
+  },
+});
+</script>
 
 <style lang="scss" scoped>
 .artwork {
@@ -168,23 +214,6 @@
     @media screen and (max-width: 400px) {
       font-size: 1.125rem;
     }
-  }
-}
-
-.button {
-  color: var(--black);
-  background-color: var(--white);
-  font-size: 1.125rem;
-  font-weight: 600;
-  line-height: 22px;
-  text-transform: uppercase;
-  padding: 8px 24px;
-  border: 1px solid var(--black);
-  border-radius: 6px;
-  cursor: pointer;
-  &:hover {
-    color: var(--white);
-    background-color: var(--black);
   }
 }
 </style>
