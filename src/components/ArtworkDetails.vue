@@ -3,32 +3,36 @@
     <h2 class="artwork__title">произведение</h2>
     <div class="artwork__card">
       <div class="artwork__image">
-        <img :src="image" :alt="title" />
+        <img src="/img/item-3-full.jpg" alt="Преображение" />
       </div>
       <div>
-        <h3 class="artwork__name">{{ title }}</h3>
+        <h3 class="artwork__name">Преображение</h3>
         <div class="artwork__artist">
           <router-link to="/artist/1" class="artwork__artist_link">
             <img src="/svg/artist.svg" alt="artist-icon" />
-            <h4>{{ artist_name }}</h4>
-            <span class="artwork__price">{{ year }}</span>
+            <h4>Виктор Тимофеев</h4>
+            <span class="artwork__price">2011</span>
           </router-link>
         </div>
-        <div class="artwork__block artwork__description">{{ description }}</div>
+        <div class="artwork__block artwork__description">
+          Современные технологии достигли такого уровня, что глубокий уровень
+          погружения представляет собой интересный эксперимент проверки новых
+          принципов формирования материально-технической и кадровой базы.
+        </div>
         <div class="artwork__block artwork__params">
           <div class="artwork__params_item">
             <span>Техника:</span>
-            <div>{{ technique }}</div>
+            <div>ДВП, масло</div>
           </div>
           <div class="artwork__params_item">
             <span>Размер:</span>
-            <div>{{ size }}</div>
+            <div>700×500 мм</div>
           </div>
           <div class="artwork__params_item">
             <span>Цена:</span>
             <div class="artwork__price">
               <img src="svg/price.svg" alt="price-icon" />
-              {{ price }} ₽
+              18.000 ₽
             </div>
           </div>
           <div class="artwork__params_item">
