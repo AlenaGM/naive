@@ -190,8 +190,17 @@ const artworks = ref([
 //`;
 
 const allCountriesQuery = gql`
-  query {
+  query getAllCountries {
     countries {
+      name
+      capital
+    }
+  }
+`;
+
+const countryByCode = gql`
+  query {
+    country(code: "BR") {
       name
       capital
     }
