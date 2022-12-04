@@ -1,0 +1,14 @@
+query {
+  artworks {
+    id
+    image
+    title
+    created
+    for_sale
+    price
+    artist {
+      id
+      name
+    }
+  }
+}
