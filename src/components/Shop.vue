@@ -40,11 +40,7 @@
       </router-link>
     </div>
   </div>
-  <ul>
-    <li v-for="country in countries" :key="country.id">
-      {{ country.name }} : {{ country.capital }}
-    </li>
-  </ul>
+  {{ result }}
 </template>
 
 <script setup>
@@ -172,43 +168,18 @@ const artworks = ref([
   },
 ]);
 
-//const allArtworksQuery = gql`
-//  query {
-//    artworks {
-//        id
-//        image
-//        title
-//        created
-//        for_sale
-//        price
-//        artist {
-//          id
-//          name
-//        }
-//      }
-//    }
-//`;
-
-const allCountriesQuery = gql`
-  query getAllCountries {
-    countries {
-      name
-      capital
-    }
-  }
-`;
-
-const countryByCode = gql`
+const allArtworksQuery = gql`
   query {
-    country(code: "BR") {
-      name
-      capital
+    allArtworks {
+      id
+      title
+      imageUrl
     }
   }
 `;
 
-const { result } = useQuery(allCountriesQuery);
-const countries = computed(() => result.value?.countries ?? []);
+const { result } = useQuery(allArtworksQuery);
+//const countries = computed(() => result.value?.countries ?? []);
 </script>
 
 <style lang="scss" scoped>

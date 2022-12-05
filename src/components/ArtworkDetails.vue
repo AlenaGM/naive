@@ -48,52 +48,52 @@
 import { ref } from "vue";
 import uiButton from "@/components/ui/Button.vue";
 
-const props = defineProps({
-  id: {
-    type: String,
-    required: true,
-  },
-  image: {
-    type: String,
-    required: true,
-  },
-  title: {
-    type: String,
-    required: true,
-  },
-  price: {
-    type: Number,
-    required: true,
-  },
-  artist_id: {
-    type: String,
-    required: true,
-  },
-  artist_name: {
-    type: String,
-    required: true,
-  },
-  year: {
-    type: Number,
-    required: true,
-  },
-  description: {
-    type: String,
-    required: true,
-  },
-  technique: {
-    type: String,
-    required: true,
-  },
-  size: {
-    type: String,
-    required: true,
-  },
-  on_sale: {
-    type: Boolean,
-    default: true,
-  },
-});
+//const props = defineProps({
+//  id: {
+//    type: String,
+//    required: true,
+//  },
+//  image: {
+//    type: String,
+//    required: true,
+//  },
+//  title: {
+//    type: String,
+//    required: true,
+//  },
+//  price: {
+//    type: Number,
+//    required: true,
+//  },
+//  artist_id: {
+//    type: String,
+//    required: true,
+//  },
+//  artist_name: {
+//    type: String,
+//    required: true,
+//  },
+//  year: {
+//    type: Number,
+//    required: true,
+//  },
+//  description: {
+//    type: String,
+//    required: true,
+//  },
+//  technique: {
+//    type: String,
+//    required: true,
+//  },
+//  size: {
+//    type: String,
+//    required: true,
+//  },
+//  on_sale: {
+//    type: Boolean,
+//    default: true,
+//  },
+//});
 </script>
 
 <style lang="scss" scoped>

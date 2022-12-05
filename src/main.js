@@ -13,7 +13,7 @@ import "./style.css";
 const pinia = createPinia();
 
 const httpLink = createHttpLink({
-  uri: "https://countries.trevorblades.com/graphql",
+  uri: "http://localhost:80/graphql",
 });
 const cache = new InMemoryCache();
 const apolloClient = new ApolloClient({
