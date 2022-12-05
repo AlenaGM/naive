@@ -41,6 +41,12 @@
     </div>
   </div>
   {{ result }}
+  <ul v-for="artwork in artworkss" :key="artwork.id">
+    <li>
+      <p>{{ artwork.title }}</p>
+      <img :src="artwork.imageUrl" :alt="artwork.title" />
+    </li>
+  </ul>
 </template>
 
 <script setup>
@@ -59,14 +65,15 @@ const artworks = ref([
     title: "Бородатые лица зверей",
     artist: {
       id: 1,
-      name: "Виктор Тимофеев",
+      firstName: "Виктор",
+      lastName: "Тимофеев",
     },
     created: 2000,
-    for_sale: true,
-    price: 10000,
-    description: "описание",
+    description: "мужик с котом и бутылкой",
     technique: "техника",
     size: "размеры",
+    onSale: true,
+    price: 10000,
     path: "/:id",
   },
   {
@@ -74,15 +81,16 @@ const artworks = ref([
     image: "/img/item-2.jpg",
     title: "Котенок",
     artist: {
-      id: 3,
-      name: "Татьяна Еленок",
+      id: 2,
+      firstName: "Татьяна",
+      lastName: "Еленок",
     },
     created: 1973,
-    for_sale: false,
-    price: "",
     description: "описание",
     technique: "техника",
     size: "размеры",
+    onSale: false,
+    price: "",
     path: "/:id",
   },
   {
@@ -91,15 +99,16 @@ const artworks = ref([
     title: "Преображение",
     artist: {
       id: 1,
-      name: "Виктор Тимофеев",
+      firstName: "Виктор",
+      lastName: "Тимофеев",
     },
     created: 2011,
-    for_sale: true,
-    price: 18000,
     description:
       "Современные технологии достигли такого уровня, что глубокий уровень погружения представляет собой интересный эксперимент проверки новых принципов формирования материально-технической и кадровой базы.",
     technique: "ДВП, масло",
     size: "700×500 мм",
+    onSale: true,
+    price: 18000,
     path: "/:id",
   },
   {
@@ -108,46 +117,49 @@ const artworks = ref([
     title: "Название",
     artist: {
       id: 1,
-      name: "Виктор Тимофеев",
+      firstName: "Виктор",
+      lastName: "Тимофеев",
     },
     created: 2002,
-    for_sale: true,
-    price: 10002,
-    description: "описание",
+    description: "дед и баба",
     technique: "техника",
     size: "размеры",
+    onSale: true,
+    price: 10002,
     path: "/:id",
   },
   {
     id: 5,
     image: "/img/item-5.jpg",
-    title: "Название",
+    title: "На пруду",
     artist: {
-      id: 2,
-      name: "Альфрид Шаймарданов",
+      id: 3,
+      firstName: "Михаил",
+      lastName: "Ржанников",
     },
-    created: 2003,
-    for_sale: true,
-    price: 10003,
+    created: 1992,
     description: "описание",
     technique: "техника",
     size: "размеры",
+    onSale: true,
+    price: 10003,
     path: "/:id",
   },
   {
     id: 6,
     image: "/img/item-6.jpg",
-    title: "Название",
+    title: "Коты",
     artist: {
-      id: 2,
-      name: "Альфрид Шаймарданов",
+      id: 4,
+      firstName: "Иван",
+      lastName: "Генералич",
     },
     created: 2004,
-    for_sale: true,
-    price: 10004,
     description: "описание",
     technique: "техника",
     size: "размеры",
+    onSale: true,
+    price: 10004,
     path: "/:id",
   },
   {
@@ -155,15 +167,16 @@ const artworks = ref([
     image: "/img/item-7.jpg",
     title: "Река жизни",
     artist: {
-      id: 2,
-      name: "Альфрид Шаймарданов",
+      id: 5,
+      firstName: "Альфрид",
+      lastName: "Шаймарданов",
     },
     created: 2013,
-    for_sale: true,
-    price: 10005,
     description: "описание",
     technique: "холст, масло",
     size: "130х100 см",
+    onSale: true,
+    price: 10005,
     path: "/:id",
   },
 ]);
@@ -179,7 +192,8 @@ const allArtworksQuery = gql`
 `;
 
 const { result } = useQuery(allArtworksQuery);
-//const countries = computed(() => result.value?.countries ?? []);
+console.log(result);
+const artworkss = computed(() => result.value?.allArtworks ?? []);
 </script>
 
 <style lang="scss" scoped>
