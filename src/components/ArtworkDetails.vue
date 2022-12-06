@@ -3,7 +3,7 @@
     <h2 class="artwork__title">произведение</h2>
     <div class="artwork__card">
       <div class="artwork__image">
-        <img src="/img/item-3-full.jpg" alt="Преображение" />
+        <img src="/img/item-3-fullsize.jpg" alt="Преображение" />
       </div>
       <div>
         <h3 class="artwork__name">Преображение</h3>
