@@ -19,9 +19,11 @@ _Art shop website built with VueJS._ <br>
 
 
 ## 	Result
-
-<img width="35%" alt="screen capture" src="../main/src/assets/captureweb.jpeg">
-
+<br><br>
+<img width="30%" alt="screen capture" src="../main/src/assets/images/captureweb.jpeg">
+<img width="30%" alt="screen capture" src="../main/src/assets/images/captureartist.jpeg">
+<img width="30%" alt="screen capture" src="../main/src/assets/images/captureartwork.jpeg">
+<br><br>
 
   <br><br>
   \* _Project  built in cooperation with [Serge Lugovik] who wrote a backend part_ 
