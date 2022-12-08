@@ -49,7 +49,7 @@
       </div>
 
       <div class="header__cart">
-        <router-link to="/cart" class="header__cart_link">
+        <router-link to="/naive/cart" class="header__cart_link">
           <span class="header__cart_count"> 1 </span>
           <img src="/svg/cart.svg" alt="cart" class="header__icon" />
           <span class="header__cart_title">корзина</span>

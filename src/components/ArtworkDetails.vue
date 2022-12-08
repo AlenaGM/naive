@@ -8,7 +8,7 @@
       <div>
         <h3 class="artwork__name">Преображение</h3>
         <div class="artwork__artist">
-          <router-link to="/artist/1" class="artwork__artist_link">
+          <router-link to="/naive/artist/1" class="artwork__artist_link">
             <img src="/svg/artist.svg" alt="artist-icon" />
             <h4>Виктор Тимофеев</h4>
             <span class="artwork__price">2011</span>

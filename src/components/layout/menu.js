@@ -2,27 +2,27 @@ const menu = [
   {
     name: "магазин",
     image: "/svg/menu-shop.svg",
-    path: "/",
+    path: "/naive/",
   },
   {
     name: "новости",
     image: "/svg/menu-news.svg",
-    path: "/news",
+    path: "/naive/news",
   },
   {
     name: "как заказать",
     image: "/svg/menu-order.svg",
-    path: "/how-to-order",
+    path: "/naive/how-to-order",
   },
   {
     name: "доставка",
     image: "/svg/menu-delivery.svg",
-    path: "/delivery",
+    path: "/naive/delivery",
   },
   {
     name: "контакты",
     image: "/svg/menu-contacts.svg",
-    path: "/contacts",
+    path: "/naive/contacts",
   },
 ];
 

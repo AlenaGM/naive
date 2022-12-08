@@ -75,7 +75,7 @@ const artworks = ref([
     size: "ДВП, масло",
     onSale: true,
     price: 18000,
-    path: "/:id",
+    path: "/naive/:id",
   },
   {
     id: 2,
@@ -93,7 +93,7 @@ const artworks = ref([
     size: "60×44,5",
     onSale: false,
     price: "",
-    path: "/:id",
+    path: "/naive/:id",
   },
   {
     id: 3,
@@ -111,7 +111,7 @@ const artworks = ref([
     size: "70×50",
     onSale: true,
     price: 18000,
-    path: "/:id",
+    path: "/naive/:id",
   },
   {
     id: 4,
@@ -129,7 +129,7 @@ const artworks = ref([
     size: "60×50",
     onSale: true,
     price: 24000,
-    path: "/:id",
+    path: "/naive/:id",
   },
   {
     id: 5,
@@ -146,7 +146,7 @@ const artworks = ref([
     size: "58 x 54",
     onSale: true,
     price: 15000,
-    path: "/:id",
+    path: "/naive/:id",
   },
   {
     id: 6,
@@ -164,7 +164,7 @@ const artworks = ref([
     size: "41 x 54",
     onSale: false,
     price: "",
-    path: "/:id",
+    path: "/naive/:id",
   },
   {
     id: 7,
@@ -182,7 +182,7 @@ const artworks = ref([
     size: "130х100 см",
     onSale: true,
     price: 45000,
-    path: "/:id",
+    path: "/naive/:id",
   },
 ]);
 
