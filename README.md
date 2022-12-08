@@ -24,10 +24,10 @@ _Art shop website built with VueJS._ <br>
 
 
   <br><br>
-  \* _Project  built in cooperqtion with [arche-ma] that made a backend part_ 
+  \* _Project  built in cooperation with [Serge Lugovik] who wrote a backend part_ 
   
 
-   [arche-ma]: <https://github.com/arche-ma>
+   [Serge Lugovik]: <https://github.com/arche-ma>
    [Naïve Art Shop]: <https://alenagm.github.io/naive/>
 
 
