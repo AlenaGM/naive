@@ -61,7 +61,7 @@ import gql from "graphql-tag";
 const artworks = ref([
   {
     id: 1,
-    image: "/img/item-1.jpg",
+    image: "/naive/img/item-1.jpg",
     title: "Бородатые лица зверей",
     artist: {
       id: 1,
@@ -79,7 +79,7 @@ const artworks = ref([
   },
   {
     id: 2,
-    image: "/img/item-2.jpg",
+    image: "/naive/img/item-2.jpg",
     title: "Котенок",
     artist: {
       id: 2,
@@ -97,7 +97,7 @@ const artworks = ref([
   },
   {
     id: 3,
-    image: "/img/item-3.jpg",
+    image: "/naive/img/item-3.jpg",
     title: "Преображение",
     artist: {
       id: 1,
@@ -115,7 +115,7 @@ const artworks = ref([
   },
   {
     id: 4,
-    image: "/img/item-4.jpg",
+    image: "/naive/img/item-4.jpg",
     title: "Пора тополиного пуха",
     artist: {
       id: 1,
@@ -133,7 +133,7 @@ const artworks = ref([
   },
   {
     id: 5,
-    image: "/img/item-5.jpg",
+    image: "/naive/img/item-5.jpg",
     title: "На пруду",
     artist: {
       id: 3,
@@ -150,7 +150,7 @@ const artworks = ref([
   },
   {
     id: 6,
-    image: "/img/item-6.jpg",
+    image: "/naive/img/item-6.jpg",
     title: "Кот",
     artist: {
       id: 4,
@@ -168,7 +168,7 @@ const artworks = ref([
   },
   {
     id: 7,
-    image: "/img/item-7.jpg",
+    image: "/naive/img/item-7.jpg",
     title: "Река жизни",
     artist: {
       id: 5,
