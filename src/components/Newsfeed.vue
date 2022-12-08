@@ -11,7 +11,7 @@
       </div>
       <ui-button type="link" to="/">в магазин</ui-button>
       <img
-        src="img/news-background.jpg"
+        src="/img/news-background.jpg"
         alt="background"
         class="news__background"
       />

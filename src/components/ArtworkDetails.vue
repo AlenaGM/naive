@@ -31,7 +31,7 @@
           <div class="artwork__params_item">
             <span>Цена:</span>
             <div class="artwork__price">
-              <img src="svg/price.svg" alt="price-icon" />
+              <img src="/svg/price.svg" alt="price-icon" />
               18.000 ₽
             </div>
           </div>
