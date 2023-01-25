@@ -1,1 +1,1 @@
-# naivegallery
+# naive
