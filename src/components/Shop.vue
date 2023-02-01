@@ -40,8 +40,7 @@
       </router-link>
     </div>
   </div>
-  {{ result }}
-  <ul v-for="(artwork, i) in artworkss" :key="artwork.id">
+  <ul v-for="(artwork, i) in artworks" :key="artwork.id">
     <li>
       <p>{{ artwork.title }}</p>
       <img :src="artwork.imageUrl" :alt="artwork.title" />

@@ -2,10 +2,9 @@
   <ArtworkDetails />
 </template>
 
-<script setup lang="js">
-import { ref, onMounted } from "vue";
+<script setup>
+import { ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
-import api from "@/api.js";
 import ArtworkDetails from "@/components/ArtworkDetails.vue";
 
 const route = useRoute();

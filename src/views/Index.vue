@@ -2,6 +2,6 @@
   <Shop />
 </template>
 
-<script setup lang="js">
+<script setup>
 import Shop from "@/components/Shop.vue";
 </script>
