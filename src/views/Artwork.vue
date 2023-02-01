@@ -12,8 +12,4 @@ const route = useRoute();
 const router = useRouter();
 const artworkId = ref("");
 const currentProduct = ref({});
-
-onMounted(async () => {
-  artworkId.value = await api.getArtwork(artworkId.value);
-});
 </script>
