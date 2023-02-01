@@ -58,7 +58,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="js">
 import uiButton from "@/components/ui/Button.vue";
 </script>
 

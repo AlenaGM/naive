@@ -50,15 +50,7 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from "vue";
-import Loader from "@/components/ui/Loader.vue";
 import artworks from "@/components/artworks.js";
-import api from "@/api.js";
-import { computed } from "vue";
-
-onMounted(async () => {
-  artworks.value = await api.getArtworks();
-});
 </script>
 
 <style lang="scss" scoped>

@@ -2,7 +2,7 @@
   <ArtworkDetails />
 </template>
 
-<script setup>
+<script setup lang="js">
 import { ref, onMounted } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import api from "@/api.js";

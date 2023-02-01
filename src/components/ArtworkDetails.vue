@@ -45,7 +45,6 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
 import uiButton from "@/components/ui/Button.vue";
 
 //const props = defineProps({
