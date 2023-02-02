@@ -15,4 +15,13 @@ export default {
       console.log(e);
     }
   },
+  async getAllArworks() {
+    try {
+      const response = await HTTP.get("/artworks");
+      console.log(response.data);
+      return response.data;
+    } catch (e) {
+      console.log(e);
+    }
+  },
 };

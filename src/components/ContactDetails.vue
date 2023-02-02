@@ -11,6 +11,7 @@ import api from "@/api";
 
 onMounted(() => {
   api.getAllArtists();
+  api.getAllArtworks();
 });
 </script>
 
