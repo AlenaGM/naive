@@ -283,7 +283,8 @@
                         "price": 18000,
                         "available": true,
                         "onSale": false,
-                        "image": "/naive/img/item-1.jpg"
+                        "image": "/naive/img/item-1-fullsize.jpg",
+                        "thumbnail": "/naive/img/item-1.jpg"
                       },
                       {
                         "id": 2,
@@ -302,7 +303,8 @@
                         "price": 0,
                         "available": false,
                         "onSale": false,
-                        "image": "/naive/img/item-2.jpg"
+                        "image": "/naive/img/item-2-fullsize.jpg",
+                        "thumbnail": "/naive/img/item-2.jpg"
                       },
                       {
                         "id": 3,
@@ -321,7 +323,8 @@
                         "price": 18000,
                         "available": true,
                         "onSale": false,
-                        "image": "/naive/img/item-3.jpg"
+                        "image": "/naive/img/item-3-fullsize.jpg",
+                        "thumbnail": "/naive/img/item-3.jpg"
                       },
                       {
                         "id": 4,
@@ -340,7 +343,8 @@
                         "price": 24000,
                         "available": true,
                         "onSale": false,
-                        "image": "/naive/img/item-4.jpg"
+                        "image": "/naive/img/item-4-fullsize.jpg",
+                        "thumbnail": "/naive/img/item-4.jpg"
                       },
                       {
                         "id": 5,
@@ -359,7 +363,8 @@
                         "price": 15000,
                         "available": true,
                         "onSale": false,
-                        "image": "/naive/img/item-5.jpg"
+                        "image": "/naive/img/item-5-fullsize.jpg",
+                        "thumbnail": "/naive/img/item-5.jpg"
                       },
                       {
                         "id": 6,
@@ -378,7 +383,8 @@
                         "price": 0,
                         "available": false,
                         "onSale": false,
-                        "image": "/naive/img/item-6.jpg"
+                        "image": "/naive/img/item-6-fullsize.jpg",
+                        "thumbnail": "/naive/img/item-6.jpg"
                       },
                       {
                         "id": 7,
@@ -397,7 +403,8 @@
                         "price": 45000,
                         "available": true,
                         "onSale": false,
-                        "image": "/naive/img/item-7.jpg"
+                        "image": "/naive/img/item-7-fullsize.jpg",
+                        "thumbnail": "/naive/img/item-7.jpg"
                       }
                     ]
                   }
@@ -693,6 +700,9 @@
           },
           "image": {
             "type": "string"
+          },
+          "thumbnail": {
+            "type": "string"
           }
         },
         "required": [
@@ -700,7 +710,8 @@
           "title",
           "artist",
           "available",
-          "image"
+          "image",
+          "thumbnail"
         ]
       }
     },
