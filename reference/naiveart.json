@@ -24,6 +24,20 @@
       "url": "https://loutre.stoplight.io"
     }
   ],
+  "tags": [
+     {
+       "name": "Artist",
+       "description":"End-artist information"
+     },
+    {
+       "name": "Artwork",
+       "description":"End-artwork information"
+     },     
+     {
+       "name": "Users",
+       "description":"End-user information"
+     }
+  ],
   "paths": {
     "/users/{userId}": {
       "parameters": [
@@ -39,7 +53,7 @@
       ],
       "get": {
         "summary": "Get User Info by User ID",
-        "tags": [],
+        "tags": ["Users"],
         "responses": {
           "200": {
             "description": "User Found",
@@ -233,8 +247,22 @@
     "/artworks": {
       "get": {
         "summary": "Your GET endpoint",
-        "tags": [],
-        "responses": {},
+        "tags": ["Artwork"],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Artwork"
+                  }
+                }
+              }
+            }
+          }
+        },
         "operationId": "get-artworks",
         "description": "List of all artworks"
       },
@@ -246,7 +274,12 @@
             "description": "OK"
           }
         },
-        "description": "Add a new artwork"
+        "description": "Add a new artwork",
+        "security": [
+          {
+            "apikey": []
+          }
+        ]
       }
     },
     "/artworks/{artworkId}": {
@@ -257,13 +290,25 @@
           },
           "name": "artworkId",
           "in": "path",
-          "required": true
+          "required": true,
+          "description": "single piece of artwork by id"
         }
       ],
       "get": {
         "summary": "Your GET endpoint",
-        "tags": [],
-        "responses": {},
+        "tags": ["Artwork"],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Artwork"
+                }
+              }
+            }
+          }
+        },
         "operationId": "get-artworks-artworkId",
         "description": "Get one specifique artwork"
       },
@@ -272,7 +317,14 @@
         "operationId": "put-artworks-artworkId",
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Artwork"
+                }
+              }
+            }
           }
         },
         "description": "Update one specifique artwork"
@@ -281,8 +333,8 @@
         "summary": "",
         "operationId": "delete-artworks-artworkId",
         "responses": {
-          "200": {
-            "description": "OK"
+          "204": {
+            "description": "No Content"
           }
         },
         "description": "Remove one specifique artwork"
@@ -291,8 +343,22 @@
     "/artists": {
       "get": {
         "summary": "Your GET endpoint",
-        "tags": [],
-        "responses": {},
+        "tags": ["Artist"],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Artist"
+                  }
+                }
+              }
+            }
+          }
+        },
         "operationId": "get-artists",
         "description": "List of all artists"
       },
@@ -304,7 +370,12 @@
             "description": "OK"
           }
         },
-        "description": "Add a new artist"
+        "description": "Add a new artist",
+        "security": [
+          {
+            "apikey": []
+          }
+        ]
       }
     },
     "/artists/{artistId}": {
@@ -315,13 +386,27 @@
           },
           "name": "artistId",
           "in": "path",
-          "required": true
+          "required": true,
+          "description": "single artist by id"
         }
       ],
       "get": {
         "summary": "Your GET endpoint",
-        "tags": [],
-        "responses": {},
+        "tags": [ 
+       "Artist"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Artist"
+                }
+              }
+            }
+          }
+        },
         "operationId": "get-artists-artistId",
         "description": "Get one specifique artist"
       },
@@ -330,7 +415,14 @@
         "operationId": "put-artists-artistId",
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Artist"
+                }
+              }
+            }
           }
         },
         "description": "Update one specifique artist"
@@ -339,8 +431,8 @@
         "summary": "",
         "operationId": "delete-artists-artistId",
         "responses": {
-          "200": {
-            "description": "OK"
+          "204": {
+            "description": "No Content"
           }
         },
         "description": "Delete one specifique artist"
@@ -508,7 +600,7 @@
       }
     },
     "securitySchemes": {
-      "API Key": {
+      "apikey": {
         "name": "apikey",
         "type": "apiKey",
         "in": "query"
