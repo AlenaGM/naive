@@ -623,7 +623,7 @@
           }
         },
         "required": [
-          "id",
+          "artistId",
           "lastName"
         ]
       },
@@ -670,8 +670,7 @@
             "type": "object"
           },
           "created": {
-            "type": "string",
-            "format": "date"
+            "type": "string"
           },
           "description": {
             "type": "string"
