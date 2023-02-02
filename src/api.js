@@ -15,7 +15,7 @@ export default {
       console.log(e);
     }
   },
-  async getAllArworks() {
+  async getAllArtworks() {
     try {
       const response = await HTTP.get("/artworks");
       console.log(response.data);
