@@ -793,6 +793,53 @@
         },
         "type": "object",
         "description": "Single artist",
+        "examples": [
+          {
+            "artistId": 0,
+            "firstName": "string",
+            "lastName": "string",
+            "bio": "string",
+            "image": "string",
+            "artworks": [
+              {
+                "id": 0,
+                "title": "string",
+                "artist": {
+                  "artistId": 0,
+                  "firstName": "string",
+                  "lastName": "string"
+                },
+                "created": "string",
+                "description": "string",
+                "techniques": "string",
+                "dimensions": "string",
+                "price": 0,
+                "available": true,
+                "onSale": true,
+                "image": "string",
+                "thumbnail": "string"
+              },
+              {
+                "id": 0,
+                "title": "string",
+                "artist": {
+                  "artistId": 0,
+                  "firstName": "string",
+                  "lastName": "string"
+                },
+                "created": "string",
+                "description": "string",
+                "techniques": "string",
+                "dimensions": "string",
+                "price": 0,
+                "available": true,
+                "onSale": true,
+                "image": "string",
+                "thumbnail": "string"
+              }
+            ]
+          }
+        ],
         "properties": {
           "artistId": {
             "type": "integer"
@@ -808,6 +855,14 @@
           },
           "image": {
             "type": "string"
+          },
+          "artworks": {
+            "allOf": [
+              {},
+              {},
+              {}
+            ],
+            "type": "object"
           }
         },
         "required": [
@@ -823,29 +878,11 @@
         "type": "object",
         "description": "Single artwork",
         "properties": {
-          "id": {
+          "artworkId": {
             "type": "integer"
           },
           "title": {
             "type": "string"
-          },
-          "artist": {
-            "allOf": [
-              {
-                "properties": {
-                  "artistId": {
-                    "type": "integer"
-                  },
-                  "firstName": {
-                    "type": "string"
-                  },
-                  "lastName": {
-                    "type": "string"
-                  }
-                }
-              }
-            ],
-            "type": "object"
           },
           "created": {
             "type": "string"
@@ -877,9 +914,8 @@
           }
         },
         "required": [
-          "id",
+          "artworkId",
           "title",
-          "artist",
           "available",
           "image",
           "thumbnail"
