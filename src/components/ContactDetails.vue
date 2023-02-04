@@ -13,7 +13,7 @@ onMounted(() => {
   api.getAllArtists();
   api.getAllArtworks();
   api.getArtwork(1);
-  api.getArtist(1);
+  api.getArtist(4);
 });
 </script>
 
