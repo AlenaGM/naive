@@ -7,7 +7,6 @@
       принципов формирования материально-технической и кадровой базы.
     </div>
     <div class="shop__filter">
-      <img src="/svg/filter.svg" alt="menu-icon" />
       <div class="shop__filter_item">
         <span>Год</span>
         <img src="/svg/filter-arrows-norm.svg" alt="menu-icon" />

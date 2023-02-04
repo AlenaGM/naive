@@ -24,4 +24,30 @@ export default {
       console.log(e);
     }
   },
+  async getArtwork(artworkId) {
+    try {
+      const response = await HTTP.get(`/artworks/${artworkId}`, {
+        headers: {
+          Prefer: `code=200, example=Example ${artworkId}`,
+        },
+      });
+      console.log(response.data);
+      return response.data;
+    } catch (e) {
+      console.log(e);
+    }
+  },
+  async getArtist(artistId) {
+    try {
+      const response = await HTTP.get(`/artists/${artistId}`, {
+        headers: {
+          Prefer: `code=200, example=Example ${artistId}`,
+        },
+      });
+      console.log(response.data);
+      return response.data;
+    } catch (e) {
+      console.log(e);
+    }
+  },
 };
