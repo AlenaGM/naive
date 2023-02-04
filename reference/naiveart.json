@@ -693,8 +693,8 @@
           "Artist"
         ],
         "responses": {
-          "500": {
-            "description": "Artist not found",
+          "200": {
+            "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
@@ -749,6 +749,9 @@
                 }
               }
             }
+          },
+          "500": {
+            "description": "Artist not found"
           }
         },
         "operationId": "get-artists-artistId",
