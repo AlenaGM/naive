@@ -403,7 +403,7 @@
         "description": "Fetches list of all artworks"
       }
     },
-    "/artworks/byartist": {
+    "/thumbnails": {
       "get": {
         "summary": "Your GET endpoint",
         "tags": [
@@ -525,6 +525,17 @@
                       }
                     ]
                   }
+                }
+              }
+            }
+          },
+          "": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
                 }
               }
             }
