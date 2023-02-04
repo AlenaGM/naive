@@ -600,6 +600,9 @@
                 }
               }
             }
+          },
+          "500": {
+            "description": "Artwork not found"
           }
         },
         "operationId": "get-artworks-artworkId",
