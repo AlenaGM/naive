@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-    <h2 class="contact__title">контакты - тест</h2>
+    <h2 class="contact__title">контакты - тест запосов к АПИ</h2>
     <div class="contact__card"></div>
   </div>
 </template>
@@ -10,10 +10,10 @@ import { onMounted } from "vue";
 import api from "@/api";
 
 onMounted(() => {
-  api.getAllArtists();
-  api.getAllArtworks();
-  api.getArtwork(1);
-  api.getArtist(4);
+  //api.getAllArtists();
+  //api.getAllArtworks();
+  //api.getArtwork(1);
+  //api.getArtist(4);
 });
 </script>
 
