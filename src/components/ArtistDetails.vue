@@ -3,67 +3,46 @@
     <h2 class="artist__title">художник</h2>
     <div class="artist__card">
       <div class="artist__image">
-        <img src="/img/artist-1.jpg" alt="artist" />
+        <img :src="artist.image" :alt="artist.lastName" />
       </div>
       <div>
-        <h3 class="artist__name">Виктор Тимофеев</h3>
+        <h3 class="artist__name">
+          {{ artist.firstName }} {{ artist.lastName }}
+        </h3>
         <div class="artist__description">
-          В творчестве В. Тимофеева гармонично соединились элементы
-          экспрессионизма и примитивизма, народного лубка и декоративного
-          искусства, иконописи. Столь разнородные стилевые направления дают
-          возможность визуальных «путешествий» в мир литературы, театра,
-          истории, фольклора и религии. Свою роль играют надписи и даты
-          исполнения картин и рисунков, как своего рода рефлексии
-          повседневности. <br /><br />
-          Работы художника находятся в Музее наивного искусства (Москва), Музее
-          традиционного искусства народов мира (Москва), Музее органической
-          культуры (Коломна), Государственном музее изобразительных искусств РТ,
-          Музее Казанского Кремля, Национальном культурном центре «Казань», а
-          также в частных собраниях — Галеев-галерее (Москва), Арт-Наив галерее
-          (Москва) и других коллекциях Москвы, Пскова, Казани, а также США,
-          Канады, Аргентины, Германии, Франции, Голландии, Бельгии, Португалии.
+          {{ artist.bio }}
         </div>
       </div>
     </div>
     <div class="artist__paintings">
       <h4 class="artist__paintings_title">Работы художника</h4>
       <div class="artist__paintings_container">
-        <div class="artist__paintings_item">
-          <router-link to="/naive/artworks/:artworkId">
-            <img src="/img/item-3.jpg" alt="painting" />
-          </router-link>
-        </div>
-        <div class="artist__paintings_item">
-          <router-link to="/naive/artworks/:artworkId">
-            <img src="/img/item-4.jpg" alt="painting" />
-          </router-link>
-        </div>
-        <div class="artist__paintings_item">
-          <router-link to="/naive/artworks/:artworkId">
-            <img src="/img/item-1.jpg" alt="painting" />
-          </router-link>
-        </div>
-        <div class="artist__paintings_item">
-          <router-link to="/naive/artworks/:artworkId">
-            <img src="/img/item-3.jpg" alt="painting" />
-          </router-link>
-        </div>
-        <div class="artist__paintings_item">
-          <router-link to="/naive/artworks/:artworkId">
-            <img src="/img/item-4.jpg" alt="painting" />
-          </router-link>
-        </div>
-        <div class="artist__paintings_item">
-          <router-link to="/naive/artworks/:artworkId">
-            <img src="/img/item-1.jpg" alt="painting" />
-          </router-link>
-        </div>
+        <router-link
+          class="artist__paintings_item"
+          v-for="artwork of artist.artworks"
+          :to="`/naive/artworks/${artwork.artworkId}`"
+          :key="artwork.artworkId"
+        >
+          <img
+            :src="artwork.thumbnail"
+            :alt="artwork.title"
+            class="artist__paintings_thumbnail"
+          />
+        </router-link>
       </div>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const props = defineProps({
+  artist: {
+    type: Object,
+    default: () => {},
+    required: true,
+  },
+});
+</script>
 
 <style lang="scss" scoped>
 .artist {
