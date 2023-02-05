@@ -8,9 +8,12 @@
       <div>
         <h3 class="artwork__name">{{ artwork.title }}</h3>
         <div class="artwork__artist">
-          <router-link to="/naive/artist/1" class="artwork__artist_link">
+          <router-link
+            :to="`/naive/artists/${artist.id}`"
+            class="artwork__artist_link"
+          >
             <img src="/svg/artist.svg" alt="artist-icon" />
-            <h4>Виктор Тимофеев</h4>
+            <h4>{{ artist.firstName }} {{ artist.lastName }}</h4>
             <span class="artwork__year">{{ artwork.created }}</span>
           </router-link>
         </div>
@@ -47,11 +50,15 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
 import uiButton from "@/components/ui/Button.vue";
 
 const props = defineProps({
   artwork: {
+    type: Object,
+    default: () => {},
+    required: true,
+  },
+  artist: {
     type: Object,
     default: () => {},
     required: true,

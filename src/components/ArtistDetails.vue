@@ -29,32 +29,32 @@
       <h4 class="artist__paintings_title">Работы художника</h4>
       <div class="artist__paintings_container">
         <div class="artist__paintings_item">
-          <router-link to="/naive/:id">
+          <router-link to="/naive/artworks/:artworkId">
             <img src="/img/item-3.jpg" alt="painting" />
           </router-link>
         </div>
         <div class="artist__paintings_item">
-          <router-link to="/naive/:id">
+          <router-link to="/naive/artworks/:artworkId">
             <img src="/img/item-4.jpg" alt="painting" />
           </router-link>
         </div>
         <div class="artist__paintings_item">
-          <router-link to="/naive/:id">
+          <router-link to="/naive/artworks/:artworkId">
             <img src="/img/item-1.jpg" alt="painting" />
           </router-link>
         </div>
         <div class="artist__paintings_item">
-          <router-link to="/naive/:id">
+          <router-link to="/naive/artworks/:artworkId">
             <img src="/img/item-3.jpg" alt="painting" />
           </router-link>
         </div>
         <div class="artist__paintings_item">
-          <router-link to="/naive/:id">
+          <router-link to="/naive/artworks/:artworkId">
             <img src="/img/item-4.jpg" alt="painting" />
           </router-link>
         </div>
         <div class="artist__paintings_item">
-          <router-link to="/naive/:id">
+          <router-link to="/naive/artworks/:artworkId">
             <img src="/img/item-1.jpg" alt="painting" />
           </router-link>
         </div>
