@@ -66,7 +66,7 @@ const props = defineProps({
   &__card {
     display: grid;
     align-items: start;
-    grid-template-columns: 1fr 580px;
+    grid-template-columns: minmax(auto, 540px) minmax(580px, 1fr);
     column-gap: 40px;
     margin-bottom: 83px;
     @media screen and (max-width: 1092px) {
@@ -81,7 +81,7 @@ const props = defineProps({
   &__image {
     display: block;
     img {
-      max-width: 100%;
+      width: 100%;
     }
   }
   &__name {
