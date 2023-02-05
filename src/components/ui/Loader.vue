@@ -7,7 +7,7 @@
   animation: rotate 1s infinite;
   height: 50px;
   width: 50px;
-  margin-bottom: 50px;
+  margin: 50px 0;
   &-container {
     display: flex;
     justify-content: center;

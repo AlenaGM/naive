@@ -16,33 +16,24 @@
         <img src="/svg/filter-arrows-norm.svg" alt="menu-icon" />
       </div>
     </div>
-    <div class="shop__gallery">
-      <router-link
-        class="shop__gallery_item"
-        :to="artwork.path"
-        v-for="artwork of artworks"
-        :key="artwork.id"
-        :artist_id="artwork.artist.id"
-        :artist_name="artwork.artist.name"
-        :year="artwork.created"
-        :description="artwork.description"
-        :technique="artwork.technique"
-        :size="artwork.size"
-        :on_sale="artwork.for_sale"
-        :price="artwork.price"
-      >
-        <img
-          :src="artwork.image"
-          :alt="artwork.title"
-          class="shop__gallery_image"
-        />
-      </router-link>
-    </div>
+    <Loader v-if="loading" />
+    <Gallery :artworks="allArtworks" v-else />
   </div>
 </template>
 
 <script setup>
-import artworks from "@/components/artworks.js";
+import { onMounted, ref } from "vue";
+import api from "@/api";
+import Gallery from "@/components/Gallery.vue";
+import Loader from "@/components/ui/Loader.vue";
+
+const allArtworks = ref([]);
+const loading = ref(true);
+
+onMounted(async () => {
+  allArtworks.value = await api.getAllArtworks();
+  loading.value = false;
+});
 </script>
 
 <style lang="scss" scoped>
@@ -89,33 +80,6 @@ import artworks from "@/components/artworks.js";
       cursor: pointer;
       img {
         margin-left: 7px;
-      }
-    }
-  }
-  &__gallery {
-    columns: 3 360px;
-    column-gap: 40px;
-    margin: 0 auto 250px auto;
-    @media screen and (max-width: 1207px) {
-      margin: 0 auto 120px auto;
-    }
-    @media screen and (max-width: 1024px) {
-      columns: 2 350px;
-      column-gap: 20px;
-    }
-    a {
-      width: 360px;
-      margin: 0 0 50px 0;
-      display: inline-block;
-      width: 100%;
-      img {
-        width: 100%;
-      }
-      @media screen and (max-width: 1024px) {
-        width: 350px;
-        margin: 0 0 12px 0;
-        display: inline-block;
-        width: 100%;
       }
     }
   }
