@@ -23,14 +23,14 @@
 }
 .loader:before {
   animation: ball1 1s infinite;
-  background-color: #cb2025;
-  box-shadow: 30px 0 0 #f8b334;
+  background-color: #6e2b15;
+  box-shadow: 30px 0 0 #dba34c;
   margin-bottom: 10px;
 }
 .loader:after {
   animation: ball2 1s infinite;
-  background-color: #00a096;
-  box-shadow: 30px 0 0 #97bf0d;
+  background-color: #1e6080;
+  box-shadow: 30px 0 0 #bdc774;
 }
 @keyframes rotate {
   0% {
@@ -48,31 +48,31 @@
 }
 @keyframes ball1 {
   0% {
-    box-shadow: 30px 0 0 #f8b334;
+    box-shadow: 30px 0 0 #dba34c;
   }
   50% {
-    box-shadow: 0 0 0 #f8b334;
+    box-shadow: 0 0 0 #dba34c;
     margin-bottom: 0;
     -webkit-transform: translate(15px, 15px);
     -moz-transform: translate(15px, 15px);
   }
   100% {
-    box-shadow: 30px 0 0 #f8b334;
+    box-shadow: 30px 0 0 #dba34c;
     margin-bottom: 10px;
   }
 }
 @keyframes ball2 {
   0% {
-    box-shadow: 30px 0 0 #97bf0d;
+    box-shadow: 30px 0 0 #bdc774;
   }
   50% {
-    box-shadow: 0 0 0 #97bf0d;
+    box-shadow: 0 0 0 #bdc774;
     margin-top: -20px;
     -webkit-transform: translate(15px, 15px);
     -moz-transform: translate(15px, 15px);
   }
   100% {
-    box-shadow: 30px 0 0 #97bf0d;
+    box-shadow: 30px 0 0 #bdc774;
     margin-top: 0;
   }
 }

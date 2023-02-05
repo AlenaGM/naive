@@ -32,7 +32,7 @@ const loading = ref(true);
 
 onMounted(async () => {
   allArtworks.value = await api.getAllArtworks();
-  loading.value = false;
+  //loading.value = false;
 });
 </script>
 
