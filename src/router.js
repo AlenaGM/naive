@@ -17,7 +17,7 @@ const router = createRouter({
       component: Index,
     },
     {
-      path: "/naive/:artworkId",
+      path: "/naive/artworks/:artworkId",
       name: "Artwork",
       component: Artwork,
     },

@@ -10,10 +10,10 @@ import { onMounted } from "vue";
 import api from "@/api";
 
 onMounted(() => {
-  //api.getAllArtists();
-  //api.getAllArtworks();
-  //api.getArtwork(1);
-  //api.getArtist(4);
+  api.getAllArtists();
+  api.getAllArtworks();
+  api.getArtwork(1);
+  api.getArtist(4);
 });
 </script>
 

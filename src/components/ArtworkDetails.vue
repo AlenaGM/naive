@@ -3,37 +3,39 @@
     <h2 class="artwork__title">произведение</h2>
     <div class="artwork__card">
       <div class="artwork__image">
-        <img src="/img/item-3-fullsize.jpg" alt="Преображение" />
+        <img :src="artwork.image" :alt="artwork.title" />
       </div>
       <div>
-        <h3 class="artwork__name">Преображение</h3>
+        <h3 class="artwork__name">{{ artwork.title }}</h3>
         <div class="artwork__artist">
           <router-link to="/naive/artist/1" class="artwork__artist_link">
             <img src="/svg/artist.svg" alt="artist-icon" />
             <h4>Виктор Тимофеев</h4>
-            <span class="artwork__price">2011</span>
+            <span class="artwork__year">{{ artwork.created }}</span>
           </router-link>
         </div>
         <div class="artwork__block artwork__description">
-          Современные технологии достигли такого уровня, что глубокий уровень
-          погружения представляет собой интересный эксперимент проверки новых
-          принципов формирования материально-технической и кадровой базы.
+          {{ artwork.description }}
         </div>
         <div class="artwork__block artwork__params">
           <div class="artwork__params_item">
             <span>Техника:</span>
-            <div>ДВП, масло</div>
+            <div>{{ artwork.techniques }}</div>
           </div>
           <div class="artwork__params_item">
             <span>Размер:</span>
-            <div>700×500 мм</div>
+            <div>{{ artwork.dimensions }} см</div>
           </div>
           <div class="artwork__params_item">
             <span>Цена:</span>
-            <div class="artwork__price">
+            <div
+              class="artwork__price"
+              v-if="artwork.price && artwork.available"
+            >
               <img src="/svg/price.svg" alt="price-icon" />
-              18.000 ₽
+              {{ artwork.price }} ₽
             </div>
+            <div v-else>нет в продаже</div>
           </div>
           <div class="artwork__params_item">
             <ui-button>в корзину</ui-button>
@@ -45,54 +47,16 @@
 </template>
 
 <script setup>
+import { ref } from "vue";
 import uiButton from "@/components/ui/Button.vue";
 
-//const props = defineProps({
-//  id: {
-//    type: String,
-//    required: true,
-//  },
-//  image: {
-//    type: String,
-//    required: true,
-//  },
-//  title: {
-//    type: String,
-//    required: true,
-//  },
-//  price: {
-//    type: Number,
-//    required: true,
-//  },
-//  artist_id: {
-//    type: String,
-//    required: true,
-//  },
-//  artist_name: {
-//    type: String,
-//    required: true,
-//  },
-//  year: {
-//    type: Number,
-//    required: true,
-//  },
-//  description: {
-//    type: String,
-//    required: true,
-//  },
-//  technique: {
-//    type: String,
-//    required: true,
-//  },
-//  size: {
-//    type: String,
-//    required: true,
-//  },
-//  on_sale: {
-//    type: Boolean,
-//    default: true,
-//  },
-//});
+const props = defineProps({
+  artwork: {
+    type: Object,
+    default: () => {},
+    required: true,
+  },
+});
 </script>
 
 <style lang="scss" scoped>

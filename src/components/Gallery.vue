@@ -3,7 +3,7 @@
     <router-link
       class="shop__gallery_item"
       v-for="artwork of artworks"
-      :to="`/naive/${artwork.artworkId}`"
+      :to="`/naive/artworks/${artwork.artworkId}`"
       :key="artwork.artworkId"
       :created="artwork.created"
       :price="artwork.price"
