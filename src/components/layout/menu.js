@@ -5,17 +5,17 @@ const menu = [
     path: "/naive/",
   },
   {
+    name: "художники",
+    image: "/naive/svg/artist.svg",
+    path: "/naive/artists",
+  },
+  {
     name: "новости",
     image: "/naive/svg/menu-news.svg",
     path: "/naive/news",
   },
   {
-    name: "как заказать",
-    image: "/naive/svg/menu-order.svg",
-    path: "/naive/how-to-order",
-  },
-  {
-    name: "доставка",
+    name: "заказ и доставка",
     image: "/naive/svg/menu-delivery.svg",
     path: "/naive/delivery",
   },

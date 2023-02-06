@@ -9,7 +9,6 @@ export default {
   async getAllArtists() {
     try {
       const response = await HTTP.get("/artists");
-      console.log(response.data);
       return response.data;
     } catch (e) {
       console.log(e);
@@ -18,7 +17,6 @@ export default {
   async getAllArtworks() {
     try {
       const response = await HTTP.get("/artists/artworks");
-      console.log(response.data);
       return response.data;
     } catch (e) {
       console.log(e);
@@ -31,7 +29,6 @@ export default {
           Prefer: `code=200, example=Example ${artistId}`,
         },
       });
-      console.log(response.data);
       return response.data;
     } catch (e) {
       console.log(e);
@@ -44,7 +41,6 @@ export default {
           Prefer: `code=200, example=Example ${artworkId}`,
         },
       });
-      console.log(response.data);
       return response.data;
     } catch (e) {
       console.log(e);

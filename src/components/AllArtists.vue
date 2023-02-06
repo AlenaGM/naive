@@ -1,0 +1,1 @@
+<template>Художники</template>
