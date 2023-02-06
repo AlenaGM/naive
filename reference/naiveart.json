@@ -278,7 +278,8 @@
                         "onSale": false,
                         "image": "/naive/img/item-1-fullsize.jpg",
                         "thumbnail": "/naive/img/item-1.jpg",
-                        "artistId": 1
+                        "artistId": 1,
+                        "artistName": "Виктор Тимофеев"
                       },
                       {
                         "artworkId": 2,
@@ -292,7 +293,8 @@
                         "onSale": false,
                         "image": "/naive/img/item-2-fullsize.jpg",
                         "thumbnail": "/naive/img/item-2.jpg",
-                        "artistId": 2
+                        "artistId": 2,
+                        "artistName": "Татьяна Еленок"
                       },
                       {
                         "artworkId": 3,
@@ -306,7 +308,8 @@
                         "onSale": false,
                         "image": "/naive/img/item-3-fullsize.jpg",
                         "thumbnail": "/naive/img/item-3.jpg",
-                        "artistId": 1
+                        "artistId": 1,
+                        "artistName": "Виктор Тимофеев"
                       },
                       {
                         "artworkId": 4,
@@ -320,7 +323,8 @@
                         "onSale": false,
                         "image": "/naive/img/item-4-fullsize.jpg",
                         "thumbnail": "/naive/img/item-4.jpg",
-                        "artistId": 1
+                        "artistId": 1,
+                        "artistName": "Виктор Тимофеев"
                       },
                       {
                         "artworkId": 5,
@@ -334,7 +338,8 @@
                         "onSale": false,
                         "image": "/naive/img/item-5-fullsize.jpg",
                         "thumbnail": "/naive/img/item-5.jpg",
-                        "artistId": 3
+                        "artistId": 3,
+                        "artistName": "Михаил Ржанников"
                       },
                       {
                         "artworkId": 6,
@@ -348,7 +353,8 @@
                         "onSale": false,
                         "image": "/naive/img/item-6-fullsize.jpg",
                         "thumbnail": "/naive/img/item-6.jpg",
-                        "artistId": 4
+                        "artistId": 4,
+                        "artistName": "Иван Генералич"
                       },
                       {
                         "artworkId": 7,
@@ -362,7 +368,8 @@
                         "onSale": false,
                         "image": "/naive/img/item-7-fullsize.jpg",
                         "thumbnail": "/naive/img/item-7.jpg",
-                        "artistId": 5
+                        "artistId": 5,
+                        "artistName": "Альфрид Шаймарданов"
                       }
                     ]
                   }
@@ -430,7 +437,8 @@
                       "onSale": false,
                       "image": "/naive/img/item-1-fullsize.jpg",
                       "thumbnail": "/naive/img/item-1.jpg",
-                      "artistId": 1
+                      "artistId": 1,
+                      "artistName": "Виктор Тимофеев"
                     }
                   },
                   "Example 2": {
@@ -446,7 +454,8 @@
                       "onSale": false,
                       "image": "/naive/img/item-2-fullsize.jpg",
                       "thumbnail": "/naive/img/item-2.jpg",
-                      "artistId": 2
+                      "artistId": 2,
+                      "artistName": "Татьяна Еленок"
                     }
                   },
                   "Example 3": {
@@ -462,7 +471,8 @@
                       "onSale": false,
                       "image": "/naive/img/item-3-fullsize.jpg",
                       "thumbnail": "/naive/img/item-3.jpg",
-                      "artistId": 1
+                      "artistId": 1,
+                      "artistName": "Виктор Тимофеев"
                     }
                   },
                   "Example 4": {
@@ -478,7 +488,8 @@
                       "onSale": false,
                       "image": "/naive/img/item-4-fullsize.jpg",
                       "thumbnail": "/naive/img/item-4.jpg",
-                      "artistId": 1
+                      "artistId": 1,
+                      "artistName": "Виктор Тимофеев"
                     }
                   },
                   "Example 5": {
@@ -494,7 +505,8 @@
                       "onSale": false,
                       "image": "/naive/img/item-5-fullsize.jpg",
                       "thumbnail": "/naive/img/item-5.jpg",
-                      "artistId": 3
+                      "artistId": 3,
+                      "artistName": "Михаил Ржанников"
                     }
                   },
                   "Example 6": {
@@ -510,7 +522,8 @@
                       "onSale": false,
                       "image": "/naive/img/item-6-fullsize.jpg",
                       "thumbnail": "/naive/img/item-6.jpg",
-                      "artistId": 4
+                      "artistId": 4,
+                      "artistName": "Иван Генералич"
                     }
                   },
                   "Example 7": {
@@ -526,7 +539,8 @@
                       "onSale": false,
                       "image": "/naive/img/item-7-fullsize.jpg",
                       "thumbnail": "/naive/img/item-7.jpg",
-                      "artistId": 5
+                      "artistId": 5,
+                      "artistName": "Альфрид Шаймарданов"
                     }
                   }
                 }
@@ -592,7 +606,8 @@
                             "onSale": false,
                             "image": "/naive/img/item-1-fullsize.jpg",
                             "thumbnail": "/naive/img/item-1.jpg",
-                            "artistId": 1
+                            "artistId": 1,
+                            "artistName": "Виктор Тимофеев"
                           },
                           {
                             "artworkId": 3,
@@ -606,7 +621,8 @@
                             "onSale": false,
                             "image": "/naive/img/item-3-fullsize.jpg",
                             "thumbnail": "/naive/img/item-3.jpg",
-                            "artistId": 1
+                            "artistId": 1,
+                            "artistName": "Виктор Тимофеев"
                           },
                           {
                             "artworkId": 4,
@@ -620,7 +636,8 @@
                             "onSale": false,
                             "image": "/naive/img/item-4-fullsize.jpg",
                             "thumbnail": "/naive/img/item-4.jpg",
-                            "artistId": 1
+                            "artistId": 1,
+                            "artistName": "Виктор Тимофеев"
                           }
                         ]
                       },
@@ -643,7 +660,8 @@
                             "onSale": false,
                             "image": "/naive/img/item-2-fullsize.jpg",
                             "thumbnail": "/naive/img/item-2.jpg",
-                            "artistId": 2
+                            "artistId": 2,
+                            "artistName": "Татьяна Еленок"
                           }
                         ]
                       },
@@ -666,7 +684,8 @@
                             "onSale": false,
                             "image": "/naive/img/item-5-fullsize.jpg",
                             "thumbnail": "/naive/img/item-5.jpg",
-                            "artistId": 3
+                            "artistId": 3,
+                            "artistName": "Михаил Ржанников"
                           }
                         ]
                       },
@@ -689,7 +708,8 @@
                             "onSale": false,
                             "image": "/naive/img/item-6-fullsize.jpg",
                             "thumbnail": "/naive/img/item-6.jpg",
-                            "artistId": 4
+                            "artistId": 4,
+                            "artistName": "Иван Генералич"
                           }
                         ]
                       },
@@ -712,7 +732,8 @@
                             "onSale": false,
                             "image": "/naive/img/item-7-fullsize.jpg",
                             "thumbnail": "/naive/img/item-7.jpg",
-                            "artistId": 5
+                            "artistId": 5,
+                            "artistName": "Альфрид Шаймарданов"
                           }
                         ]
                       }
@@ -782,7 +803,8 @@
                           "onSale": false,
                           "image": "/naive/img/item-1-fullsize.jpg",
                           "thumbnail": "/naive/img/item-1.jpg",
-                          "artistId": 1
+                          "artistId": 1,
+                          "artistName": "Виктор Тимофеев"
                         },
                         {
                           "artworkId": 3,
@@ -796,7 +818,8 @@
                           "onSale": false,
                           "image": "/naive/img/item-3-fullsize.jpg",
                           "thumbnail": "/naive/img/item-3.jpg",
-                          "artistId": 1
+                          "artistId": 1,
+                          "artistName": "Виктор Тимофеев"
                         },
                         {
                           "artworkId": 4,
@@ -810,7 +833,8 @@
                           "onSale": false,
                           "image": "/naive/img/item-4-fullsize.jpg",
                           "thumbnail": "/naive/img/item-4.jpg",
-                          "artistId": 1
+                          "artistId": 1,
+                          "artistName": "Виктор Тимофеев"
                         }
                       ]
                     }
@@ -835,7 +859,8 @@
                           "onSale": false,
                           "image": "/naive/img/item-2-fullsize.jpg",
                           "thumbnail": "/naive/img/item-2.jpg",
-                          "artistId": 2
+                          "artistId": 2,
+                          "artistName": "Татьяна Еленок"
                         }
                       ]
                     }
@@ -860,7 +885,8 @@
                           "onSale": false,
                           "image": "/naive/img/item-5-fullsize.jpg",
                           "thumbnail": "/naive/img/item-5.jpg",
-                          "artistId": 3
+                          "artistId": 3,
+                          "artistName": "Михаил Ржанников"
                         }
                       ]
                     }
@@ -885,7 +911,8 @@
                           "onSale": false,
                           "image": "/naive/img/item-6-fullsize.jpg",
                           "thumbnail": "/naive/img/item-6.jpg",
-                          "artistId": 4
+                          "artistId": 4,
+                          "artistName": "Иван Генералич"
                         }
                       ]
                     }
@@ -910,7 +937,8 @@
                           "onSale": false,
                           "image": "/naive/img/item-7-fullsize.jpg",
                           "thumbnail": "/naive/img/item-7.jpg",
-                          "artistId": 5
+                          "artistId": 5,
+                          "artistName": "Альфрид Шаймарданов"
                         }
                       ]
                     }
@@ -1021,7 +1049,9 @@
                 "available": true,
                 "onSale": true,
                 "image": "string",
-                "thumbnail": "string"
+                "thumbnail": "string",
+                "artistId": 0,
+                "aristName": "string"
               },
               {
                 "artworkId": 0,
@@ -1086,7 +1116,9 @@
             "available": true,
             "onSale": true,
             "image": "string",
-            "thumbnail": "string"
+            "thumbnail": "string",
+            "artistId": 0,
+            "artistName": "string"
           }
         ],
         "properties": {
@@ -1126,6 +1158,9 @@
           },
           "artistId": {
             "type": "integer"
+          },
+          "artistName": {
+            "type": "string"
           }
         },
         "required": [
@@ -1133,7 +1168,9 @@
           "title",
           "available",
           "image",
-          "thumbnail"
+          "thumbnail",
+          "artistId",
+          "artistName"
         ]
       }
     },
