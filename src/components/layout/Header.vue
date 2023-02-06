@@ -236,7 +236,7 @@ const cartStore = useCartStore();
     &_count {
       width: 15px;
       height: 15px;
-      background: #000;
+      background: var(--black);
       border-radius: 50%;
       color: var(--white);
       font-size: 11px;
@@ -246,6 +246,7 @@ const cartStore = useCartStore();
       align-items: center;
       margin-right: -10px;
       margin-bottom: -20px;
+      z-index: 1;
     }
     &_title {
       font-size: 16px;
