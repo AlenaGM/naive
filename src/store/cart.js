@@ -5,10 +5,12 @@ export const useCartStore = defineStore("cartStore", {
     cart: [],
   }),
   actions: {
-    addToCart(product, count) {
-      const cartIndex = this.cart.findIndex((el) => el.id === product.id);
+    addToCart(artwork, count) {
+      const cartIndex = this.cart.findIndex(
+        (el) => el.artworkId === artwork.artworkId
+      );
       if (cartIndex === -1) {
-        this.cart.push({ ...product, count });
+        this.cart.push({ ...artwork, count });
       }
     },
   },

@@ -44,7 +44,9 @@
             class="artwork__params_item"
             v-if="artwork.price && artwork.available"
           >
-            <ui-button>в корзину</ui-button>
+            <ui-button @click="addToCart(artwork, quantity)"
+              >в корзину</ui-button
+            >
           </div>
         </div>
       </div>
@@ -54,6 +56,8 @@
 
 <script setup>
 import uiButton from "@/components/ui/Button.vue";
+import { ref } from "vue";
+import { useCartStore } from "@/store/cart.js";
 
 const props = defineProps({
   artwork: {
@@ -62,6 +66,19 @@ const props = defineProps({
     required: true,
   },
 });
+
+const quantity = ref(1);
+
+const cartStore = useCartStore();
+
+const changeQuantity = () => {
+  quantity.value === 1 ? (quantity.value = 1) : quantity.value++;
+};
+
+const addToCart = (artwork, quantity) => {
+  changeQuantity();
+  cartStore.addToCart(artwork, quantity);
+};
 </script>
 
 <style lang="scss" scoped>

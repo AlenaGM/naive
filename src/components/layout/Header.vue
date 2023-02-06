@@ -50,7 +50,9 @@
 
       <div class="header__cart">
         <router-link to="/naive/cart" class="header__cart_link">
-          <span class="header__cart_count"> 1 </span>
+          <span class="header__cart_count" v-if="cartStore.cart.length">
+            {{ cartStore.cart.length }}
+          </span>
           <img src="/svg/cart.svg" alt="cart" class="header__icon" />
           <span class="header__cart_title">корзина</span>
         </router-link>
@@ -66,7 +68,7 @@ import menu from "@/components/layout/menu.js";
 
 const isOpenedMobileMenu = ref(false);
 const isActiveSearch = ref(false);
-const cartStore = useCartStore;
+const cartStore = useCartStore();
 </script>
 
 <style lang="scss" scoped>

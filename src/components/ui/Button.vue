@@ -1,5 +1,8 @@
 <template>
-  <button v-if="type === 'button'" class="button">
+  <button
+    v-if="type === 'button'"
+    :class="['button', { button_disabled: color === 'light-gray' }]"
+  >
     <slot />
   </button>
   <router-link v-else :to="to" class="button">
@@ -16,6 +19,10 @@ const props = defineProps({
   to: {
     type: String,
     required: false,
+  },
+  color: {
+    type: String,
+    default: "black",
   },
 });
 </script>
@@ -35,6 +42,17 @@ const props = defineProps({
   &:hover {
     color: var(--white);
     background-color: var(--black);
+  }
+  &_disabled {
+    background: var(--white);
+    color: var(--light-gray);
+    border: 1px solid var(--light-gray);
+    &:hover {
+      cursor: default;
+      background: var(--white);
+      color: var(--light-gray);
+      border: 1px solid var(--light-gray);
+    }
   }
 }
 </style>
