@@ -1,6 +1,6 @@
 <template>
   <Loader v-if="loading" />
-  <ArtworkDetails :artwork="currentArtwork" :artist="currentArtist" v-else />
+  <ArtworkDetails :artwork="currentArtwork" v-else />
 </template>
 
 <script setup>
@@ -15,14 +15,12 @@ const route = useRoute();
 
 const artworkId = ref("");
 const currentArtwork = ref({});
-const currentArtist = ref({});
 
 const loading = ref(true);
 
 onMounted(async () => {
   artworkId.value = route.params.artworkId;
   currentArtwork.value = await api.getArtwork(artworkId.value);
-  currentArtist.value = await api.getArtist(currentArtwork.value.artistId);
   loading.value = false;
 });
 </script>

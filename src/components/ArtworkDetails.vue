@@ -9,11 +9,11 @@
         <h3 class="artwork__name">{{ artwork.title }}</h3>
         <div class="artwork__artist">
           <router-link
-            :to="`/naive/artists/${artist.id}`"
+            :to="`/naive/artists/${artwork.artistId}`"
             class="artwork__artist_link"
           >
             <img src="/svg/artist.svg" alt="artist-icon" />
-            <h4>{{ artist.firstName }} {{ artist.lastName }}</h4>
+            <h4>{{ artwork.artistName }}</h4>
             <span class="artwork__year">{{ artwork.created }}</span>
           </router-link>
         </div>
@@ -57,11 +57,6 @@ import uiButton from "@/components/ui/Button.vue";
 
 const props = defineProps({
   artwork: {
-    type: Object,
-    default: () => {},
-    required: true,
-  },
-  artist: {
     type: Object,
     default: () => {},
     required: true,
