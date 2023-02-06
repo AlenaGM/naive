@@ -40,7 +40,10 @@
             </div>
             <div v-else>нет в продаже</div>
           </div>
-          <div class="artwork__params_item">
+          <div
+            class="artwork__params_item"
+            v-if="artwork.price && artwork.available"
+          >
             <ui-button>в корзину</ui-button>
           </div>
         </div>
