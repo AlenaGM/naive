@@ -151,6 +151,9 @@ const addToCart = (artwork, quantity) => {
         @media screen and (max-width: 400px) {
           font-size: 1.125rem;
         }
+        &:hover {
+          text-decoration: underline 2px;
+        }
       }
       span {
         font-size: 1.125rem;
