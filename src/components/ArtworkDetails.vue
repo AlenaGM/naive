@@ -36,7 +36,13 @@
               v-if="artwork.price && artwork.available"
             >
               <img src="/svg/price.svg" alt="price-icon" />
-              {{ artwork.price }} ₽
+              {{
+                new Intl.NumberFormat("ru-RU", {
+                  style: "currency",
+                  currency: "RUB",
+                  minimumFractionDigits: 0,
+                }).format(artwork.price)
+              }}
             </div>
             <div v-else>нет в продаже</div>
           </div>
