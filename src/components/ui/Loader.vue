@@ -11,6 +11,8 @@
   &-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-grow: 1;
   }
 }
 .loader:before,
