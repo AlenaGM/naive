@@ -12,7 +12,7 @@
             :to="`/naive/artists/${artwork.artistId}`"
             class="artwork__artist_link"
           >
-            <img src="/svg/artist.svg" alt="artist-icon" />
+            <img src="/svg/menu-artist.svg" alt="artist-icon" />
             <h4>{{ artwork.artistName }}</h4>
             <span class="artwork__year">{{ artwork.created }}</span>
           </router-link>

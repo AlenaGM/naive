@@ -12,26 +12,10 @@
         >
           <span />
         </div>
-
-        <div class="header__menu_search">
-          <div className="header__menu_search-image">
-            <img
-              src="/svg/search.svg"
-              alt="search"
-              class="header__icon"
-              @click="
-                isActiveSearch = !isActiveSearch;
-                isOpenedMobileMenu = false;
-              "
-            />
-          </div>
-          <div className="header__menu_search-body" v-if="isActiveSearch">
-            <input
-              type="text"
-              className="header__menu_search-input"
-              placeholder="Поиск... "
-            />
-          </div>
+        <div class="header__menu_home">
+          <router-link to="/naive/">
+            <img src="/svg/menu-shop.svg" alt="home" class="header__icon" />
+          </router-link>
         </div>
       </div>
 
@@ -67,7 +51,6 @@ import { useCartStore } from "@/store/cart.js";
 import menu from "@/components/layout/menu.js";
 
 const isOpenedMobileMenu = ref(false);
-const isActiveSearch = ref(false);
 const cartStore = useCartStore();
 </script>
 
@@ -103,9 +86,9 @@ const cartStore = useCartStore();
       height: 24px;
       cursor: pointer;
       display: block;
-      margin-right: 70px;
+      margin-right: 32px;
       @media screen and (max-width: 500px) {
-        margin-right: 24px;
+        margin-right: 16px;
       }
       span,
       &::before,
@@ -146,50 +129,15 @@ const cartStore = useCartStore();
         }
       }
     }
-    &_search {
+    &_home {
+      position: relative;
+      width: 36px;
+      height: 24px;
       cursor: pointer;
-      display: inline-flex;
-      &-image {
-        margin-right: 8px;
-      }
-      &-body {
-        @media screen and (max-width: 767px) {
-          position: fixed;
-          background: var(--white);
-          top: 72px;
-          padding: 40px 30px 60px 30px;
-          border-radius: 8px;
-          box-shadow: 8px 8px 30px 6px #00000033;
-          display: flex;
-          flex-direction: column;
-        }
-        @media screen and (max-width: 450px) {
-          position: fixed;
-          left: 24px;
-          right: 24px;
-          background: var(--white);
-          top: 72px;
-          padding: 40px 30px 60px 30px;
-          border-radius: 8px;
-          box-shadow: 8px 8px 30px 6px #00000033;
-          display: flex;
-          flex-direction: column;
-        }
-      }
-      &-input {
-        padding: 5px 8px 5px 8px;
-        margin: 0;
-        border: solid 1px var(--third-black);
-        resize: horizontal;
-        font-family: "Montserrat", sans-serif;
-        font-size: 0.75rem;
-        font-weight: 400;
-        line-height: 23px;
-        letter-spacing: 0em;
-        border-radius: 6px;
-        height: 24px;
-        width: 212px;
-        max-width: 100%;
+      display: block;
+      img {
+        width: 100%;
+        max-width: 24px;
       }
     }
   }
@@ -220,6 +168,7 @@ const cartStore = useCartStore();
       }
       img {
         margin-right: 10px;
+        max-height: 24px;
       }
     }
   }
@@ -231,7 +180,7 @@ const cartStore = useCartStore();
     &_link {
       display: flex;
       text-decoration: none;
-      align-items: center;
+      align-items: flex-end;
     }
     &_count {
       width: 15px;
@@ -245,7 +194,7 @@ const cartStore = useCartStore();
       justify-content: center;
       align-items: center;
       margin-right: -10px;
-      margin-bottom: -20px;
+      margin-bottom: -6px;
       z-index: 1;
     }
     &_title {
@@ -257,6 +206,9 @@ const cartStore = useCartStore();
       margin-left: 8px;
       &:hover {
         text-decoration: underline 2px;
+      }
+      @media screen and (max-width: 500px) {
+        display: none;
       }
     }
   }

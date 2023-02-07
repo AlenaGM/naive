@@ -1,15 +1,16 @@
 all - добавить второй язык;
 all - добавить картин;
 all - загрузить на сервер;
+all - нужны свг художник, юзер, домик, сердечко
 
 loader - выровнять по центру;
 loader - добавить в другие компоненты;
 
-header - добавить иконку с домиком;
-header - убрать поиск (временно?);
-header - измкнить иконку с художником в меню?;
+header - вернуть поиск ?;
 header - пересмотреть дизайн у выпадающего меню и поиска;
 header/dropdown menu - убирать, когда клик вне его;
+header - порядок иконок: справа поиск-сердечко-юзер-корзина;
+header - почему дергается выпадающий список?
 
 shop - hover на items;
 shop - сортировка год, цена;
@@ -20,7 +21,6 @@ shop - кнопка для подгрузки айтемов;
 artists - наполнить страничку;
 
 artwork - div в линию;
-artwork - пересчет количества в корзине;
 artwork - дезактивировать кнопку;
 artwork - проверить адаптивность;
 artwork - посмотреть состояния: доступно, зарезервировано, нет в продаже -> вид кнопки/видимость кнопки;
@@ -47,3 +47,74 @@ cart - сделать таймаут на 15 минут;
 личный кабинет - сделать авторизацию;
 
 
+header 16+
+                <div class="header__menu_search">
+          <div className="header__menu_search-image">
+            <img
+              src="/svg/search.svg"
+              alt="search"
+              class="header__icon"
+              @click="
+                isActiveSearch = !isActiveSearch;
+                isOpenedMobileMenu = false;
+              "
+            />
+          </div>
+          <div className="header__menu_search-body" v-if="isActiveSearch">
+            <input
+              type="text"
+              className="header__menu_search-input"
+              placeholder="Поиск... "
+            />
+          </div>
+        </div>
+
+        ***
+        const isActiveSearch = ref(false);
+        ***
+        &_search {
+      cursor: pointer;
+      display: inline-flex;
+      &-image {
+        margin-right: 8px;
+      }
+      &-body {
+        @media screen and (max-width: 767px) {
+          position: fixed;
+          background: var(--white);
+          top: 72px;
+          padding: 40px 30px 60px 30px;
+          border-radius: 8px;
+          box-shadow: 8px 8px 30px 6px #00000033;
+          display: flex;
+          flex-direction: column;
+        }
+        @media screen and (max-width: 450px) {
+          position: fixed;
+          left: 24px;
+          right: 24px;
+          background: var(--white);
+          top: 72px;
+          padding: 40px 30px 60px 30px;
+          border-radius: 8px;
+          box-shadow: 8px 8px 30px 6px #00000033;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      &-input {
+        padding: 5px 8px 5px 8px;
+        margin: 0;
+        border: solid 1px var(--third-black);
+        resize: horizontal;
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0em;
+        border-radius: 6px;
+        height: 24px;
+        width: 212px;
+        max-width: 100%;
+      }
+    }

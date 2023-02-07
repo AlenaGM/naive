@@ -6,7 +6,7 @@ const menu = [
   },
   {
     name: "художники",
-    image: "/naive/svg/artist.svg",
+    image: "/naive/svg/menu-artist.svg",
     path: "/naive/artists",
   },
   {
