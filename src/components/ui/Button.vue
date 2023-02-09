@@ -1,7 +1,13 @@
 <template>
   <button
     v-if="type === 'button'"
-    :class="['button', { button_disabled: color === 'light-gray' }]"
+    :class="[
+      'button',
+      {
+        button_disabled: color === 'light-gray',
+        button_fullwidth: mobileFullWidth,
+      },
+    ]"
   >
     <slot />
   </button>
@@ -23,6 +29,10 @@ const props = defineProps({
   color: {
     type: String,
     default: "black",
+  },
+  mobileFullWidth: {
+    type: Boolean,
+    default: false,
   },
 });
 </script>
@@ -52,6 +62,11 @@ const props = defineProps({
       background: var(--white);
       color: var(--light-gray);
       border: 1px solid var(--light-gray);
+    }
+  }
+  &_fullwidth {
+    @media screen and (max-width: 560px) {
+      width: 100%;
     }
   }
 }

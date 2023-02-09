@@ -3,7 +3,7 @@
     <h2 class="cart__title">корзина</h2>
     <table class="cart__table table">
       <thead>
-        <tr class="table__row">
+        <tr>
           <th>Товар</th>
           <th>Наименование</th>
           <th>Стоимость</th>
@@ -11,7 +11,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr class="table__row">
+        <tr>
           <td><img src="img/item-1.jpg" /></td>
           <td>
             <span>Очень красивая картинка</span>
@@ -26,18 +26,21 @@
         </tr>
       </tbody>
       <tfoot>
-        <tr class="table__row">
+        <tr>
           <th class="table__total">Итого:</th>
           <th class="table__sum"><span>18 000 R</span></th>
         </tr>
       </tfoot>
     </table>
-    <div class="cart__order">ОФОРМИТЬ ЗАКАЗ</div>
+    <ui-button class="cart__order" mobileFullWidth="true"
+      >оформить заказ</ui-button
+    >
   </div>
 </template>
 
 <script setup>
 import { useCartStore } from "@/store/cart.js";
+import uiButton from "@/components/ui/Button.vue";
 
 const cartStore = useCartStore();
 </script>
@@ -54,22 +57,22 @@ const cartStore = useCartStore();
     line-height: 90%;
     text-transform: uppercase;
     margin: 60px 0 34px 0;
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 560px) {
       font-size: 1.5rem;
       margin: 30px 0 17px 0;
     }
   }
   &__table {
     width: 100%;
-    margin-bottom: 53px;
   }
   &__order {
-    background-color: yellow;
+    margin: 50px auto 100px auto;
+    @media screen and (max-width: 560px) {
+      margin: 50px auto 50px auto;
+    }
   }
 }
 .table {
-  display: flex;
-  flex-direction: column;
   font-size: 1rem;
   font-weight: 500;
   color: var(--black);
@@ -78,12 +81,56 @@ const cartStore = useCartStore();
     font-size: 18px;
     font-weight: 600;
   }
-  &__row {
-    display: flex;
+  tr {
+    display: grid;
+    grid-template: 1fr/ 160px minmax(250px, 1fr) 120px 140px;
     column-gap: 40px;
     padding: 20px 0;
     border-bottom: 1px solid var(--third-black);
     align-items: center;
+    justify-items: start;
+  }
+  td {
+    &:first-of-type {
+      img {
+        width: 100%;
+        max-width: 160px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    &:nth-of-type(2) {
+      span:hover {
+        cursor: pointer;
+        text-decoration: underline 2px;
+      }
+      div:nth-of-type(2) {
+        font-size: 14px;
+      }
+    }
+    &:nth-of-type(3) {
+      display: inline-flex;
+      justify-self: center;
+    }
+    &:last-of-type {
+      display: inline-flex;
+      justify-self: center;
+      img {
+        width: 20px;
+        margin-left: 8px;
+      }
+    }
+  }
+  th {
+    &:nth-of-type(3) {
+      display: inline-flex;
+      justify-self: center;
+    }
+    &:last-of-type {
+      display: inline-flex;
+      justify-self: center;
+    }
   }
   thead,
   tfoot {
@@ -95,63 +142,96 @@ const cartStore = useCartStore();
       padding: 8px 0;
     }
   }
-  td,
-  th {
-    font-weight: 500;
-    &:first-of-type {
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
-      width: 160px;
-      img {
-        width: 100%;
-      }
-    }
-    &:nth-of-type(2) {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      min-width: 250px;
-      flex-grow: 1;
-      span {
-        flex-wrap: wrap;
-      }
-      div:nth-of-type(2) {
-        font-size: 14px;
-      }
-    }
-    &:nth-of-type(3) {
-      display: flex;
-      justify-content: flex-start;
-      width: 120px;
-    }
-    &:last-of-type {
-      width: 140px;
-      display: flex;
-      justify-content: flex-start;
-      flex-direction: row;
-      img {
-        width: 20px;
-        margin-left: 8px;
-      }
-    }
-  }
   tfoot {
     span {
       color: var(--black);
       font-size: 18px;
       font-weight: 600;
     }
-    .table__total {
-      display: flex;
-      min-width: 410px;
-      flex-grow: 1;
-      justify-content: flex-end;
+    tr {
+      grid-template-columns: 160px minmax(250px, 1fr) 120px 140px;
+      grid-template-areas: ". total-label total-sum .";
+      th {
+        &:first-of-type {
+          grid-area: total-label;
+          display: inline-flex;
+          justify-self: flex-end;
+        }
+        &:last-of-type {
+          grid-area: total-sum;
+        }
+      }
     }
-    .table__sum {
-      display: flex;
-      max-width: 300px;
-      justify-content: flex-start;
+  }
+
+  @media screen and (max-width: 850px) {
+    thead {
+      display: none;
+    }
+    tbody {
+      tr {
+        grid-template-columns: 160px minmax(120px, 1fr) minmax(140px, 1fr);
+        grid-template-areas:
+          "item-img item-info item-info"
+          "item-img item-price item-del";
+        gap: 20px;
+        &:first-of-type {
+          border-top: 1px solid var(--third-black);
+        }
+      }
+      td {
+        &:first-of-type {
+          grid-area: item-img;
+        }
+        &:nth-of-type(2) {
+          grid-area: item-info;
+        }
+        &:nth-of-type(3) {
+          grid-area: item-price;
+          display: inline-flex;
+          justify-self: flex-start;
+        }
+        &:last-of-type {
+          grid-area: item-del;
+          display: inline-flex;
+          justify-self: flex-end;
+        }
+      }
+    }
+    tfoot {
+      tr {
+        grid-template-columns: 160px minmax(120px, 1fr) minmax(140px, 1fr);
+        grid-template-areas: "total-label total-sum .";
+        gap: 20px;
+        th:last-of-type {
+          display: inline-flex;
+          justify-self: flex-start;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 560px) {
+    tbody {
+      tr {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+          "item-img item-img"
+          "item-info item-info"
+          "item-price item-del";
+      }
+    }
+    tfoot {
+      tr {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "total-label"
+          "total-sum";
+        gap: 0px;
+        th:first-of-type {
+          justify-self: flex-start;
+        }
+      }
     }
   }
 }
