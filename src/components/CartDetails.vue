@@ -11,14 +11,26 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td><img src="img/item-1.jpg" /></td>
+        <tr v-for="item of cartStore.cart">
           <td>
-            <span>Очень красивая картинка</span>
-            <div>Дарья Воробьева</div>
-            <div>2011</div>
+            <img :src="item.image" :alt="item.title" />
           </td>
-          <td><span>18 000 R</span></td>
+          <td>
+            <span>{{ item.title }}</span>
+            <div>{{ item.artistName }}</div>
+            <div>{{ item.created }}</div>
+          </td>
+          <td>
+            <span>
+              {{
+                new Intl.NumberFormat("ru-RU", {
+                  style: "currency",
+                  currency: "RUB",
+                  minimumFractionDigits: 0,
+                }).format(item.price)
+              }}
+            </span>
+          </td>
           <td>
             Удалить
             <img src="svg/trash.svg" alt="delete icon" />
@@ -28,7 +40,9 @@
       <tfoot>
         <tr>
           <th class="table__total">Итого:</th>
-          <th class="table__sum"><span>18 000 R</span></th>
+          <th class="table__sum">
+            <span> 18000 </span>
+          </th>
         </tr>
       </tfoot>
     </table>
