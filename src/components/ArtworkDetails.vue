@@ -50,8 +50,11 @@
             class="artwork__params_item"
             v-if="artwork.price && artwork.available"
           >
-            <ui-button @click="addToCart(artwork, quantity)"
-              >в корзину</ui-button
+            <ui-button
+              @click="addToCart(artwork, quantity)"
+              :disabled="disabled"
+              ><span v-if="disabled">в резерве</span
+              ><span v-else>в корзину</span></ui-button
             >
           </div>
         </div>
@@ -74,6 +77,7 @@ const props = defineProps({
 });
 
 const quantity = ref(1);
+const disabled = ref(false);
 
 const cartStore = useCartStore();
 
@@ -84,6 +88,7 @@ const changeQuantity = () => {
 const addToCart = (artwork, quantity) => {
   changeQuantity();
   cartStore.addToCart(artwork, quantity);
+  disabled.value = true;
 };
 </script>
 

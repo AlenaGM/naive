@@ -8,6 +8,7 @@
         button_fullwidth: mobileFullWidth,
       },
     ]"
+    :disabled="disabled"
   >
     <slot />
   </button>
@@ -43,6 +44,10 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  disabled: {
+    type: Boolean,
+    required: false,
+  },
 });
 </script>
 
@@ -63,16 +68,11 @@ const props = defineProps({
     color: var(--white);
     background-color: var(--black);
   }
-  &_disabled {
+  &:disabled {
     background: var(--white);
     color: var(--light-gray);
     border: 1px solid var(--light-gray);
-    &:hover {
-      cursor: default;
-      background: var(--white);
-      color: var(--light-gray);
-      border: 1px solid var(--light-gray);
-    }
+    cursor: default;
   }
   &_fullwidth {
     @media screen and (max-width: 560px) {
