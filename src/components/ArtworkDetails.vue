@@ -128,16 +128,21 @@ const cartStore = useCartStore();
       margin-top: 48px;
     }
     @media screen and (max-width: 400px) {
+      text-align: center;
       font-size: 1.5rem;
       margin-top: 24px;
     }
   }
   &__artist {
     &_link {
-      display: inline-flex;
-      align-items: baseline;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
       text-decoration: none;
       color: var(--black);
+      @media screen and (max-width: 400px) {
+        justify-content: center;
+      }
       img {
         display: block;
         margin-right: 7px;
@@ -147,6 +152,7 @@ const cartStore = useCartStore();
         font-size: 1.5rem;
         font-weight: 600;
         line-height: 29px;
+        margin-block-end: 0;
         @media screen and (max-width: 400px) {
           font-size: 1.125rem;
         }

@@ -95,6 +95,7 @@ const props = defineProps({
     @media screen and (max-width: 400px) {
       font-size: 24px;
       margin-top: 24px;
+      text-align: center;
     }
   }
   &__description {
