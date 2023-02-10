@@ -5,13 +5,14 @@ export const useCartStore = defineStore("cartStore", {
     cart: [],
   }),
   actions: {
-    addToCart(artwork, count) {
+    addToCart(artwork) {
       const cartIndex = this.cart.findIndex(
         (el) => el.artworkId === artwork.artworkId
       );
       if (cartIndex === -1) {
-        this.cart.push({ ...artwork, count });
+        this.cart.push({ ...artwork });
       }
+      console.log(this.cart);
     },
     deleteFromCart(i) {
       this.cart.splice(i, 1);
