@@ -9,7 +9,7 @@
           <router-link
             class="footer__menu_link"
             :to="element.path"
-            v-for="(element, i) of menu"
+            v-for="(element, i) in menu"
             :key="i"
           >
             {{ element.name }}

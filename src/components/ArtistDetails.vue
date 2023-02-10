@@ -19,7 +19,7 @@
       <div class="artist__paintings_container">
         <router-link
           class="artist__paintings_item"
-          v-for="artwork of artist.artworks"
+          v-for="artwork in artist.artworks"
           :to="`/naive/artworks/${artwork.artworkId}`"
           :key="artwork.artworkId"
         >

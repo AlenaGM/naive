@@ -12,10 +12,9 @@ export const useCartStore = defineStore("cartStore", {
       if (cartIndex === -1) {
         this.cart.push({ ...artwork });
       }
-      console.log(this.cart);
     },
-    deleteFromCart(i) {
-      this.cart.splice(i, 1);
+    deleteFromCart(index) {
+      this.cart.splice(index, 1);
     },
   },
 });

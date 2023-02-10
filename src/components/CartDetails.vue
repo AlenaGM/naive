@@ -11,7 +11,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="item of cartStore.cart" :key="item.artworkId">
+        <tr v-for="(item, index) in cartStore.cart" :key="item.artworkId">
           <td>
             <router-link :to="`/naive/artworks/${item.artworkId}`">
               <img :src="item.image" :alt="item.title" />
@@ -37,7 +37,7 @@
               }}
             </span>
           </td>
-          <td @click="cartStore.deleteFromCart(i)">
+          <td @click="cartStore.deleteFromCart(index)">
             Удалить
             <img src="svg/trash.svg" alt="delete icon" />
           </td>

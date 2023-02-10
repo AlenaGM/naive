@@ -2,7 +2,7 @@
   <div class="shop__gallery">
     <router-link
       class="shop__gallery_item"
-      v-for="artwork of artworks"
+      v-for="artwork in artworks"
       :to="`/naive/artworks/${artwork.artworkId}`"
       :key="artwork.artworkId"
       :created="artwork.created"

@@ -23,7 +23,7 @@
         <router-link
           class="header__dropdown_link"
           :to="element.path"
-          v-for="(element, i) of menu"
+          v-for="(element, i) in menu"
           :key="i"
           @click="isOpenedMobileMenu = false"
         >
