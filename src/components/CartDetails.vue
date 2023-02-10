@@ -47,7 +47,15 @@
         <tr>
           <th class="table__total">Итого:</th>
           <th class="table__sum">
-            <span> 18000 </span>
+            <span>
+              {{
+                new Intl.NumberFormat("ru-RU", {
+                  style: "currency",
+                  currency: "RUB",
+                  minimumFractionDigits: 0,
+                }).format(cartTotal)
+              }}
+            </span>
           </th>
         </tr>
       </tfoot>
@@ -59,10 +67,19 @@
 </template>
 
 <script setup>
+import { computed } from "vue";
 import { useCartStore } from "@/store/cart.js";
 import uiButton from "@/components/ui/Button.vue";
 
 const cartStore = useCartStore();
+
+const cartTotal = computed(() => {
+  let result = 0;
+  for (let item of cartStore.cart) {
+    result += item.price;
+  }
+  return result;
+});
 </script>
 
 <style lang="scss" scoped>
