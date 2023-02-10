@@ -11,14 +11,20 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="item of cartStore.cart">
+        <tr v-for="item of cartStore.cart" :key="item.artworkId">
           <td>
-            <img :src="item.image" :alt="item.title" />
+            <router-link :to="`/naive/artworks/${item.artworkId}`">
+              <img :src="item.image" :alt="item.title" />
+            </router-link>
           </td>
           <td>
-            <span>{{ item.title }}</span>
-            <div>{{ item.artistName }}</div>
-            <div>{{ item.created }}</div>
+            <router-link :to="`/naive/artworks/${item.artworkId}`">
+              <span>{{ item.title }}</span>
+            </router-link>
+            <router-link :to="`/naive/artists/${item.artistId}`">
+              <div>{{ item.artistName }}</div>
+            </router-link>
+            <div>{{ item.created }} г.</div>
           </td>
           <td>
             <span>
@@ -109,13 +115,15 @@ const cartStore = useCartStore();
       img {
         width: 100%;
         max-width: 160px;
-        &:hover {
-          cursor: pointer;
-        }
+        cursor: pointer;
       }
     }
     &:nth-of-type(2) {
       span:hover {
+        cursor: pointer;
+        text-decoration: underline 2px;
+      }
+      a:nth-of-type(2):hover {
         cursor: pointer;
         text-decoration: underline 2px;
       }
@@ -130,9 +138,13 @@ const cartStore = useCartStore();
     &:last-of-type {
       display: inline-flex;
       justify-self: center;
+      cursor: pointer;
       img {
         width: 20px;
         margin-left: 8px;
+      }
+      &:hover {
+        text-decoration: underline 2px;
       }
     }
   }

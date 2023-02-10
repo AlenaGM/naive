@@ -14,7 +14,7 @@
           >
             <img src="/svg/menu-artist.svg" alt="artist-icon" />
             <h4>{{ artwork.artistName }}</h4>
-            <span class="artwork__year">{{ artwork.created }}</span>
+            <span class="artwork__year">{{ artwork.created }} г.</span>
           </router-link>
         </div>
         <div class="artwork__block artwork__description">
