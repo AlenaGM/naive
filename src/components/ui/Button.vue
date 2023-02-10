@@ -11,7 +11,16 @@
   >
     <slot />
   </button>
-  <router-link v-else :to="to" class="button">
+  <router-link
+    v-else
+    :to="to"
+    :class="[
+      'button',
+      {
+        button_fullwidth: mobileFullWidth,
+      },
+    ]"
+  >
     <slot />
   </router-link>
 </template>
@@ -44,6 +53,7 @@ const props = defineProps({
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 22px;
+  text-align: center;
   text-transform: uppercase;
   padding: 8px 24px;
   border: 1px solid var(--black);

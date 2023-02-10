@@ -1,7 +1,7 @@
 <template>
   <div class="cart">
     <h2 class="cart__title">корзина</h2>
-    <table class="cart__table table">
+    <table class="cart__table table" v-if="cartStore.cart.length">
       <thead>
         <tr>
           <th>Товар</th>
@@ -60,9 +60,23 @@
         </tr>
       </tfoot>
     </table>
-    <ui-button class="cart__order" :mobileFullWidth="true"
-      >оформить заказ</ui-button
+    <div class="cart__emptyMessage" v-else>Корзина пуста</div>
+    <ui-button
+      class="cart__order"
+      :mobileFullWidth="true"
+      v-if="cartStore.cart.length"
     >
+      оформить заказ
+    </ui-button>
+    <ui-button
+      class="cart__order"
+      type="link"
+      to="/naive/"
+      :mobileFullWidth="true"
+      v-else
+    >
+      в магазин
+    </ui-button>
   </div>
 </template>
 
@@ -88,6 +102,9 @@ const cartTotal = computed(() => {
   flex-grow: 1;
   flex-direction: column;
   align-items: flex-start;
+  @media screen and (max-width: 560px) {
+    align-items: center;
+  }
   &__title {
     font-size: 2rem;
     font-weight: 600;
@@ -98,6 +115,14 @@ const cartTotal = computed(() => {
       font-size: 1.5rem;
       margin: 30px 0 17px 0;
     }
+  }
+  &__emptyMessage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    font-size: 1.25rem;
+    margin: 0 auto;
   }
   &__table {
     width: 100%;
