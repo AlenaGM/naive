@@ -13,5 +13,8 @@ export const useCartStore = defineStore("cartStore", {
         this.cart.push({ ...artwork, count });
       }
     },
+    deleteFromCart(i) {
+      this.cart.splice(i, 1);
+    },
   },
 });

@@ -37,7 +37,7 @@
               }}
             </span>
           </td>
-          <td>
+          <td @click="cartStore.deleteFromCart(i)">
             Удалить
             <img src="svg/trash.svg" alt="delete icon" />
           </td>
@@ -52,7 +52,7 @@
         </tr>
       </tfoot>
     </table>
-    <ui-button class="cart__order" mobileFullWidth="true"
+    <ui-button class="cart__order" :mobileFullWidth="true"
       >оформить заказ</ui-button
     >
   </div>

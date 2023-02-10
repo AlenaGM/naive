@@ -84,7 +84,6 @@ const changeQuantity = () => {
 const addToCart = (artwork, quantity) => {
   changeQuantity();
   cartStore.addToCart(artwork, quantity);
-  console.log(cartStore.cart);
 };
 </script>
 
