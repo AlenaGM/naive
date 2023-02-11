@@ -1,12 +1,8 @@
 <template>
   <div class="shop__filter">
     <div class="shop__filter_item">
-      <span>Год</span>
-      <img src="/svg/filter-arrows-norm.svg" alt="menu-icon" />
-    </div>
-    <div class="shop__filter_item">
-      <span>Цена</span>
-      <img src="/svg/filter-arrows-norm.svg" alt="menu-icon" />
+      <img src="/svg/filter.svg" alt="filter-icon" />
+      <span>Показать доступные работы</span>
     </div>
   </div>
   <div class="shop__gallery">
@@ -44,10 +40,12 @@ const props = defineProps({
     font-size: 1rem;
     &_item {
       display: inline-flex;
+      align-items: center;
       margin-left: 14px;
       cursor: pointer;
       img {
-        margin-left: 7px;
+        margin-right: 7px;
+        max-height: 18px;
       }
     }
   }
