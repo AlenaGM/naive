@@ -6,16 +6,6 @@
       погружения представляет собой интересный эксперимент проверки новых
       принципов формирования материально-технической и кадровой базы.
     </div>
-    <div class="shop__filter">
-      <div class="shop__filter_item">
-        <span>Год</span>
-        <img src="/svg/filter-arrows-norm.svg" alt="menu-icon" />
-      </div>
-      <div class="shop__filter_item">
-        <span>Цена</span>
-        <img src="/svg/filter-arrows-norm.svg" alt="menu-icon" />
-      </div>
-    </div>
     <Loader v-if="loading" />
     <Gallery :artworks="allArtworks" v-else />
   </div>
@@ -67,20 +57,6 @@ onMounted(async () => {
     }
     @media screen and (max-width: 470px) {
       font-size: 1rem;
-    }
-  }
-  &__filter {
-    margin: 50px 0 15px 0;
-    display: inline-flex;
-    align-self: flex-end;
-    font-size: 1rem;
-    &_item {
-      display: inline-flex;
-      margin-left: 14px;
-      cursor: pointer;
-      img {
-        margin-left: 7px;
-      }
     }
   }
 }

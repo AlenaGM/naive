@@ -1,4 +1,14 @@
 <template>
+  <div class="shop__filter">
+    <div class="shop__filter_item">
+      <span>Год</span>
+      <img src="/svg/filter-arrows-norm.svg" alt="menu-icon" />
+    </div>
+    <div class="shop__filter_item">
+      <span>Цена</span>
+      <img src="/svg/filter-arrows-norm.svg" alt="menu-icon" />
+    </div>
+  </div>
   <div class="shop__gallery">
     <router-link
       class="shop__gallery_item"
@@ -27,6 +37,20 @@ const props = defineProps({
 
 <style lang="scss" scoped>
 .shop {
+  &__filter {
+    margin: 50px 0 15px 0;
+    display: inline-flex;
+    align-self: flex-end;
+    font-size: 1rem;
+    &_item {
+      display: inline-flex;
+      margin-left: 14px;
+      cursor: pointer;
+      img {
+        margin-left: 7px;
+      }
+    }
+  }
   &__gallery {
     columns: 3 360px;
     column-gap: 40px;
