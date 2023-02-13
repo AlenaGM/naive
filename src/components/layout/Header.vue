@@ -46,9 +46,10 @@
 </template>
 
 <script setup>
+import menu from "@/components/layout/menu.js";
 import { ref } from "vue";
 import { useCartStore } from "@/store/cart.js";
-import menu from "@/components/layout/menu.js";
+
 
 const isOpenedMobileMenu = ref(false);
 const cartStore = useCartStore();
