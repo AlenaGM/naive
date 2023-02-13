@@ -275,9 +275,7 @@
                         "dimensions": "неизв",
                         "price": 18000,
                         "available": true,
-                        "onSale": false,
                         "image": "/naive/img/item-1-fullsize.jpg",
-                        "thumbnail": "/naive/img/item-1.jpg",
                         "artistId": 1,
                         "artistName": "Виктор Тимофеев"
                       },
@@ -290,9 +288,7 @@
                         "dimensions": "60 × 45",
                         "price": 0,
                         "available": false,
-                        "onSale": false,
                         "image": "/naive/img/item-2-fullsize.jpg",
-                        "thumbnail": "/naive/img/item-2.jpg",
                         "artistId": 2,
                         "artistName": "Татьяна Еленок"
                       },
@@ -305,9 +301,7 @@
                         "dimensions": "70 × 50",
                         "price": 18000,
                         "available": true,
-                        "onSale": false,
                         "image": "/naive/img/item-3-fullsize.jpg",
-                        "thumbnail": "/naive/img/item-3.jpg",
                         "artistId": 1,
                         "artistName": "Виктор Тимофеев"
                       },
@@ -320,9 +314,7 @@
                         "dimensions": "60 × 50",
                         "price": 24000,
                         "available": true,
-                        "onSale": false,
                         "image": "/naive/img/item-4-fullsize.jpg",
-                        "thumbnail": "/naive/img/item-4.jpg",
                         "artistId": 1,
                         "artistName": "Виктор Тимофеев"
                       },
@@ -335,9 +327,7 @@
                         "dimensions": "58 x 54",
                         "price": 15000,
                         "available": true,
-                        "onSale": false,
                         "image": "/naive/img/item-5-fullsize.jpg",
-                        "thumbnail": "/naive/img/item-5.jpg",
                         "artistId": 3,
                         "artistName": "Михаил Ржанников"
                       },
@@ -350,9 +340,7 @@
                         "dimensions": "41 x 54",
                         "price": 0,
                         "available": false,
-                        "onSale": false,
                         "image": "/naive/img/item-6-fullsize.jpg",
-                        "thumbnail": "/naive/img/item-6.jpg",
                         "artistId": 4,
                         "artistName": "Иван Генералич"
                       },
@@ -365,9 +353,7 @@
                         "dimensions": "130 х 100",
                         "price": 45000,
                         "available": true,
-                        "onSale": false,
                         "image": "/naive/img/item-7-fullsize.jpg",
-                        "thumbnail": "/naive/img/item-7.jpg",
                         "artistId": 5,
                         "artistName": "Альфрид Шаймарданов"
                       }
@@ -434,9 +420,7 @@
                       "dimensions": "неизв",
                       "price": 18000,
                       "available": true,
-                      "onSale": false,
                       "image": "/naive/img/item-1-fullsize.jpg",
-                      "thumbnail": "/naive/img/item-1.jpg",
                       "artistId": 1,
                       "artistName": "Виктор Тимофеев"
                     }
@@ -451,9 +435,7 @@
                       "dimensions": "60 × 45",
                       "price": 0,
                       "available": false,
-                      "onSale": false,
                       "image": "/naive/img/item-2-fullsize.jpg",
-                      "thumbnail": "/naive/img/item-2.jpg",
                       "artistId": 2,
                       "artistName": "Татьяна Еленок"
                     }
@@ -468,9 +450,7 @@
                       "dimensions": "70 × 50",
                       "price": 18000,
                       "available": true,
-                      "onSale": false,
                       "image": "/naive/img/item-3-fullsize.jpg",
-                      "thumbnail": "/naive/img/item-3.jpg",
                       "artistId": 1,
                       "artistName": "Виктор Тимофеев"
                     }
@@ -485,9 +465,7 @@
                       "dimensions": "60 × 50",
                       "price": 24000,
                       "available": true,
-                      "onSale": false,
                       "image": "/naive/img/item-4-fullsize.jpg",
-                      "thumbnail": "/naive/img/item-4.jpg",
                       "artistId": 1,
                       "artistName": "Виктор Тимофеев"
                     }
@@ -502,9 +480,7 @@
                       "dimensions": "58 x 54",
                       "price": 15000,
                       "available": true,
-                      "onSale": false,
                       "image": "/naive/img/item-5-fullsize.jpg",
-                      "thumbnail": "/naive/img/item-5.jpg",
                       "artistId": 3,
                       "artistName": "Михаил Ржанников"
                     }
@@ -519,9 +495,7 @@
                       "dimensions": "41 x 54",
                       "price": 0,
                       "available": false,
-                      "onSale": false,
                       "image": "/naive/img/item-6-fullsize.jpg",
-                      "thumbnail": "/naive/img/item-6.jpg",
                       "artistId": 4,
                       "artistName": "Иван Генералич"
                     }
@@ -536,9 +510,7 @@
                       "dimensions": "130 х 100",
                       "price": 45000,
                       "available": true,
-                      "onSale": false,
                       "image": "/naive/img/item-7-fullsize.jpg",
-                      "thumbnail": "/naive/img/item-7.jpg",
                       "artistId": 5,
                       "artistName": "Альфрид Шаймарданов"
                     }
@@ -603,9 +575,7 @@
                             "dimensions": "неизв",
                             "price": 18000,
                             "available": true,
-                            "onSale": false,
                             "image": "/naive/img/item-1-fullsize.jpg",
-                            "thumbnail": "/naive/img/item-1.jpg",
                             "artistId": 1,
                             "artistName": "Виктор Тимофеев"
                           },
@@ -618,9 +588,7 @@
                             "dimensions": "70 × 50",
                             "price": 18000,
                             "available": true,
-                            "onSale": false,
                             "image": "/naive/img/item-3-fullsize.jpg",
-                            "thumbnail": "/naive/img/item-3.jpg",
                             "artistId": 1,
                             "artistName": "Виктор Тимофеев"
                           },
@@ -633,9 +601,7 @@
                             "dimensions": "60 × 50",
                             "price": 24000,
                             "available": true,
-                            "onSale": false,
                             "image": "/naive/img/item-4-fullsize.jpg",
-                            "thumbnail": "/naive/img/item-4.jpg",
                             "artistId": 1,
                             "artistName": "Виктор Тимофеев"
                           }
@@ -657,9 +623,7 @@
                             "dimensions": "60 × 45",
                             "price": 0,
                             "available": false,
-                            "onSale": false,
                             "image": "/naive/img/item-2-fullsize.jpg",
-                            "thumbnail": "/naive/img/item-2.jpg",
                             "artistId": 2,
                             "artistName": "Татьяна Еленок"
                           }
@@ -681,9 +645,7 @@
                             "dimensions": "58 x 54",
                             "price": 15000,
                             "available": true,
-                            "onSale": false,
                             "image": "/naive/img/item-5-fullsize.jpg",
-                            "thumbnail": "/naive/img/item-5.jpg",
                             "artistId": 3,
                             "artistName": "Михаил Ржанников"
                           }
@@ -705,9 +667,7 @@
                             "dimensions": "41 x 54",
                             "price": 0,
                             "available": false,
-                            "onSale": false,
                             "image": "/naive/img/item-6-fullsize.jpg",
-                            "thumbnail": "/naive/img/item-6.jpg",
                             "artistId": 4,
                             "artistName": "Иван Генералич"
                           }
@@ -729,9 +689,7 @@
                             "dimensions": "130 х 100",
                             "price": 45000,
                             "available": true,
-                            "onSale": false,
                             "image": "/naive/img/item-7-fullsize.jpg",
-                            "thumbnail": "/naive/img/item-7.jpg",
                             "artistId": 5,
                             "artistName": "Альфрид Шаймарданов"
                           }
@@ -800,9 +758,7 @@
                           "dimensions": "неизв",
                           "price": 18000,
                           "available": true,
-                          "onSale": false,
                           "image": "/naive/img/item-1-fullsize.jpg",
-                          "thumbnail": "/naive/img/item-1.jpg",
                           "artistId": 1,
                           "artistName": "Виктор Тимофеев"
                         },
@@ -815,9 +771,7 @@
                           "dimensions": "70 × 50",
                           "price": 18000,
                           "available": true,
-                          "onSale": false,
                           "image": "/naive/img/item-3-fullsize.jpg",
-                          "thumbnail": "/naive/img/item-3.jpg",
                           "artistId": 1,
                           "artistName": "Виктор Тимофеев"
                         },
@@ -830,9 +784,7 @@
                           "dimensions": "60 × 50",
                           "price": 24000,
                           "available": true,
-                          "onSale": false,
                           "image": "/naive/img/item-4-fullsize.jpg",
-                          "thumbnail": "/naive/img/item-4.jpg",
                           "artistId": 1,
                           "artistName": "Виктор Тимофеев"
                         }
@@ -856,9 +808,7 @@
                           "dimensions": "60 × 45",
                           "price": 0,
                           "available": false,
-                          "onSale": false,
                           "image": "/naive/img/item-2-fullsize.jpg",
-                          "thumbnail": "/naive/img/item-2.jpg",
                           "artistId": 2,
                           "artistName": "Татьяна Еленок"
                         }
@@ -882,9 +832,7 @@
                           "dimensions": "58 x 54",
                           "price": 15000,
                           "available": true,
-                          "onSale": false,
                           "image": "/naive/img/item-5-fullsize.jpg",
-                          "thumbnail": "/naive/img/item-5.jpg",
                           "artistId": 3,
                           "artistName": "Михаил Ржанников"
                         }
@@ -908,9 +856,7 @@
                           "dimensions": "41 x 54",
                           "price": 0,
                           "available": false,
-                          "onSale": false,
                           "image": "/naive/img/item-6-fullsize.jpg",
-                          "thumbnail": "/naive/img/item-6.jpg",
                           "artistId": 4,
                           "artistName": "Иван Генералич"
                         }
@@ -934,9 +880,7 @@
                           "dimensions": "130 х 100",
                           "price": 45000,
                           "available": true,
-                          "onSale": false,
                           "image": "/naive/img/item-7-fullsize.jpg",
-                          "thumbnail": "/naive/img/item-7.jpg",
                           "artistId": 5,
                           "artistName": "Альфрид Шаймарданов"
                         }
@@ -1047,9 +991,7 @@
                 "dimensions": "string",
                 "price": 0,
                 "available": true,
-                "onSale": true,
                 "image": "string",
-                "thumbnail": "string",
                 "artistId": 0,
                 "aristName": "string"
               },
@@ -1114,9 +1056,7 @@
             "dimensions": "string",
             "price": 0,
             "available": true,
-            "onSale": true,
             "image": "string",
-            "thumbnail": "string",
             "artistId": 0,
             "artistName": "string"
           }
@@ -1147,13 +1087,7 @@
           "available": {
             "type": "boolean"
           },
-          "onSale": {
-            "type": "boolean"
-          },
           "image": {
-            "type": "string"
-          },
-          "thumbnail": {
             "type": "string"
           },
           "artistId": {
@@ -1168,7 +1102,6 @@
           "title",
           "available",
           "image",
-          "thumbnail",
           "artistId",
           "artistName"
         ]
