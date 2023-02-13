@@ -1,7 +1,7 @@
 {
   "name": "naive",
   "private": true,
-  "homepage": "https://naiveart.netlify.app/",
+  "homepage": "",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
