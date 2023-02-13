@@ -39,7 +39,7 @@
           </td>
           <td @click="cartStore.deleteFromCart(index)">
             Удалить
-            <img src="svg/trash.svg" alt="delete icon" />
+            <img src="/svg/trash.svg" alt="delete icon" />
           </td>
         </tr>
       </tbody>
