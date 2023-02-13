@@ -1,6 +1,6 @@
 # Naïve Art Shop and Gallery 🖼️
 
-_Art gallery and shop website built with VueJS._ <br>
+_Art gallery and shop website built with VueJS 3._ <br>
 
 PROJECT IN PROGRESS
 
