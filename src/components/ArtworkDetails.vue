@@ -53,9 +53,8 @@
             <ui-button
               @click="cartStore.addToCart(artwork)"
               :disabled="disabled"
-              ><span v-if="disabled">в резерве</span
-              ><span v-else>в корзину</span></ui-button
-            >
+              ><span>в корзину</span>
+            </ui-button>
           </div>
         </div>
       </div>
