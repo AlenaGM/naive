@@ -24,7 +24,7 @@
           :key="artwork.artworkId"
         >
           <img
-            :src="artwork.thumbnail"
+            :src="artwork.image"
             :alt="artwork.title"
             class="artist__paintings_thumbnail"
           />
