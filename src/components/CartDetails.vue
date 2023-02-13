@@ -72,7 +72,7 @@
     <ui-button
       class="cart__order"
       type="link"
-      to="/"
+      to="/naive/"
       :mobileFullWidth="true"
       v-else
     >

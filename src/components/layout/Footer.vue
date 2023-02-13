@@ -3,7 +3,7 @@
     <div class="footer__container container">
       <div class="footer__top">
         <div class="footer__logo">
-          <router-link to="/"> Наивное<br />искусство </router-link>
+          <router-link to="/naive/"> Наивное<br />искусство </router-link>
         </div>
         <div class="footer__menu">
           <router-link
