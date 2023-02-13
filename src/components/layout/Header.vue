@@ -10,7 +10,7 @@
           <span />
         </div>
         <div class="header__menu_home">
-          <router-link to="/">
+          <router-link to="/naive/">
             <img src="/svg/menu-shop.svg" alt="home" class="header__icon" />
           </router-link>
         </div>
@@ -30,7 +30,7 @@
       </div>
 
       <div class="header__cart">
-        <router-link to="/cart" class="header__cart_link">
+        <router-link to="/naive/cart" class="header__cart_link">
           <span class="header__cart_count" v-if="cartStore.cart.length">
             {{ cartStore.cart.length }}
           </span>
