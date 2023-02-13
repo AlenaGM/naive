@@ -1,28 +1,28 @@
 const menu = [
   {
     name: "магазин",
-    image: "/naive/svg/menu-shop.svg",
-    path: "/naive/",
+    image: "/svg/menu-shop.svg",
+    path: "/",
   },
   {
     name: "художники",
-    image: "/naive/svg/menu-artist.svg",
-    path: "/naive/artists",
+    image: "/svg/menu-artist.svg",
+    path: "/artists",
   },
   {
     name: "новости",
-    image: "/naive/svg/menu-news.svg",
-    path: "/naive/news",
+    image: "/svg/menu-news.svg",
+    path: "/news",
   },
   {
     name: "заказ и доставка",
-    image: "/naive/svg/menu-delivery.svg",
-    path: "/naive/delivery",
+    image: "/svg/menu-delivery.svg",
+    path: "/delivery",
   },
   {
     name: "контакты",
-    image: "/naive/svg/menu-contacts.svg",
-    path: "/naive/contacts",
+    image: "/svg/menu-contacts.svg",
+    path: "/contacts",
   },
 ];
 

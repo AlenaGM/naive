@@ -9,7 +9,7 @@
         рассмотрены исключительно в разрезе маркетинговых и финансовых
         предпосылок.
       </div>
-      <ui-button type="link" to="/naive/">в магазин</ui-button>
+      <ui-button type="link" to="/">в магазин</ui-button>
       <img
         src="/img/news-background.jpg"
         alt="background"

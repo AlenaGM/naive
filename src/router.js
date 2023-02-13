@@ -12,42 +12,42 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
-      path: "/naive/",
+      path: "/",
       name: "Index",
       component: Index,
     },
     {
-      path: "/naive/artworks/:artworkId",
+      path: "/artworks/:artworkId",
       name: "Artwork",
       component: Artwork,
     },
     {
-      path: "/naive/artists",
+      path: "/artists",
       name: "Artists",
       component: Artists,
     },
     {
-      path: "/naive/artists/:id",
+      path: "/artists/:id",
       name: "Artist",
       component: Artist,
     },
     {
-      path: "/naive/news",
+      path: "/news",
       name: "News",
       component: News,
     },
     {
-      path: "/naive/delivery",
+      path: "/delivery",
       name: "Delivery",
       component: Delivery,
     },
     {
-      path: "/naive/contacts",
+      path: "/contacts",
       name: "Contacts",
       component: Contacts,
     },
     {
-      path: "/naive/cart",
+      path: "/cart",
       name: "Cart",
       component: Cart,
     },

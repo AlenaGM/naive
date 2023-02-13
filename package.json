@@ -2,6 +2,7 @@
   "name": "naive",
   "private": true,
   "version": "0.0.0",
+  "homepage": "naiveart.netlify.app",
   "type": "module",
   "scripts": {
     "dev": "vite",

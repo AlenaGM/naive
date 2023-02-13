@@ -13,15 +13,15 @@
       <tbody>
         <tr v-for="(item, index) in cartStore.cart" :key="item.artworkId">
           <td>
-            <router-link :to="`/naive/artworks/${item.artworkId}`">
+            <router-link :to="`/artworks/${item.artworkId}`">
               <img :src="item.image" :alt="item.title" />
             </router-link>
           </td>
           <td>
-            <router-link :to="`/naive/artworks/${item.artworkId}`">
+            <router-link :to="`/artworks/${item.artworkId}`">
               <span>{{ item.title }}</span>
             </router-link>
-            <router-link :to="`/naive/artists/${item.artistId}`">
+            <router-link :to="`/artists/${item.artistId}`">
               <div>{{ item.artistName }}</div>
             </router-link>
             <div>{{ item.created }} г.</div>
@@ -72,7 +72,7 @@
     <ui-button
       class="cart__order"
       type="link"
-      to="/naive/"
+      to="/"
       :mobileFullWidth="true"
       v-else
     >

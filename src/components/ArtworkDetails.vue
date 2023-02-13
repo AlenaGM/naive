@@ -9,7 +9,7 @@
         <h3 class="artwork__name">{{ artwork.title }}</h3>
         <div class="artwork__artist">
           <router-link
-            :to="`/naive/artists/${artwork.artistId}`"
+            :to="`/artists/${artwork.artistId}`"
             class="artwork__artist_link"
           >
             <img src="/svg/menu-artist.svg" alt="artist-icon" />
