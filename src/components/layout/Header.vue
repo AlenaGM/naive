@@ -4,10 +4,7 @@
       <div class="header__menu">
         <div
           class="header__menu_mobile"
-          @click="
-            isOpenedMobileMenu = !isOpenedMobileMenu;
-            isActiveSearch = false;
-          "
+          @click="isOpenedMobileMenu = !isOpenedMobileMenu"
           v-bind:class="{ _active: isOpenedMobileMenu }"
         >
           <span />
@@ -49,7 +46,6 @@
 import menu from "@/components/layout/menu.js";
 import { ref } from "vue";
 import { useCartStore } from "@/store/cart.js";
-
 
 const isOpenedMobileMenu = ref(false);
 const cartStore = useCartStore();
