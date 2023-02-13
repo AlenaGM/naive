@@ -53,9 +53,7 @@
       ],
       "get": {
         "summary": "Get User Info by User ID",
-        "tags": [
-          "Users"
-        ],
+        "tags": ["Users"],
         "responses": {
           "200": {
             "description": "User Found",
@@ -222,12 +220,7 @@
                     "format": "date"
                   }
                 },
-                "required": [
-                  "firstName",
-                  "lastName",
-                  "email",
-                  "dateOfBirth"
-                ]
+                "required": ["firstName", "lastName", "email", "dateOfBirth"]
               },
               "examples": {
                 "Create User Bob Fellow": {
@@ -249,9 +242,7 @@
     "/artists/artworks": {
       "get": {
         "summary": "Your GET endpoint",
-        "tags": [
-          "Artwork"
-        ],
+        "tags": ["Artwork"],
         "responses": {
           "200": {
             "description": "OK",
@@ -398,9 +389,7 @@
       ],
       "get": {
         "summary": "Your GET endpoint",
-        "tags": [
-          "Artwork"
-        ],
+        "tags": ["Artwork"],
         "responses": {
           "200": {
             "description": "OK",
@@ -542,9 +531,7 @@
     "/artists": {
       "get": {
         "summary": "Your GET endpoint",
-        "tags": [
-          "Artist"
-        ],
+        "tags": ["Artist"],
         "responses": {
           "200": {
             "description": "OK",
@@ -729,9 +716,7 @@
       ],
       "get": {
         "summary": "Your GET endpoint",
-        "tags": [
-          "Artist"
-        ],
+        "tags": ["Artist"],
         "responses": {
           "200": {
             "description": "OK",
@@ -959,13 +944,7 @@
             "description": "The date that the user was created."
           }
         },
-        "required": [
-          "id",
-          "firstName",
-          "lastName",
-          "email",
-          "emailVerified"
-        ]
+        "required": ["id", "firstName", "lastName", "email", "emailVerified"]
       },
       "Artist": {
         "title": "Artist",
@@ -1004,9 +983,7 @@
                 "dimensions": "string",
                 "price": 0,
                 "available": true,
-                "onSale": true,
-                "image": "string",
-                "thumbnail": "string"
+                "image": "string"
               }
             ]
           }
@@ -1034,10 +1011,7 @@
             }
           }
         },
-        "required": [
-          "id",
-          "lastName"
-        ]
+        "required": ["id", "lastName"]
       },
       "Artwork": {
         "title": "Artwork",
