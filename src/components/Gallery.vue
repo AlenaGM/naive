@@ -124,7 +124,7 @@ const props = defineProps({
         font-size: 16px;
         color: var(--white);
         img {
-          margin-right: 6px;
+          margin-right: 5px;
           width: 12px;
         }
         span {
