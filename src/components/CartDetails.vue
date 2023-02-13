@@ -186,9 +186,9 @@ const cartTotal = computed(() => {
         width: 20px;
         margin-left: 8px;
       }
-      &:hover {
-        text-decoration: underline 2px;
-      }
+    }
+    &:last-of-type:hover {
+      text-decoration: underline 2px;
     }
   }
   th {
