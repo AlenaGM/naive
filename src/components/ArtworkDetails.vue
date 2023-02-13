@@ -53,6 +53,7 @@
             <ui-button
               @click="cartStore.addToCart(artwork)"
               :disabled="disabled"
+              :mobileFullWidth="true"
               ><span>в корзину</span>
             </ui-button>
           </div>
@@ -95,7 +96,7 @@ const cartStore = useCartStore();
     margin: 60px 0 34px 0;
     @media screen and (max-width: 400px) {
       font-size: 1.5rem;
-      margin: 30px 0 17px 0;
+      margin: 17px 0 17px 0;
     }
   }
   &__card {

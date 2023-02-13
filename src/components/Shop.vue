@@ -43,6 +43,7 @@ onMounted(async () => {
     }
     @media screen and (max-width: 470px) {
       font-size: 3rem;
+      margin: 17px 0 0 0;
     }
   }
   &__description {

@@ -114,7 +114,7 @@ const cartTotal = computed(() => {
     margin: 60px 0 34px 0;
     @media screen and (max-width: 560px) {
       font-size: 1.5rem;
-      margin: 30px 0 17px 0;
+      margin: 17px 0 17px 0;
     }
   }
   &__emptyMessage {

@@ -72,6 +72,10 @@ const cartStore = useCartStore();
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    @media screen and (max-width: 500px) {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
   }
   &__menu {
     display: flex;
