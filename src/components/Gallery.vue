@@ -111,7 +111,7 @@ const props = defineProps({
       right: 20px;
       transition: all 0.5s ease-out;
       padding: 20px;
-      outline: 1px solid #ffffff80;
+      outline: 1px solid #ffffff50;
       outline-offset: -20px;
       font-size: 16px;
       color: var(--white);

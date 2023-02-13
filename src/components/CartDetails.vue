@@ -65,6 +65,7 @@
       class="cart__order"
       :mobileFullWidth="true"
       v-if="cartStore.cart.length"
+      @click="makeOrder"
     >
       оформить заказ
     </ui-button>
@@ -268,8 +269,8 @@ const cartTotal = computed(() => {
     }
     tfoot {
       tr {
-        grid-template-columns: 160px minmax(120px, 1fr) minmax(140px, 1fr);
-        grid-template-areas: "total-label total-sum .";
+        grid-template-columns: minmax(280px, 1fr) minmax(140px, 1fr);
+        grid-template-areas: "total-label total-sum";
         gap: 20px;
         th:last-of-type {
           display: inline-flex;
