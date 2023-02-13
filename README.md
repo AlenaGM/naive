@@ -1,7 +1,29 @@
-# Vue 3 + Vite
+# Naïve Art Shop and Gallery 🖼️
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+_Art gallery and shop website built with VueJS._ <br>
 
-## Recommended IDE Setup
+PROJECT IN PROGRESS
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Tech stack
+
+&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Vue3 + Vite<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Composition API<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; SASS<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Vue Router 4<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Stoplight 4<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Axios<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Pinia<br>
+
+## Demo
+
+[Naïve Art Shop]
+
+## Result
+
+<br><br>
+<img width="30%" alt="screen capture" src="../main/src/assets/images/captureweb.jpeg">
+<img width="30%" alt="screen capture" src="../main/src/assets/images/captureartist.jpeg">
+<img width="30%" alt="screen capture" src="../main/src/assets/images/captureartwork.jpeg">
+<br><br>
+
+[naïve art shop]: https://alenagm.github.io/naive/
