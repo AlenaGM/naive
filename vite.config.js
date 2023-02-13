@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/naiveart.netlify.app/",
+  base: "/naive/",
   plugins: [vue()],
   resolve: {
     alias: {
