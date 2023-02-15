@@ -2,7 +2,7 @@
 
 _Art gallery and shop website built with VueJS 3 and Pinia._ <br>
 
-THE PROJECT IS STILL MAKING
+THE PROJECT IS STILL IN MAKING
 
 ## Tech stack
 
@@ -21,10 +21,9 @@ THE PROJECT IS STILL MAKING
 ## Result
 
 <br><br>
-<img width="45%" alt="screen capture" src="../main/src/assets/images/captureweb.jpeg">
-<img width="45%" alt="screen capture" src="../main/src/assets/images/captureartist.jpeg">
-<img width="45%" alt="screen capture" src="../main/src/assets/images/captureartwork.jpeg">
-<img width="45%" alt="screen capture" src="../main/src/assets/images/capturecart.jpeg">
+<img width="33%" alt="screen capture" src="../main/src/assets/images/capturesmall.jpeg">
+<img width="33%" alt="screen capture" src="../main/src/assets/images/captureartwork.jpeg">
+<img width="33%" alt="screen capture" src="../main/src/assets/images/capturecart.jpeg">
 <br><br>
 
 [naïve art shop]: https://alenagm.github.io/naive/
