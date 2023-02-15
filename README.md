@@ -2,7 +2,7 @@
 
 _Art gallery and shop website built with VueJS 3._ <br>
 
-PROJECT IN PROGRESS
+THE PROJECT IS STILL MAKING
 
 ## Tech stack
 
@@ -24,6 +24,7 @@ PROJECT IN PROGRESS
 <img width="30%" alt="screen capture" src="../main/src/assets/images/captureweb.jpeg">
 <img width="30%" alt="screen capture" src="../main/src/assets/images/captureartist.jpeg">
 <img width="30%" alt="screen capture" src="../main/src/assets/images/captureartwork.jpeg">
+<img width="30%" alt="screen capture" src="../main/src/assets/images/captureartcart.jpeg">
 <br><br>
 
 [naïve art shop]: https://alenagm.github.io/naive/
