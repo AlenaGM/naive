@@ -1,6 +1,6 @@
-# Naïve Art Shop and Gallery 🖼️
+# Naïve Art Shop and Gallery 🎨
 
-_Art gallery and shop website built with VueJS 3._ <br>
+_Art gallery and shop website built with VueJS 3 and Pinia._ <br>
 
 THE PROJECT IS STILL MAKING
 
@@ -21,10 +21,10 @@ THE PROJECT IS STILL MAKING
 ## Result
 
 <br><br>
-<img width="30%" alt="screen capture" src="../main/src/assets/images/captureweb.jpeg">
-<img width="30%" alt="screen capture" src="../main/src/assets/images/captureartist.jpeg">
-<img width="30%" alt="screen capture" src="../main/src/assets/images/captureartwork.jpeg">
-<img width="30%" alt="screen capture" src="../main/src/assets/images/captureartcart.jpeg">
+<img width="45%" alt="screen capture" src="../main/src/assets/images/captureweb.jpeg">
+<img width="45%" alt="screen capture" src="../main/src/assets/images/captureartist.jpeg">
+<img width="45%" alt="screen capture" src="../main/src/assets/images/captureartwork.jpeg">
+<img width="45%" alt="screen capture" src="../main/src/assets/images/capturecart.jpeg">
 <br><br>
 
 [naïve art shop]: https://alenagm.github.io/naive/
