@@ -1,14 +1,14 @@
 <template>
-  <div class="artists">
-    <h2 class="artists__title">художники</h2>
-    <div class="artists__card"></div>
+  <div class="delivery">
+    <h2 class="delivery__title">заказ и доставка</h2>
+    <div class="delivery__card"></div>
   </div>
 </template>
 
 <script setup></script>
 
 <style lang="scss" scoped>
-.artists {
+.delivery {
   display: flex;
   flex-direction: column;
   align-items: flex-start;

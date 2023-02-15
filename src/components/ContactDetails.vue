@@ -1,21 +1,11 @@
 <template>
   <div class="contact">
-    <h2 class="contact__title">контакты - тест запосов к АПИ</h2>
+    <h2 class="contact__title">контакты</h2>
     <div class="contact__card"></div>
   </div>
 </template>
 
-<script setup>
-import { onMounted } from "vue";
-import api from "@/api";
-
-onMounted(() => {
-  api.getAllArtists();
-  api.getAllArtworks();
-  api.getArtwork(1);
-  api.getArtist(4);
-});
-</script>
+<script setup></script>
 
 <style lang="scss" scoped>
 .contact {
@@ -39,7 +29,7 @@ onMounted(() => {
   &__card {
     display: grid;
     align-items: start;
-    grid-template-columns: 1fr 580px;
+    grid-template-columns: minmax(auto, 540px) minmax(580px, 1fr);
     column-gap: 40px;
     margin-bottom: 83px;
     @media screen and (max-width: 1092px) {
