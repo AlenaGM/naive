@@ -18,10 +18,10 @@
             </router-link>
           </td>
           <td>
-            <router-link :to="`/artworks/${item.artworkId}`">
+            <router-link :to="`/naive/artworks/${item.artworkId}`">
               <span>{{ item.title }}</span>
             </router-link>
-            <router-link :to="`/artists/${item.artistId}`">
+            <router-link :to="`/naive/artists/${item.artistId}`">
               <div>{{ item.artistName }}</div>
             </router-link>
             <div>{{ item.created }} г.</div>
