@@ -21,9 +21,9 @@ THE PROJECT IS STILL IN MAKING
 ## Result
 
 <br><br>
-<img width="33%" alt="screen capture" src="../main/src/assets/images/capturesmall.jpeg">
-<img width="33%" alt="screen capture" src="../main/src/assets/images/captureartwork.jpeg">
-<img width="33%" alt="screen capture" src="../main/src/assets/images/capturecart.jpeg">
+<img width="30%" alt="screen capture" src="../main/src/assets/images/capturesmall.jpeg">
+<img width="30%" alt="screen capture" src="../main/src/assets/images/captureartwork.jpeg">
+<img width="30%" alt="screen capture" src="../main/src/assets/images/capturecart.jpeg">
 <br><br>
 
 [naïve art shop]: https://alenagm.github.io/naive/
