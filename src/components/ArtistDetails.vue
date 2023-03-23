@@ -66,7 +66,7 @@ const props = defineProps({
   &__card {
     display: grid;
     align-items: start;
-    grid-template-columns: minmax(auto, 540px) minmax(580px, 1fr);
+    grid-template-columns: minmax(auto, 480px) minmax(580px, 1fr);
     column-gap: 40px;
     margin-bottom: 83px;
     @media screen and (max-width: 1092px) {

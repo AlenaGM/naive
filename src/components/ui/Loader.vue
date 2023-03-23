@@ -10,6 +10,7 @@
   margin: 50px 0;
   &-container {
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
