@@ -9,11 +9,10 @@
         :to="`/naive/artists/${artist.id}`"
         :key="artist.id"
       >
-        <img
-          :src="artist.image"
-          :alt="artist.lastName"
-          class="artists__gallery_image"
-        />
+        <div class="artists__gallery_image">
+          <img :src="artist.image" :alt="artist.lastName" />
+        </div>
+
         <h3 class="artists__gallery_info">
           <img src="/svg/menu-artist.svg" alt="artist-icon" />
           {{ artist.firstName }} {{ artist.lastName }}
@@ -80,8 +79,10 @@ onMounted(async () => {
 
     &_image {
       position: relative;
+      padding: 0px 0px 90% 0px;
       margin: 0px 0px 12px 0px;
       cursor: pointer;
+      transition: all 0.4s ease;
       img {
         position: absolute;
         width: 100%;
@@ -89,7 +90,6 @@ onMounted(async () => {
         top: 0;
         left: 0;
         object-fit: cover;
-        opacity: 0.8;
       }
     }
     &_info {
