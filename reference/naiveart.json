@@ -340,7 +340,7 @@
                         "dimensions": "90 x 110",
                         "price": 46000,
                         "available": true,
-                        "image": "/naive/img/item-6frol.jpg",
+                        "image": "/naive/img/item-6frol.jpeg",
                         "artistId": 7,
                         "artistName": "Илья Фролов"
                       },
@@ -366,7 +366,7 @@
                         "dimensions": "50 x 80",
                         "price": 26000,
                         "available": true,
-                        "image": "/naive/img/item-8frol.jpg",
+                        "image": "/naive/img/item-8frol.jpeg",
                         "artistId": 7,
                         "artistName": "Илья Фролов"
                       },
@@ -781,7 +781,7 @@
                       "dimensions": "90 x 110",
                       "price": 46000,
                       "available": true,
-                      "image": "/naive/img/item-6frol.jpg",
+                      "image": "/naive/img/item-6frol.jpeg",
                       "artistId": 7,
                       "artistName": "Илья Фролов"
                     }
@@ -811,7 +811,7 @@
                       "dimensions": "50 x 80",
                       "price": 26000,
                       "available": true,
-                      "image": "/naive/img/item-8frol.jpg",
+                      "image": "/naive/img/item-8frol.jpeg",
                       "artistId": 7,
                       "artistName": "Илья Фролов"
                     }
