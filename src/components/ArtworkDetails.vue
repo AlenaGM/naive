@@ -102,7 +102,7 @@ const cartStore = useCartStore();
   &__card {
     display: grid;
     align-items: start;
-    grid-template-columns: minmax(auto, 660px) minmax(360px, 1fr);
+    grid-template-columns: minmax(auto, 660px) minmax(460px, 1fr);
     column-gap: 40px;
     margin-bottom: 220px;
     @media screen and (max-width: 1092px) {

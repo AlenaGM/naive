@@ -12,11 +12,13 @@
         <div class="artists__gallery_image">
           <img :src="artist.image" :alt="artist.lastName" />
         </div>
-
-        <h3 class="artists__gallery_info">
-          <img src="/svg/menu-artist.svg" alt="artist-icon" />
-          {{ artist.firstName }} {{ artist.lastName }}
-        </h3>
+        <div class="artists__gallery_info">
+          <h3>
+            <img src="/svg/menu-artist.svg" alt="artist-icon" />
+            {{ artist.firstName }} {{ artist.lastName }}
+          </h3>
+          <div>{{ artist.bio.substr(0, 150) }}...<span> Подробнее</span></div>
+        </div>
       </router-link>
     </div>
   </div>
@@ -90,22 +92,34 @@ onMounted(async () => {
         top: 0;
         left: 0;
         object-fit: cover;
+        opacity: 0.9;
+        &:hover {
+          opacity: 1;
+        }
       }
     }
     &_info {
       position: relative;
       display: flex;
+      flex-direction: column;
       justify-content: flex-start;
       text-align: left;
       align-items: center;
-      width: 100%;
-      font-size: 1.25rem;
-      font-weight: 600;
-      line-height: 1.2;
-      cursor: pointer;
-      &:hover {
-        text-decoration: underline 2px;
+      h3 {
+        display: inline-flex;
+        width: 100%;
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 1.2;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline 2px;
+        }
       }
+      span {
+        font-weight: 600;
+      }
+
       img {
         display: block;
         width: 20px;

@@ -1,10 +1,4 @@
 <template>
-  <div class="shop__filter">
-    <div class="shop__filter_item">
-      <img src="/svg/filter.svg" alt="filter-icon" />
-      <span>Показать доступные работы</span>
-    </div>
-  </div>
   <div class="shop__gallery">
     <router-link
       class="shop__gallery_item"
@@ -13,6 +7,7 @@
       :key="artwork.artworkId"
       :created="artwork.created"
       :price="artwork.price"
+      :available="artwork.available"
     >
       <img
         :src="artwork.image"
@@ -73,9 +68,9 @@ const props = defineProps({
   &__gallery {
     columns: 3 360px;
     column-gap: 40px;
-    margin: 0 auto 250px auto;
+    margin: 80px auto 250px auto;
     @media screen and (max-width: 1207px) {
-      margin: 0 auto 120px auto;
+      margin: 50px auto 120px auto;
     }
     @media screen and (max-width: 1024px) {
       columns: 2 350px;
@@ -105,6 +100,7 @@ const props = defineProps({
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      text-align: center;
       top: 20px;
       left: 20px;
       bottom: 20px;
