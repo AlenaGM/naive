@@ -1462,7 +1462,7 @@
                           "price": 200000,
                           "available": true,
                           "image": "/naive/img/item-25karn.jpg",
-                          "artistId": 6,
+                          "artistId": 3,
                           "artistName": "Лев Карнаухов"
                         },
                         {
@@ -1475,7 +1475,7 @@
                           "price": 170000,
                           "available": true,
                           "image": "/naive/img/item-27karn.jpg",
-                          "artistId": 6,
+                          "artistId": 3,
                           "artistName": "Лев Карнаухов"
                         }
                       ]
