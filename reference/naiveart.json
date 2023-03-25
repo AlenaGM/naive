@@ -315,7 +315,7 @@
                         "price": 0,
                         "available": false,
                         "image": "/naive/img/item-4shaj.jpg",
-                        "artistId": 6,
+                        "artistId": 8,
                         "artistName": "Альфрид Шаймарданов"
                       },
                       {
@@ -471,7 +471,7 @@
                         "price": 600000,
                         "available": true,
                         "image": "/naive/img/item-16shaj.jpg",
-                        "artistId": 6,
+                        "artistId": 8,
                         "artistName": "Альфрид Шаймарданов"
                       },
                       {
@@ -484,7 +484,7 @@
                         "price": 180000,
                         "available": true,
                         "image": "/naive/img/item-17kony.jpg",
-                        "artistId": 6,
+                        "artistId": 4,
                         "artistName": "Натта Конышева"
                       },
                       {
@@ -510,7 +510,7 @@
                         "price": 120000,
                         "available": true,
                         "image": "/naive/img/item-19kony.jpg",
-                        "artistId": 6,
+                        "artistId": 4,
                         "artistName": "Натта Конышева"
                       },
                       {
