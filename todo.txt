@@ -1,4 +1,3 @@
-API - исправить год не указан г., размер неизв см
 API - убрать нерелевантных художников
 API - довать релевантных художников
 API - может заменить фиктивными?
@@ -105,3 +104,16 @@ header 16+
         max-width: 100%;
       }
     }
+
+    ***
+    <div class="shop__filter">
+      <img src="/svg/filter.svg" alt="menu-icon" />
+      <div class="shop__filter_item">
+        <span>Год</span>
+        <img src="/svg/filter-arrows-norm.svg" alt="menu-icon" />
+      </div>
+      <div class="shop__filter_item">
+        <span>Цена</span>
+        <img src="/svg/filter-arrows-norm.svg" alt="menu-icon" />
+      </div>
+    </div>

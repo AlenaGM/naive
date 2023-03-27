@@ -14,7 +14,9 @@
           >
             <img src="/svg/menu-artist.svg" alt="artist-icon" />
             <h4>{{ artwork.artistName }}</h4>
-            <span class="artwork__year">{{ artwork.created }} г.</span>
+            <span class="artwork__year" v-if="artwork.created"
+              >{{ artwork.created }} г.</span
+            >
           </router-link>
         </div>
         <div class="artwork__block artwork__description">
@@ -27,7 +29,8 @@
           </div>
           <div class="artwork__params_item">
             <span>Размер:</span>
-            <div>{{ artwork.dimensions }} см</div>
+            <div v-if="artwork.dimensions">{{ artwork.dimensions }} см</div>
+            <div v-else>не указан</div>
           </div>
           <div class="artwork__params_item">
             <span>Цена:</span>
