@@ -2,8 +2,6 @@
 
 _Art gallery and shop website built with VueJS 3 and Pinia._ <br>
 
-THE PROJECT IS STILL IN MAKING
-
 ## Tech stack
 
 &nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp; Vue3 + Vite<br>
