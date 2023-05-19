@@ -564,7 +564,7 @@
                       "price": 0,
                       "available": false,
                       "image": "/naive/img/item-1timo.jpg",
-                      "artistId": 6,
+                      "artistId": 5,
                       "artistName": "Виктор Тимофеев"
                     }
                   },
@@ -583,9 +583,9 @@
                       "artistName": "Татьяна Еленок"
                     }
                   },
-                  "Example 4": {
+                  "Example 3": {
                     "value": {
-                      "artworkId": 4,
+                      "artworkId": 3,
                       "title": "В ледяном плену",
                       "created": "2019",
                       "description": "Нет описания",
@@ -594,13 +594,13 @@
                       "price": 0,
                       "available": false,
                       "image": "/naive/img/item-4shaj.jpg",
-                      "artistId": 8,
+                      "artistId": 6,
                       "artistName": "Альфрид Шаймарданов"
                     }
                   },
-                  "Example 5": {
+                  "Example 11": {
                     "value": {
-                      "artworkId": 5,
+                      "artworkId": 11,
                       "title": "Променад Командора",
                       "created": "2019",
                       "description": "Нет описания",
@@ -613,9 +613,9 @@
                       "artistName": "Лев Карнаухов"
                     }
                   },
-                  "Example 7": {
+                  "Example 5": {
                     "value": {
-                      "artworkId": 7,
+                      "artworkId": 5,
                       "title": "Вера.Надежда.Любовь",
                       "created": "2013",
                       "description": "Нет описания",
@@ -624,13 +624,13 @@
                       "price": 550000,
                       "available": true,
                       "image": "/naive/img/item-7shaj.jpg",
-                      "artistId": 8,
+                      "artistId": 6,
                       "artistName": "Альфрид Шаймарданов"
                     }
                   },
-                  "Example 9": {
+                  "Example 4": {
                     "value": {
-                      "artworkId": 9,
+                      "artworkId": 4,
                       "title": "200 лет Бородино",
                       "created": "2012",
                       "description": "Нет описания",
@@ -639,13 +639,13 @@
                       "price": 25000,
                       "available": true,
                       "image": "/naive/img/item-9timo.jpg",
-                      "artistId": 6,
+                      "artistId": 5,
                       "artistName": "Виктор Тимофеев"
                     }
                   },
-                  "Example 11": {
+                  "Example 6": {
                     "value": {
-                      "artworkId": 11,
+                      "artworkId": 6,
                       "title": "Преображение",
                       "created": "2011",
                       "description": "— Главное в живописи  — быть интересным. Само умение рисовать не делает человека художником, потому как умение рисовать (писать) — это понятие относительное, а умение чувствовать — вполне конкретное. Работа художника — это глас вопиющего в пустыне. Хорошо, чтобы его услышали. Кому-то везет больше, раздается  эхо. Его «А-аааа!» разносится по всему миру.",
@@ -654,13 +654,13 @@
                       "price": 0,
                       "available": false,
                       "image": "/naive/img/item-11timo.jpg",
-                      "artistId": 6,
+                      "artistId": 5,
                       "artistName": "Виктор Тимофеев"
                     }
                   },
-                  "Example 12": {
+                  "Example 7": {
                     "value": {
-                      "artworkId": 12,
+                      "artworkId": 7,
                       "title": "Пора тополиного пуха",
                       "created": "2010",
                       "description": "Интуитивно подбирая краски, работая в условиях испепеляющей жары 2010 года он передал настроение того лета, воплотил на ДВП масляными красками атмосферу не выносимой жары.",
@@ -669,13 +669,13 @@
                       "price": 0,
                       "available": false,
                       "image": "/naive/img/item-12timo.jpg",
-                      "artistId": 6,
+                      "artistId": 5,
                       "artistName": "Виктор Тимофеев"
                     }
                   },
-                  "Example 13": {
+                  "Example 8": {
                     "value": {
-                      "artworkId": 13,
+                      "artworkId": 8,
                       "title": "На пруду",
                       "created": "1992",
                       "description": "Нет описания",
@@ -684,13 +684,13 @@
                       "price": 0,
                       "available": false,
                       "image": "/naive/img/item-13rzha.jpg",
-                      "artistId": 5,
+                      "artistId": 4,
                       "artistName": "Михаил Ржанников"
                     }
                   },
-                  "Example 14": {
+                  "Example 9": {
                     "value": {
-                      "artworkId": 14,
+                      "artworkId": 9,
                       "title": "Сакс протяжно тянет родину",
                       "created": "",
                       "description": "Нет описания",
@@ -699,28 +699,13 @@
                       "price": 60000,
                       "available": true,
                       "image": "/naive/img/item-14timo.jpg",
-                      "artistId": 6,
+                      "artistId": 5,
                       "artistName": "Виктор Тимофеев"
                     }
                   },
-                  "Example 15": {
+                  "Example 10": {
                     "value": {
-                      "artworkId": 15,
-                      "title": "Кибела",
-                      "created": "2002",
-                      "description": "Нет описания",
-                      "techniques": "холст, масло",
-                      "dimensions": "70 x 70",
-                      "price": 200000,
-                      "available": true,
-                      "image": "/naive/img/item-15karn.jpg",
-                      "artistId": 3,
-                      "artistName": "Лев Карнаухов"
-                    }
-                  },
-                  "Example 16": {
-                    "value": {
-                      "artworkId": 16,
+                      "artworkId": 10,
                       "title": "В ожидании чуда",
                       "created": "2013",
                       "description": "Нет описания",
@@ -729,13 +714,13 @@
                       "price": 600000,
                       "available": true,
                       "image": "/naive/img/item-16shaj.jpg",
-                      "artistId": 8,
+                      "artistId": 6,
                       "artistName": "Альфрид Шаймарданов"
                     }
                   },
-                  "Example 18": {
+                  "Example 16": {
                     "value": {
-                      "artworkId": 18,
+                      "artworkId": 16,
                       "title": "Голубка",
                       "created": "",
                       "description": "Нет описания",
@@ -744,13 +729,13 @@
                       "price": 12000,
                       "available": true,
                       "image": "/naive/img/item-18timo.jpg",
-                      "artistId": 6,
+                      "artistId": 5,
                       "artistName": "Виктор Тимофеев"
                     }
                   },
-                  "Example 21": {
+                  "Example 12": {
                     "value": {
-                      "artworkId": 21,
+                      "artworkId": 12,
                       "title": "Кот",
                       "created": "1978",
                       "description": "Произведения Генералича — камерных размеров и написаны маслом по стеклу. Подобным образом в старину писались иконки в альпийских областях Хорватии и Словении — свет, проходя через стекло, создает особо насыщенный колорит. Художник верен народному промыслу и в манере изображать мир: уплощенное изображение, четкость контура, ритмичность ковровой композиции, в которой все детали равновелики и равнозначны. Народное видение мира, наивное и мудрое, сочетается с опытом знакомства художника с массовой изобразительной продукцией — кичем, что породило неповторимый сплав детской непосредственности восприятия со смелостью художественных решений. Творчество Генералича, оторвавшееся от народного ремесла и не примкнувшее к «образованному» искусству, образовало особую нишу, влившись в интернациональный художественный процесс. ",
@@ -763,9 +748,9 @@
                       "artistName": "Иван Генералич"
                     }
                   },
-                  "Example 22": {
+                  "Example 13": {
                     "value": {
-                      "artworkId": 22,
+                      "artworkId": 13,
                       "title": "Река жизни",
                       "created": "2013",
                       "description": "Образ будущей картины возникает спонтанно. Любая ситуация, сцена, фраза, сказанная кем-то или прочитанная мною, может натолкнуть на сюжет новой картины. Например, взять мою работу «Река жизни» с зебрами. Как-то случайно увидел в программе «Дискавери», как зебры, с риском для жизни, во время ежегодной миграции переходят реку. Река кишит крокодилами, а на берегу их могут поджидать ещё и львы. У меня сразу возникла ассоциация с нашей жизнью. Иногда, чтобы добиться цели, ты упорно стремишься туда, где, кажется, и лучше, и безопаснее. Преодолеваешь множество препятствий, а достичь цели порой так и не удаётся.",
@@ -774,13 +759,13 @@
                       "price": 0,
                       "available": false,
                       "image": "/naive/img/item-22shaj.jpg",
-                      "artistId": 8,
+                      "artistId": 6,
                       "artistName": "Альфрид Шаймарданов"
                     }
                   },
-                  "Example 24": {
+                  "Example 14": {
                     "value": {
-                      "artworkId": 24,
+                      "artworkId": 14,
                       "title": "Ночь полной луны",
                       "created": "2005",
                       "description": "Нет описания",
@@ -789,13 +774,13 @@
                       "price": 950000,
                       "available": true,
                       "image": "/naive/img/item-24shaj.jpg",
-                      "artistId": 8,
+                      "artistId": 6,
                       "artistName": "Альфрид Шаймарданов"
                     }
                   },
-                  "Example 25": {
+                  "Example 15": {
                     "value": {
-                      "artworkId": 25,
+                      "artworkId": 15,
                       "title": "…и медные трубы",
                       "created": "2019",
                       "description": "Нет описания",
@@ -806,21 +791,6 @@
                       "image": "/naive/img/item-25karn.jpg",
                       "artistId": 3,
                       "artistName": "Лев Карнаухов"
-                    }
-                  },
-                  "Example 26": {
-                    "value": {
-                      "artworkId": 26,
-                      "title": "Джаз",
-                      "created": "2006",
-                      "description": "Нет описания",
-                      "techniques": "ДВП, масло",
-                      "dimensions": "63 x 89",
-                      "price": 143000,
-                      "available": true,
-                      "image": "/naive/img/item-26timo.jpg",
-                      "artistId": 6,
-                      "artistName": "Виктор Тимофеев"
                     }
                   }
                 }
