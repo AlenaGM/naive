@@ -319,19 +319,6 @@
                         "artistName": "Лев Карнаухов"
                       },
                       {
-                        "artworkId": 6,
-                        "title": "Del Mar",
-                        "created": "2017",
-                        "description": "Нет описания",
-                        "techniques": "холст, акрил",
-                        "dimensions": "90 x 110",
-                        "price": 46000,
-                        "available": true,
-                        "image": "/naive/img/item-6frol.jpeg",
-                        "artistId": 7,
-                        "artistName": "Илья Фролов"
-                      },
-                      {
                         "artworkId": 7,
                         "title": "Вера.Надежда.Любовь",
                         "created": "2013",
@@ -345,19 +332,6 @@
                         "artistName": "Альфрид Шаймарданов"
                       },
                       {
-                        "artworkId": 8,
-                        "title": "Барселонский байк",
-                        "created": "2015",
-                        "description": "Нет описания",
-                        "techniques": "холст, акрил, смешанная техника",
-                        "dimensions": "50 x 80",
-                        "price": 26000,
-                        "available": true,
-                        "image": "/naive/img/item-8frol.jpeg",
-                        "artistId": 7,
-                        "artistName": "Илья Фролов"
-                      },
-                      {
                         "artworkId": 9,
                         "title": "200 лет Бородино",
                         "created": "2012",
@@ -369,19 +343,6 @@
                         "image": "/naive/img/item-9timo.jpg",
                         "artistId": 6,
                         "artistName": "Виктор Тимофеев"
-                      },
-                      {
-                        "artworkId": 10,
-                        "title": "К вечеру",
-                        "created": "1976",
-                        "description": "Нет описания",
-                        "techniques": "оргалит, масло",
-                        "dimensions": "75 x 70",
-                        "price": 100000,
-                        "available": true,
-                        "image": "/naive/img/item-10karn.jpg",
-                        "artistId": 3,
-                        "artistName": "Лев Карнаухов"
                       },
                       {
                         "artworkId": 11,
@@ -475,19 +436,6 @@
                         "artistName": "Виктор Тимофеев"
                       },
                       {
-                        "artworkId": 20,
-                        "title": "Праздник",
-                        "created": "2005",
-                        "description": "Нет описания",
-                        "techniques": "ДВП, масло",
-                        "dimensions": "75 x 75",
-                        "price": 143000,
-                        "available": true,
-                        "image": "/naive/img/item-20timo.jpg",
-                        "artistId": 6,
-                        "artistName": "Виктор Тимофеев"
-                      },
-                      {
                         "artworkId": 21,
                         "title": "Кот",
                         "created": "1978",
@@ -512,19 +460,6 @@
                         "image": "/naive/img/item-22shaj.jpg",
                         "artistId": 8,
                         "artistName": "Альфрид Шаймарданов"
-                      },
-                      {
-                        "artworkId": 23,
-                        "title": "На золотом крыльце",
-                        "created": "2013",
-                        "description": "Нет описания",
-                        "techniques": "масло",
-                        "dimensions": "44 x 74",
-                        "price": 42900,
-                        "available": true,
-                        "image": "/naive/img/item-23timo.jpg",
-                        "artistId": 6,
-                        "artistName": "Виктор Тимофеев"
                       },
                       {
                         "artworkId": 24,
@@ -562,45 +497,6 @@
                         "price": 143000,
                         "available": true,
                         "image": "/naive/img/item-26timo.jpg",
-                        "artistId": 6,
-                        "artistName": "Виктор Тимофеев"
-                      },
-                      {
-                        "artworkId": 27,
-                        "title": "3 часа. Февраль",
-                        "created": "2003",
-                        "description": "Нет описания",
-                        "techniques": "холст, масло",
-                        "dimensions": "70 x 50",
-                        "price": 170000,
-                        "available": true,
-                        "image": "/naive/img/item-27karn.jpg",
-                        "artistId": 3,
-                        "artistName": "Лев Карнаухов"
-                      },
-                      {
-                        "artworkId": 28,
-                        "title": "Благовещенье",
-                        "created": "2003",
-                        "description": "Нет описания",
-                        "techniques": "холст, масло",
-                        "dimensions": "71 x 57,5",
-                        "price": 143000,
-                        "available": true,
-                        "image": "/naive/img/item-28timo.jpg",
-                        "artistId": 6,
-                        "artistName": "Виктор Тимофеев"
-                      },
-                      {
-                        "artworkId": 29,
-                        "title": "Первоцвет",
-                        "created": "2014",
-                        "description": "Нет описания",
-                        "techniques": "ДВП, масло",
-                        "dimensions": "45 x 60",
-                        "price": 42900,
-                        "available": true,
-                        "image": "/naive/img/item-29timo.jpg",
                         "artistId": 6,
                         "artistName": "Виктор Тимофеев"
                       }
@@ -717,21 +613,6 @@
                       "artistName": "Лев Карнаухов"
                     }
                   },
-                  "Example 6": {
-                    "value": {
-                      "artworkId": 6,
-                      "title": "Del Mar",
-                      "created": "2017",
-                      "description": "Нет описания",
-                      "techniques": "холст, акрил",
-                      "dimensions": "90 x 110",
-                      "price": 46000,
-                      "available": true,
-                      "image": "/naive/img/item-6frol.jpeg",
-                      "artistId": 7,
-                      "artistName": "Илья Фролов"
-                    }
-                  },
                   "Example 7": {
                     "value": {
                       "artworkId": 7,
@@ -747,21 +628,6 @@
                       "artistName": "Альфрид Шаймарданов"
                     }
                   },
-                  "Example 8": {
-                    "value": {
-                      "artworkId": 8,
-                      "title": "Барселонский байк",
-                      "created": "2015",
-                      "description": "Нет описания",
-                      "techniques": "Холст, акрил, смешанная техника",
-                      "dimensions": "50 x 80",
-                      "price": 26000,
-                      "available": true,
-                      "image": "/naive/img/item-8frol.jpeg",
-                      "artistId": 7,
-                      "artistName": "Илья Фролов"
-                    }
-                  },
                   "Example 9": {
                     "value": {
                       "artworkId": 9,
@@ -775,21 +641,6 @@
                       "image": "/naive/img/item-9timo.jpg",
                       "artistId": 6,
                       "artistName": "Виктор Тимофеев"
-                    }
-                  },
-                  "Example 10": {
-                    "value": {
-                      "artworkId": 10,
-                      "title": "К вечеру",
-                      "created": "1976",
-                      "description": "Нет описания",
-                      "techniques": "оргалит, масло",
-                      "dimensions": "75 x 70",
-                      "price": 100000,
-                      "available": true,
-                      "image": "/naive/img/item-10karn.jpg",
-                      "artistId": 3,
-                      "artistName": "Лев Карнаухов"
                     }
                   },
                   "Example 11": {
@@ -897,21 +748,6 @@
                       "artistName": "Виктор Тимофеев"
                     }
                   },
-                  "Example 20": {
-                    "value": {
-                      "artworkId": 20,
-                      "title": "Праздник",
-                      "created": "2005",
-                      "description": "Нет описания",
-                      "techniques": "ДВП, масло",
-                      "dimensions": "75 x 75",
-                      "price": 143000,
-                      "available": true,
-                      "image": "/naive/img/item-20timo.jpg",
-                      "artistId": 6,
-                      "artistName": "Виктор Тимофеев"
-                    }
-                  },
                   "Example 21": {
                     "value": {
                       "artworkId": 21,
@@ -940,21 +776,6 @@
                       "image": "/naive/img/item-22shaj.jpg",
                       "artistId": 8,
                       "artistName": "Альфрид Шаймарданов"
-                    }
-                  },
-                  "Example 23": {
-                    "value": {
-                      "artworkId": 23,
-                      "title": "На золотом крыльце",
-                      "created": "2013",
-                      "description": "Нет описания",
-                      "techniques": "масло",
-                      "dimensions": "44 x 74",
-                      "price": 42900,
-                      "available": true,
-                      "image": "/naive/img/item-23timo.jpg",
-                      "artistId": 6,
-                      "artistName": "Виктор Тимофеев"
                     }
                   },
                   "Example 24": {
@@ -998,51 +819,6 @@
                       "price": 143000,
                       "available": true,
                       "image": "/naive/img/item-26timo.jpg",
-                      "artistId": 6,
-                      "artistName": "Виктор Тимофеев"
-                    }
-                  },
-                  "Example 27": {
-                    "value": {
-                      "artworkId": 27,
-                      "title": "3 часа. Февраль",
-                      "created": "2003",
-                      "description": "Нет описания",
-                      "techniques": "холст, масло",
-                      "dimensions": "70 x 50",
-                      "price": 170000,
-                      "available": true,
-                      "image": "/naive/img/item-27karn.jpg",
-                      "artistId": 3,
-                      "artistName": "Лев Карнаухов"
-                    }
-                  },
-                  "Example 28": {
-                    "value": {
-                      "artworkId": 28,
-                      "title": "Благовещенье",
-                      "created": "2003",
-                      "description": "Нет описания",
-                      "techniques": "холст, масло",
-                      "dimensions": "71 x 57,5",
-                      "price": 143000,
-                      "available": true,
-                      "image": "/naive/img/item-28timo.jpg",
-                      "artistId": 6,
-                      "artistName": "Виктор Тимофеев"
-                    }
-                  },
-                  "Example 29": {
-                    "value": {
-                      "artworkId": 29,
-                      "title": "Первоцвет",
-                      "created": "2014",
-                      "description": "Нет описания",
-                      "techniques": "ДВП, масло",
-                      "dimensions": "45 x 60",
-                      "price": 42900,
-                      "available": true,
-                      "image": "/naive/img/item-29timo.jpg",
                       "artistId": 6,
                       "artistName": "Виктор Тимофеев"
                     }
@@ -1156,32 +932,6 @@
                             "artistName": "Лев Карнаухов"
                           },
                           {
-                            "artworkId": 10,
-                            "title": "К вечеру",
-                            "created": "1976",
-                            "description": "Нет описания",
-                            "techniques": "оргалит, масло",
-                            "dimensions": "75 x 70",
-                            "price": 100000,
-                            "available": true,
-                            "image": "/naive/img/item-10karn.jpg",
-                            "artistId": 3,
-                            "artistName": "Лев Карнаухов"
-                          },
-                          {
-                            "artworkId": 15,
-                            "title": "string",
-                            "created": "string",
-                            "description": "string",
-                            "techniques": "string",
-                            "dimensions": "string",
-                            "price": 0,
-                            "available": true,
-                            "image": "/naive/img/item-15karn.jpg",
-                            "artistId": 3,
-                            "aristName": "Лев Карнаухов"
-                          },
-                          {
                             "artworkId": 25,
                             "title": "…и медные трубы",
                             "created": "2019",
@@ -1191,19 +941,6 @@
                             "price": 200000,
                             "available": true,
                             "image": "/naive/img/item-25karn.jpg",
-                            "artistId": 3,
-                            "artistName": "Лев Карнаухов"
-                          },
-                          {
-                            "artworkId": 27,
-                            "title": "3 часа. Февраль",
-                            "created": "2003",
-                            "description": "Нет описания",
-                            "techniques": "холст, масло",
-                            "dimensions": "70 x 50",
-                            "price": 170000,
-                            "available": true,
-                            "image": "/naive/img/item-27karn.jpg",
                             "artistId": 3,
                             "artistName": "Лев Карнаухов"
                           }
@@ -1317,32 +1054,6 @@
                             "artistName": "Виктор Тимофеев"
                           },
                           {
-                            "artworkId": 20,
-                            "title": "Праздник",
-                            "created": "2005",
-                            "description": "Нет описания",
-                            "techniques": "ДВП, масло",
-                            "dimensions": "75 x 75",
-                            "price": 143000,
-                            "available": true,
-                            "image": "/naive/img/item-20timo.jpg",
-                            "artistId": 6,
-                            "artistName": "Виктор Тимофеев"
-                          },
-                          {
-                            "artworkId": 23,
-                            "title": "На золотом крыльце",
-                            "created": "2013",
-                            "description": "Нет описания",
-                            "techniques": "масло",
-                            "dimensions": "44 x 74",
-                            "price": 42900,
-                            "available": true,
-                            "image": "/naive/img/item-23timo.jpg",
-                            "artistId": 6,
-                            "artistName": "Виктор Тимофеев"
-                          },
-                          {
                             "artworkId": 26,
                             "title": "Джаз",
                             "created": "2006",
@@ -1354,67 +1065,6 @@
                             "image": "/naive/img/item-26timo.jpg",
                             "artistId": 6,
                             "artistName": "Виктор Тимофеев"
-                          },
-                          {
-                            "artworkId": 28,
-                            "title": "Благовещенье",
-                            "created": "2003",
-                            "description": "Нет описания",
-                            "techniques": "холст, масло",
-                            "dimensions": "71 x 57,5",
-                            "price": 143000,
-                            "available": true,
-                            "image": "/naive/img/item-28timo.jpg",
-                            "artistId": 6,
-                            "artistName": "Виктор Тимофеев"
-                          },
-                          {
-                            "artworkId": 29,
-                            "title": "Первоцвет",
-                            "created": "2014",
-                            "description": "Нет описания",
-                            "techniques": "ДВП, масло",
-                            "dimensions": "45 x 60",
-                            "price": 42900,
-                            "available": true,
-                            "image": "/naive/img/item-29timo.jpg",
-                            "artistId": 6,
-                            "artistName": "Виктор Тимофеев"
-                          }
-                        ]
-                      },
-                      {
-                        "id": 7,
-                        "firstName": "Илья",
-                        "lastName": "Фролов",
-                        "bio": "Илья Фролов – художник из Челябинска. Около десяти лет жил в Москве и Санкт-Петербурге. Потом уехал в Испанию на полгода за яркими красками и вдохновением. Вернулся в Челябинск и продолжил заниматься фотографией. В какой-то момент Илья понял, что не может максимально влиять на изображение, и первые опыты в расширении возможностей визуализации были в составлении коллажей. По настоянию подруги-художницы начал работать акрилом. «О живописи: «Пой как птица, если не можешь не петь. Если можешь не петь — не пой» — для меня это очень понятное и верное высказывание. Чтобы верно донести то, что я думаю через живопись, приходится иногда «неверно» писать картины. Поэтому я не ограничиваю себя стилистически или содержательно. Живопись, фотография или дизайн — это просто части жизни, которую я живу, а не отдельные «специальные» занятия.»\n",
-                        "image": "/naive/img/artist-7frol.jpg",
-                        "artworks": [
-                          {
-                            "artworkId": 6,
-                            "title": "Del Mar",
-                            "created": "2017",
-                            "description": "Нет описания",
-                            "techniques": "холст, акрил",
-                            "dimensions": "90 x 110",
-                            "price": 46000,
-                            "available": true,
-                            "image": "/naive/img/item-6frol.jpeg",
-                            "artistId": 7,
-                            "artistName": "Илья Фролов"
-                          },
-                          {
-                            "artworkId": 8,
-                            "title": "Барселонский байк",
-                            "created": "2015",
-                            "description": "Нет описания",
-                            "techniques": "холст, акрил, смешанная техника",
-                            "dimensions": "50 x 80",
-                            "price": 26000,
-                            "available": true,
-                            "image": "/naive/img/item-8frol.jpeg",
-                            "artistId": 7,
-                            "artistName": "Илья Фролов"
                           }
                         ]
                       },
@@ -1836,43 +1486,6 @@
                           "image": "/naive/img/item-29timo.jpg",
                           "artistId": 6,
                           "artistName": "Виктор Тимофеев"
-                        }
-                      ]
-                    }
-                  },
-                  "Example 7": {
-                    "value": {
-                      "id": 7,
-                      "firstName": "Илья",
-                      "lastName": "Фролов",
-                      "bio": "Илья Фролов – художник из Челябинска. Около десяти лет жил в Москве и Санкт-Петербурге. Потом уехал в Испанию на полгода за яркими красками и вдохновением. Вернулся в Челябинск и продолжил заниматься фотографией. В какой-то момент Илья понял, что не может максимально влиять на изображение, и первые опыты в расширении возможностей визуализации были в составлении коллажей. По настоянию подруги-художницы начал работать акрилом. «О живописи: «Пой как птица, если не можешь не петь. Если можешь не петь — не пой» — для меня это очень понятное и верное высказывание. Чтобы верно донести то, что я думаю через живопись, приходится иногда «неверно» писать картины. Поэтому я не ограничиваю себя стилистически или содержательно. Живопись, фотография или дизайн — это просто части жизни, которую я живу, а не отдельные «специальные» занятия.»\n",
-                      "image": "/naive/img/artist-7frol.jpg",
-                      "artworks": [
-                        {
-                          "artworkId": 6,
-                          "title": "Del Mar",
-                          "created": "2017",
-                          "description": "Нет описания",
-                          "techniques": "холст, акрил",
-                          "dimensions": "90 x 110",
-                          "price": 46000,
-                          "available": true,
-                          "image": "/naive/img/item-6frol.jpeg",
-                          "artistId": 7,
-                          "artistName": "Илья Фролов"
-                        },
-                        {
-                          "artworkId": 8,
-                          "title": "Барселонский байк",
-                          "created": "2015",
-                          "description": "Нет описания",
-                          "techniques": "холст, акрил, смешанная техника",
-                          "dimensions": "50 x 80",
-                          "price": 26000,
-                          "available": true,
-                          "image": "/naive/img/item-8frol.jpeg",
-                          "artistId": 7,
-                          "artistName": "Илья Фролов"
                         }
                       ]
                     }
