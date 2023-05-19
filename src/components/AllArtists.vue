@@ -112,6 +112,7 @@ onMounted(async () => {
         font-weight: 600;
         line-height: 1.2;
         cursor: pointer;
+        margin: 0 0 0.75rem;
         &:hover {
           text-decoration: underline 2px;
         }
